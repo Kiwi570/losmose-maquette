@@ -1,0 +1,539 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "lien vers le site actuel",
+      "detail": "mailto:contact@restaurantlosmose.fr",
+      "etape": "fichiers",
+      "page": "404.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien vers le site actuel",
+      "detail": "mailto:contact@restaurantlosmose.fr",
+      "etape": "fichiers",
+      "page": "bons-cadeaux.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien vers le site actuel",
+      "detail": "mailto:contact@restaurantlosmose.fr",
+      "etape": "fichiers",
+      "page": "contact.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien vers le site actuel",
+      "detail": "mailto:contact@restaurantlosmose.fr",
+      "etape": "fichiers",
+      "page": "index.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien vers le site actuel",
+      "detail": "mailto:contact@restaurantlosmose.fr",
+      "etape": "fichiers",
+      "page": "la-maison.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien vers le site actuel",
+      "detail": "mailto:contact@restaurantlosmose.fr",
+      "etape": "fichiers",
+      "page": "menus.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien vers le site actuel",
+      "detail": "mailto:contact@restaurantlosmose.fr",
+      "etape": "fichiers",
+      "page": "reserver.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément sans nom accessible",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "body#haut > header > div.entete-rangee > a.entete-logo",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1366×768 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "accueil-ouverture (4/5, faible, 36 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.hero-arche-cadre:nth-of-type(2) > figure.media.arche > picture > img « Deux boules vertes enveloppées de feuilles, une fe »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : color-contrast",
+      "detail": "Elements must meet minimum color contrast ratio thresholds",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "#lettre-email",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.hero-texte:nth-of-type(1) > h1.hero-titre > span.titre-masque > span.titre-ligne « L’Osmose »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1920×1080",
+      "mode": "normal",
+      "selecteur": "section#debut > div.hero-texte:nth-of-type(1) > p.surtitre:nth-of-type(1) « TABLE DE CHEF · GAULT&MILLAU 2026 · OBERNAI »",
+      "lieux": [
+        "1920×1080 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec h1.hero-titre > span.titre-masque > span.titre-ligne > span.o « O »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1920×1080",
+      "mode": "normal",
+      "selecteur": "section#debut > div.hero-texte:nth-of-type(1) > p.surtitre:nth-of-type(1) « TABLE DE CHEF · GAULT&MILLAU 2026 · OBERNAI »",
+      "lieux": [
+        "1920×1080 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "section#debut > div.hero-texte:nth-of-type(1) > p.hero-info:nth-of-type(3) « Du mardi au samedi Menus dès 29 € »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "effet du plan absent",
+      "detail": "« repere » : aucun élément data-effet=\"repere\"",
+      "etape": "mouvement",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "effet du plan absent",
+      "detail": "« bon » : aucun élément data-effet=\"bon\"",
+      "etape": "mouvement",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "effet du plan absent",
+      "detail": "« bandeau » : aucun élément data-effet=\"bandeau\"",
+      "etape": "mouvement",
+      "lieux": [
+        ""
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "bons-cadeaux.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "contact.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "reserver.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "config.json : page type introuvable",
+      "detail": "/la-maison, /menus, /bons-cadeaux, /reserver, /contact",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : effet signature qui ne se manipule pas (point 1)",
+      "detail": "aucun élément data-grille=\"manipuler\" sur l’accueil : objet à attraper, faire tourner ou glisser (module objet-a-faire-tourner, lumiere-au-pointeur…)",
+      "etape": "grille",
+      "page": "/",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : rien ne relie les sections (point 4)",
+      "detail": "sur aucune page : élément du métier qui relie les sections et les pages (fil dans la marge, objet unique qui change, lumière qui passe, carte, folio, frise), marqué data-grille=\"fil\"",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "sur aucune page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : action principale sans retour physique (point 7)",
+      "detail": "ajout au panier, réservation, envoi ou filtre : quelque chose de l’objet part, se pose ou se transforme (module envol-vers-le-panier, tampon « reçu »), marqué data-grille=\"retour\"",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.8 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#debut > div.hero-texte:nth-of-type(1) > p.surtitre:nth-of-type(1) « TABLE DE CHEF · GAULT&MILLAU 2026 · OBERNAI »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.8 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#philosophie > div:nth-of-type(1) > p.surtitre:nth-of-type(1) « NOTRE PHILOSOPHIE »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.disques:nth-of-type(2) > div.disque.disque--vin:nth-of-type(2) > figure.media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.8 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#accord > div.conteneur.accord > div > p.surtitre:nth-of-type(1) « L'ACCORD DU SOMMELIER »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#accord > div.conteneur.accord > figure.media.accord-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.conteneur.salle-grille:nth-of-type(2) > div.salle-composition:nth-of-type(2) > figure.media.salle-mur:nth-of-type(1) > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.8 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#en-ce-moment > div.tete-section:nth-of-type(1) > div > p.surtitre « EN CE MOMENT »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.8 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#infos > div:nth-of-type(2) > p.surtitre « INFOS PRATIQUES »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.8 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div:nth-of-type(2) > div.infos-liste.fx-fini > div:nth-of-type(4) > h3 « PAIEMENTS ACCEPTÉS »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.8 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "sansJs",
+      "selecteur": "div:nth-of-type(2) > div.infos-liste > div:nth-of-type(4) > h3 « PAIEMENTS ACCEPTÉS »",
+      "lieux": [
+        "1366×768 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 87 ms (différence 21 %) (films/retour-arrière-390.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "retour arrière",
+      "lieux": [
+        "390×844 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "effet qui ne bouge pas au défilement",
+      "detail": "vitrail : il ne bouge ni au défilement ni tout seul à cette taille (effet au survol, au clic, ou réservé à l'ordinateur ?) ; il ne compte pas comme effet de section",
+      "etape": "mouvement",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.vitrail",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "fichiers",
+      "raison": "ENOENT: no such file or directory, stat '/home/claude/losmose-maquette/_audit/node_modules/playwright-core'",
+      "etape": "fichiers"
+    },
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 3,
+    "mesures": 11,
+    "balayage": 1,
+    "films d’ouverture": 2,
+    "films de transition": 2,
+    "bords de l’écran": 2,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 1,
+    "liens et boutons": 1,
+    "liens profonds": 4,
+    "liens vers la page en cours": 1,
+    "changements de hauteur": 1,
+    "parcours du projet": 1,
+    "fluidité": 2,
+    "défilement selon l’appareil": 5,
+    "mouvement": 2,
+    "effets du plan": 5,
+    "souris immobile": 1,
+    "vitesse": 1,
+    "captures": 1
+  },
+  "infos": [
+    "Audit standard : étapes lourdes sur /.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Ouverture / (1366×768) : 2896 ms depuis le premier octet",
+    "Ouverture / (390×844) : 2904 ms depuis le premier octet",
+    "film de l'ouverture / 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Bords de l’écran : 145 images d’intro, 12 de voile et 41 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Tient dans l'écran / : aucune section épinglée ou plein écran.",
+    "Fluidité / 1366×768 (molette) : 0 % d'images lentes sur 391, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1421, tâche la plus longue 0 ms",
+    "Vitesse / : 0.49 s de calcul au chargement (téléphone ralenti)."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "absent",
+      "detail": "aucun data-grille=\"manipuler\" sur l’accueil"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 1 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en iris"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "absent",
+      "detail": "sur aucune page"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "absent",
+      "detail": "sur aucune page"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "sans objet",
+      "detail": "aucune scène épinglée marquée ni galerie générique"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "absent",
+      "detail": "sur aucune page"
+    }
+  ]
+}

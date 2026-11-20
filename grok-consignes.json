@@ -1,0 +1,99 @@
+{
+  "client": "L'Osmose",
+  "activite": "restauration",
+  "direction": "Grès rose et vin d'Alsace",
+  "date": "2026-11-20T15:26:13.633Z",
+  "images": [
+    {
+      "nom": "maison-ouverture",
+      "fichier": "maison-ouverture.jpg",
+      "page": "la-maison",
+      "emplacement": "Ouverture de la page La maison, bandeau large sous le grand titre (rien n'est écrit sur l'image)",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "lieu",
+      "pieges": [],
+      "consigne": "A wall of pink Vosges sandstone blocks under old dark oak beams in the corner of a small historic dining room, soft patches of red, amber and green coloured light cast by an unseen stained-glass window drifting across the stone, the furniture only hinted in soft blur, nobody in the room, no food, nothing like a recognizable real restaurant. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic low-key food-mood photography, intimate, warm and refined mood, palette of warm linen cream, pale pink sandstone, deep wine red and burnt terracotta, soft warm side light with small drifting patches of coloured light from a stained-glass window, tactile pink Vosges sandstone, old dark oak beams, white linen and fine crystal, set in an old house of a small wine town in eastern France on a winter evening, shallow depth of field, subtle film grain, modern editorial look, photorealistic, high detail. No finished dish, no plated food, no menu, no packaging, no labelled bottle, no glass being drunk, no oven or cooking equipment presented as the restaurant's own, no jewelry, no tattoo. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "reserver-ouverture",
+      "fichier": "reserver-ouverture.jpg",
+      "page": "reserver",
+      "emplacement": "Ouverture de la page Réserver, image en hauteur à droite du formulaire",
+      "role": "ouverture",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "lieu",
+      "pieges": [],
+      "consigne": "Close view of a single small table set for two in a warm intimate fine-dining room: white linen, two empty crystal wine glasses, folded napkins, polished cutlery and a small glowing candle, a pink sandstone wall softly out of focus behind, no food, no bottle, nobody, not a recognizable real restaurant. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic low-key food-mood photography, intimate, warm and refined mood, palette of warm linen cream, pale pink sandstone, deep wine red and burnt terracotta, soft warm side light with small drifting patches of coloured light from a stained-glass window, tactile pink Vosges sandstone, old dark oak beams, white linen and fine crystal, set in an old house of a small wine town in eastern France on a winter evening, shallow depth of field, subtle film grain, modern editorial look, photorealistic, high detail. No finished dish, no plated food, no menu, no packaging, no labelled bottle, no glass being drunk, no oven or cooking equipment presented as the restaurant's own, no jewelry, no tattoo. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "osmose-vin",
+      "fichier": "osmose-vin.jpg",
+      "page": "accueil",
+      "emplacement": "Accueil, section manifeste : disque « le vin » qui rejoint le disque « le mets »",
+      "role": "vignette",
+      "format": "1:1",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "Overhead macro of deep ruby red wine swirling inside a thin crystal wine glass seen straight from above, the round bowl of the glass filling the frame as a near-perfect circle, soft curved reflections on the glass rim, dark warm background, no hands, no bottle, nothing written. Square composition, aspect ratio 1:1, subject centered, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic low-key food-mood photography, intimate, warm and refined mood, palette of warm linen cream, pale pink sandstone, deep wine red and burnt terracotta, soft warm side light with small drifting patches of coloured light from a stained-glass window, tactile pink Vosges sandstone, old dark oak beams, white linen and fine crystal, set in an old house of a small wine town in eastern France on a winter evening, shallow depth of field, subtle film grain, modern editorial look, photorealistic, high detail. No finished dish, no plated food, no menu, no packaging, no labelled bottle, no glass being drunk, no oven or cooking equipment presented as the restaurant's own, no jewelry, no tattoo. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "accord-verres",
+      "fichier": "accord-verres.jpg",
+      "page": "accueil",
+      "emplacement": "Accueil, section L'accord du sommelier (fond lie de vin), image en hauteur à côté des verres animés",
+      "role": "produit",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "Three stemmed crystal wine glasses lined up on a dark oak counter, each with a small pour of a different wine, pale golden white, salmon rosé and deep ruby red, a clear glass decanter softly blurred behind, low warm side light, dark wine-red background, no bottle, no hands, no food. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic low-key food-mood photography, intimate, warm and refined mood, palette of warm linen cream, pale pink sandstone, deep wine red and burnt terracotta, soft warm side light with small drifting patches of coloured light from a stained-glass window, tactile pink Vosges sandstone, old dark oak beams, white linen and fine crystal, set in an old house of a small wine town in eastern France on a winter evening, shallow depth of field, subtle film grain, modern editorial look, photorealistic, high detail. No finished dish, no plated food, no menu, no packaging, no labelled bottle, no glass being drunk, no oven or cooking equipment presented as the restaurant's own, no jewelry, no tattoo. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "recevoir-tablee",
+      "fichier": "recevoir-tablee.jpg",
+      "page": "accueil",
+      "emplacement": "Accueil, section Recevoir (privatisation), grande image ; reprise sur La maison",
+      "role": "section-fond",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "lieu",
+      "pieges": [],
+      "consigne": "A long table dressed for a private celebration dinner in a small historic dining room with pink sandstone walls and dark oak beams, white linen, rows of crystal glasses, small candles and a few sprigs of winter greenery, empty chairs, nobody in the room, no food, not a recognizable real restaurant. Landscape composition, aspect ratio 3:2, quiet uncluttered area in the upper half for a title. Cinematic low-key food-mood photography, intimate, warm and refined mood, palette of warm linen cream, pale pink sandstone, deep wine red and burnt terracotta, soft warm side light with small drifting patches of coloured light from a stained-glass window, tactile pink Vosges sandstone, old dark oak beams, white linen and fine crystal, set in an old house of a small wine town in eastern France on a winter evening, shallow depth of field, subtle film grain, modern editorial look, photorealistic, high detail. No finished dish, no plated food, no menu, no packaging, no labelled bottle, no glass being drunk, no oven or cooking equipment presented as the restaurant's own, no jewelry, no tattoo. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "cadeaux-fond",
+      "fichier": "cadeaux-fond.jpg",
+      "page": "bons-cadeaux",
+      "emplacement": "Ouverture de la page Bons cadeaux : fond sous la carte cadeau dessinée en code, milieu de l'image laissé calme",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [],
+      "consigne": "A cream linen tablecloth seen from above, a sprig of fir and a loosely curled deep red satin ribbon near the right edge, the soft glow of a small candle in the top right corner, generous calm empty space on the left half, no card, no envelope, no box, nothing written, no food. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Cinematic low-key food-mood photography, intimate, warm and refined mood, palette of warm linen cream, pale pink sandstone, deep wine red and burnt terracotta, soft warm side light with small drifting patches of coloured light from a stained-glass window, tactile pink Vosges sandstone, old dark oak beams, white linen and fine crystal, set in an old house of a small wine town in eastern France on a winter evening, shallow depth of field, subtle film grain, modern editorial look, photorealistic, high detail. No finished dish, no plated food, no menu, no packaging, no labelled bottle, no glass being drunk, no oven or cooking equipment presented as the restaurant's own, no jewelry, no tattoo. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "page-404",
+      "fichier": "page-404.jpg",
+      "page": "404",
+      "emplacement": "Page 404, image en tête",
+      "role": "404",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "404",
+      "pieges": [],
+      "consigne": "An empty white fine-dining plate on white linen with only a last brushstroke of sauce and a few crumbs left, a silver spoon resting on the rim and a folded napkin beside it, soft warm side light, a gentle touch of humour, no food left on the plate. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic low-key food-mood photography, intimate, warm and refined mood, palette of warm linen cream, pale pink sandstone, deep wine red and burnt terracotta, soft warm side light with small drifting patches of coloured light from a stained-glass window, tactile pink Vosges sandstone, old dark oak beams, white linen and fine crystal, set in an old house of a small wine town in eastern France on a winter evening, shallow depth of field, subtle film grain, modern editorial look, photorealistic, high detail. No finished dish, no plated food, no menu, no packaging, no labelled bottle, no glass being drunk, no oven or cooking equipment presented as the restaurant's own, no jewelry, no tattoo. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

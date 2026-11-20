@@ -1,0 +1,15 @@
+… fichiers
+  fait en 0 s
+… mesures
+  17/117
+  41/117
+  65/117
+  88/117
+  113/117
+  fait en 158 s
+… mesures:balayage
+  fait en 29 s
+
+Échecs : 1 · À regarder : 3 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/menus --seulement=fichiers,mesures
+Rapport : /home/claude/losmose-maquette/_audit/rapport/rapport.md (passe 20261120-164412-complet-cible-partiel)

@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "L'Osmose",
+  "description": "Restaurant gastronomique à Obernai : menus par nombre de services et accords mets et vins.",
+  "servesCuisine": "Française moderne",
+  "priceRange": "29 € à 122 €",
+  "telephone": "+33388993889",
+  "email": "contact@restaurantlosmose.fr",
+  "address": { "@type": "PostalAddress", "streetAddress": "18 rue du Général Gouraud", "postalCode": "67210", "addressLocality": "Obernai", "addressCountry": "FR" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "12:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "19:00", "closes": "21:00" }
+  ],
+  "acceptsReservations": "True",
+  "paymentAccepted": "American Express, Chèques-Vacances, ANCV Connect"
+}

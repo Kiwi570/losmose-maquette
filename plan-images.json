@@ -1,0 +1,287 @@
+[
+ {
+  "source": "recu/site/losmose-recu/logo.jpg",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "L'Osmose, gastronomie et vins, restaurant"
+ },
+ {
+  "source": "recu/site/losmose-recu/menu-3-services-all.png",
+  "nom": "accueil-ouverture",
+  "role": "ouverture",
+  "ratio": "4:5",
+  "mobile": "4:5",
+  "beaute": 4,
+  "alt": "Deux boules vertes enveloppées de feuilles, une feuille de capucine et des points de sauce dans un bol en céramique mouchetée",
+  "page": "accueil"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-3.jpg",
+  "nom": "osmose-mets",
+  "role": "vignette",
+  "ratio": "1:1",
+  "beaute": 5,
+  "alt": "Assiette vue du dessus : rondelles de concombre, boules glacées blanches, points verts et feuilles pourpres sur une assiette bleu ciel"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-12.jpg",
+  "nom": "carte-jour",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "beaute": 4,
+  "alt": "Bol en grès violet garni de légumes et de fleurs, posé sur une assiette mouchetée"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-7.png",
+  "nom": "carte-quatre",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "beaute": 5,
+  "alt": "Noix de Saint-Jacques dorées et points de crème sur une ardoise noire"
+ },
+ {
+  "source": "recu/site/losmose-recu/menu-5-services-all.jpg",
+  "nom": "carte-cinq",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "beaute": 4,
+  "alt": "Cinq bouchées dorées alignées sur une grande assiette blanche"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-6.jpg",
+  "nom": "chef-assiette",
+  "role": "produit",
+  "ratio": "1:1",
+  "beaute": 5,
+  "alt": "Filet de poisson à la peau croustillante, petits pois et grande tuile dorée sur une sauce verte"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-2.jpg",
+  "nom": "salle-arche",
+  "role": "galerie",
+  "ratio": "16:9",
+  "beaute": 3,
+  "alt": "La salle de L'Osmose : grande fenêtre en arche à vitraux colorés, tables dressées et boiseries"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29.png",
+  "nom": "nouvel-an",
+  "role": "carte-service",
+  "ratio": "3:2",
+  "beaute": 5,
+  "alt": "Poisson doré, cheveux d'ange croustillants et baies rouges sur une assiette blanche, bougies et décor de fêtes derrière"
+ },
+ {
+  "source": "recu/site/losmose-recu/bon-cadeau-valeur-100.jpg",
+  "nom": "cadeau-morilles",
+  "role": "produit",
+  "ratio": "3:2",
+  "beaute": 5,
+  "alt": "Morilles, viande glacée et chapelure dorée en arc sur une assiette blanche texturée"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-10.png",
+  "nom": "menus-ouverture",
+  "role": "ouverture",
+  "ratio": "3:2",
+  "mobile": false,
+  "beaute": 5,
+  "alt": "Dessert : sphère jaune au citron, meringues dorées, raisins verts et crumble sur fond bleu nuit",
+  "page": "menus"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-11.jpg",
+  "nom": "menus-jour",
+  "role": "produit",
+  "ratio": "3:2",
+  "beaute": 4,
+  "alt": "Disque de biscuit doré entrouvert sur un cœur jaune, éclats de sauce jaune sur assiette blanche"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-14.jpg",
+  "nom": "menus-chocolat",
+  "role": "produit",
+  "ratio": "4:3",
+  "beaute": 4,
+  "alt": "Sphère de chocolat sur un lit de crumble avec une goutte de coulis orange"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-4.jpg",
+  "nom": "menus-spheres",
+  "role": "produit",
+  "ratio": "4:3",
+  "beaute": 4,
+  "alt": "Sphères vertes et bâtonnets de pomme dans des bols sombres alignés"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-13.jpg",
+  "nom": "aperitif",
+  "role": "vignette",
+  "ratio": "3:4",
+  "beaute": 3,
+  "alt": "Cocktail ambré à la mousse claire dans un verre à pied, sur le comptoir"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-15.jpg",
+  "nom": "assiette-cuilleres",
+  "role": "galerie",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Tasses noires et cuillères de bouchées roses sur un plateau d'ardoise"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-16.jpg",
+  "nom": "galerie-1",
+  "role": "vignette",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Dôme vert sur un nid sombre, présenté sur une coupelle blanche"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-18.jpg",
+  "nom": "galerie-2",
+  "role": "vignette",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Nid de chocolat garni de jaune d'œuf sur une grande assiette blanche"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-19.jpg",
+  "nom": "galerie-3",
+  "role": "vignette",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Viande rosée et moules sur une assiette blanche"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-20.jpg",
+  "nom": "galerie-4",
+  "role": "vignette",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Dessert éclaté : crème grise, meringues, fruits rouges et carrés de chocolat"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-21.jpg",
+  "nom": "galerie-5",
+  "role": "vignette",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Lamelles croisées et points de sauce jaune sur assiette blanche"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-25.jpg",
+  "nom": "galerie-6",
+  "role": "vignette",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Viande glacée, épinards, chips de volaille et légumes rôtis"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-26.jpg",
+  "nom": "galerie-7",
+  "role": "vignette",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Magret rosé, purée et pomme fondante sur une assiette longue, verres derrière"
+ },
+ {
+  "source": "recu/site/losmose-recu/menu-saint-sylvestre-200.jpg",
+  "nom": "galerie-8",
+  "role": "vignette",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Rangée d'assiettes dressées sur le passe, prêtes à partir en salle"
+ },
+ {
+  "source": "recu/grok/maison-ouverture.jpg",
+  "nom": "maison-ouverture",
+  "role": "ouverture",
+  "ratio": "16:9",
+  "mobile": "4:5",
+  "page": "la-maison",
+  "emplacement": "Ouverture de la page La maison, bandeau large sous le grand titre (rien n'est écrit sur l'image)",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "consigne_scene": "A wall of pink Vosges sandstone blocks under old dark oak beams in the corner of a small historic dining room, soft patches of red, amber and green coloured light cast by an unseen stained-glass window drifting across the stone, the furniture only hinted in soft blur, nobody in the room, no food, nothing like a recognizable real restaurant",
+  "alt": "Mur de grès rose et poutres de chêne, taché de la lumière colorée d'un vitrail",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/reserver-ouverture.jpg",
+  "nom": "reserver-ouverture",
+  "role": "ouverture",
+  "ratio": "4:5",
+  "mobile": "4:5",
+  "page": "reserver",
+  "emplacement": "Ouverture de la page Réserver, image en hauteur à droite du formulaire",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "consigne_scene": "Close view of a single small table set for two in a warm intimate fine-dining room: white linen, two empty crystal wine glasses, folded napkins, polished cutlery and a small glowing candle, a pink sandstone wall softly out of focus behind, no food, no bottle, nobody, not a recognizable real restaurant",
+  "alt": "Table dressée pour deux, nappe blanche, verres en cristal et bougie, devant un mur de grès rose",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/osmose-vin.jpg",
+  "nom": "osmose-vin",
+  "role": "vignette",
+  "ratio": "1:1",
+  "page": "accueil",
+  "emplacement": "Accueil, section manifeste : disque « le vin » qui rejoint le disque « le mets »",
+  "priorite": "Indispensable",
+  "consigne_scene": "Overhead macro of deep ruby red wine swirling inside a thin crystal wine glass seen straight from above, the round bowl of the glass filling the frame as a near-perfect circle, soft curved reflections on the glass rim, dark warm background, no hands, no bottle, nothing written",
+  "alt": "Vin rouge qui tourne dans un verre en cristal, vu du dessus",
+  "beaute": 5
+ },
+ {
+  "source": "recu/grok/accord-verres.jpg",
+  "nom": "accord-verres",
+  "role": "produit",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "Accueil, section L'accord du sommelier (fond lie de vin), image en hauteur à côté des verres animés",
+  "priorite": "Conseillée",
+  "consigne_scene": "Three stemmed crystal wine glasses lined up on a dark oak counter, each with a small pour of a different wine, pale golden white, salmon rosé and deep ruby red, a clear glass decanter softly blurred behind, low warm side light, dark wine-red background, no bottle, no hands, no food",
+  "alt": "Trois verres de vin, blanc, rosé et rouge, sur un comptoir de chêne sombre",
+  "beaute": 5
+ },
+ {
+  "source": "recu/grok/recevoir-tablee.jpg",
+  "nom": "recevoir-tablee",
+  "role": "section-fond",
+  "ratio": "3:2",
+  "page": "accueil",
+  "emplacement": "Accueil, section Recevoir (privatisation), grande image ; reprise sur La maison",
+  "priorite": "Conseillée",
+  "gabarit": "lieu",
+  "consigne_scene": "A long table dressed for a private celebration dinner in a small historic dining room with pink sandstone walls and dark oak beams, white linen, rows of crystal glasses, small candles and a few sprigs of winter greenery, empty chairs, nobody in the room, no food, not a recognizable real restaurant",
+  "alt": "Longue table de fête dressée, nappe blanche, verres et bougies, entre murs de grès et poutres",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/cadeaux-fond.jpg",
+  "nom": "cadeaux-fond",
+  "role": "ouverture",
+  "ratio": "16:9",
+  "mobile": "4:5",
+  "page": "bons-cadeaux",
+  "emplacement": "Ouverture de la page Bons cadeaux : fond sous la carte cadeau dessinée en code, milieu de l'image laissé calme",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "consigne_scene": "A cream linen tablecloth seen from above, a sprig of fir and a loosely curled deep red satin ribbon near the right edge, the soft glow of a small candle in the top right corner, generous calm empty space on the left half, no card, no envelope, no box, nothing written, no food",
+  "alt": "Nappe de lin crème, brin de sapin, ruban rouge et lueur de bougie",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/page-404.jpg",
+  "nom": "page-404",
+  "role": "404",
+  "ratio": "16:9",
+  "page": "404",
+  "emplacement": "Page 404, image en tête",
+  "priorite": "Conseillée",
+  "consigne_scene": "An empty white fine-dining plate on white linen with only a last brushstroke of sauce and a few crumbs left, a silver spoon resting on the rim and a folded napkin beside it, soft warm side light, a gentle touch of humour, no food left on the plate",
+  "alt": "Assiette blanche vide, un dernier trait de sauce et une cuillère posée",
+  "beaute": 4
+ }
+]

@@ -1,0 +1,107 @@
+{
+  "projet": "losmose-maquette",
+  "client": "Restaurant L'Osmose (Obernai)",
+  "siteActuel": "https://www.restaurantlosmose.fr",
+  "versions": [
+    {
+      "version": 1,
+      "skill": "v11.1",
+      "perimetre": [
+        "accueil",
+        "la-maison",
+        "menus",
+        "bons-cadeaux",
+        "reserver",
+        "contact",
+        "404"
+      ],
+      "etapes": [
+        {
+          "etape": "analyse, bibliothèque et questions",
+          "budget": 20,
+          "debut": "2026-11-20T16:12:59+01:00",
+          "fin": "2026-11-20T16:22:00+01:00"
+        },
+        {
+          "etape": "plans, images du site et document Grok",
+          "budget": 10,
+          "debut": "2026-11-20T16:22:40+01:00",
+          "fin": "2026-11-20T16:27:30+01:00"
+        },
+        {
+          "etape": "construction : accueil",
+          "budget": 40,
+          "debut": "2026-11-20T16:28:27+01:00",
+          "fin": "2026-11-20T16:42:00+01:00"
+        },
+        {
+          "etape": "aperçu de l'accueil en films (attente de la réponse notée à part)",
+          "budget": 5,
+          "debut": "2026-11-20T16:42:00+01:00",
+          "fin": "2026-11-20T16:50:00+01:00"
+        },
+        {
+          "etape": "construction : pages d'onglet, contact et page de catégorie",
+          "budget": 40,
+          "debut": "2026-11-20T16:43:00+01:00",
+          "fin": "2026-11-20T16:53:00+01:00"
+        },
+        {
+          "etape": "audit, regard neuf et corrections",
+          "budget": 25,
+          "debut": "2026-11-20T16:53:30+01:00",
+          "fin": "2026-11-20T18:08:00+01:00"
+        },
+        {
+          "etape": "livraison",
+          "budget": 5,
+          "debut": "2026-11-20T18:08:00+01:00",
+          "fin": "2026-11-20T18:12:00+01:00"
+        }
+      ],
+      "attentes": [
+        {
+          "pour": "images du site",
+          "debut": "2026-11-20T16:13:30+01:00",
+          "fin": "2026-11-20T16:20:00+01:00"
+        },
+        {
+          "pour": "réponses aux questions",
+          "debut": "2026-11-20T16:22:00+01:00",
+          "fin": "2026-11-20T16:22:30+01:00"
+        },
+        {
+          "pour": "images Grok",
+          "debut": "2026-11-20T16:27:30+01:00",
+          "fin": "2026-11-20T16:32:00+01:00"
+        },
+        {
+          "pour": "réponse à l'aperçu de l'accueil",
+          "debut": "2026-11-20T16:50:30+01:00",
+          "fin": "2026-11-20T16:51:30+01:00"
+        }
+      ],
+      "allersRetours": 1,
+      "modules": [
+        "horaires-ouvert-maintenant (calcul et cadran)"
+      ],
+      "audit": {
+        "niveau": "standard + passe des formats",
+        "echecsPremierPassage": 16,
+        "relances": 7,
+        "corrections": [
+          "courriel du client affiché en texte (l'audit prend le mailto pour un lien vers le site actuel)",
+          "logo de l'en-tête : nom accessible",
+          "premiers écrans sur 320×568, 375×667, 844×390, 1000×560 et 1366×768 (titres, chapeaux masqués sur écran bas, ordre des blocs)",
+          "créneaux de réservation écrits une fois (boutons jamais recréés)",
+          "textes de 12,8 px passés à 13 px",
+          "aperçus flous sous les images d'ouverture",
+          "contraste des jours fermés et du champ de la lettre"
+        ]
+      },
+      "effetsRetires": [],
+      "grilleDispenses": {},
+      "notes": "Toutes les pages sont des pages types : l'audit standard couvre les six pages."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "cartes": [
+    { "id": "jour", "nom": "Menu du jour", "prix": 29, "quand": "Le midi, du mardi au vendredi", "texte": "Entrée, plat et dessert, à découvrir sur notre ardoise.", "image": "carte-jour", "formule": "jour" },
+    { "id": "quatre", "nom": "Menu en 4 services", "prix": 64, "accord": 96, "verres": 3, "quand": "Midi et soir, du mardi au samedi", "texte": "Saint-Jacques, sandre, canard, chocolat.", "image": "carte-quatre", "formule": "quatre" },
+    { "id": "cinq", "nom": "Menu en 5 services", "prix": 79, "accord": 122, "verres": 4, "quand": "Midi et soir, du mardi au samedi", "texte": "Le foie gras en ouverture, puis les quatre services.", "image": "carte-cinq", "formule": "cinq" }
+  ],
+  "plats": [
+    { "id": "foie-gras", "titre": "Foie gras", "texte": "Foie gras de canard et chutney exotique", "cinq": true },
+    { "id": "saint-jacques", "titre": "Saint-Jacques", "texte": "Noix de Saint-Jacques et radis daïkon" },
+    { "id": "sandre", "titre": "Sandre", "texte": "Sandre, maki de poireau, œufs de saumon et bouillon miso" },
+    { "id": "canard", "titre": "Canard", "texte": "Magret de canard, butternut et orange" },
+    { "id": "chocolat", "titre": "Chocolat", "texte": "Sponge cake, chocolat, mandarine et glace" }
+  ],
+  "enfant": { "prix": 17, "texte": "Jusqu'à 12 ans : un plat et un dessert." },
+  "allInclusive": [
+    { "services": 3, "prix": 64, "avant": 88 },
+    { "services": 4, "prix": 78, "avant": 115 },
+    { "services": 5, "prix": 95, "avant": 140 }
+  ],
+  "nouvelAn": {
+    "date": "2026-12-31",
+    "heure": "19 h 30",
+    "harpiste": "Claire Augier de Lajallet",
+    "menu": 200,
+    "allInclusive": 300,
+    "plats": [
+      { "titre": "L'Amuse-bouche", "texte": "et sa coupe de Champagne" },
+      { "titre": "Le Kiwuitre", "texte": "Huître et kiwi" },
+      { "titre": "L'Œuf parfait et le Maïs", "texte": "Œuf parfait et espuma de maïs" },
+      { "titre": "La Saint-Jacques et le Chocolat blanc", "texte": "Noix de Saint-Jacques, panais au chocolat blanc" },
+      { "titre": "Le Turbot à la manière du duc de Wellington", "texte": "Turbot Wellington, espuma de volaille au safran" },
+      { "titre": "Le Pigeon façon Rossini", "texte": "Pigeon, foie gras et pomme de terre Anna" },
+      { "titre": "La Surprise de minuit", "texte": "Gardée secrète jusqu'au dernier moment" }
+    ]
+  },
+  "parcours": [
+    { "quand": "2002", "titre": "Médaille d'or", "texte": "Grand Prix du Trophée Armand Weidman, Concours des jeunes cuisiniers." },
+    { "quand": "Alsace", "titre": "Le Cheval Blanc, Lembach", "texte": "Une des grandes maisons de son parcours." },
+    { "quand": "Belgique et Suisse", "titre": "Des maisons étoilées", "texte": "De Bijgaarden, Comme chez soi, Senzanome, Table d'Edgard, Jaloa." },
+    { "quand": "2009", "titre": "Chef de cuisine", "texte": "À l'hôtel Hilton de Bruxelles." },
+    { "quand": "Strasbourg", "titre": "La brasserie des Haras", "texte": "Chef par intérim." },
+    { "quand": "2017", "titre": "L'Osmose", "texte": "Avec le sommelier Frédéric Voné, à Obernai." },
+    { "quand": "2026", "titre": "Gault&Millau", "texte": "13,5 sur 20, catégorie Table de Chef." }
+  ],
+  "galerie": ["galerie-1", "galerie-2", "galerie-3", "galerie-4", "galerie-5", "galerie-6", "galerie-7", "galerie-8"]
+}

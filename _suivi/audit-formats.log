@@ -1,0 +1,21 @@
+… mesures
+  17/273
+  41/273
+  69/273
+  91/273
+  121/273
+  146/273
+  168/273
+  196/273
+  214/273
+  240/273
+  262/273
+  fait en 344 s
+… mesures:balayage
+  fait en 59 s
+… ecran
+  fait en 18 s
+
+Échecs : 4 · À regarder : 0 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/contact,/menus --seulement=fichiers,mesures
+Rapport : /home/claude/losmose-maquette/_audit/rapport/rapport.md (passe 20261120-163630-complet-partiel)

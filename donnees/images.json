@@ -1,0 +1,2258 @@
+{
+ "logo": {
+  "nom": "logo",
+  "source": "recu/site/losmose-recu/logo.jpg",
+  "role": "logo",
+  "alt": "L'Osmose, gastronomie et vins, restaurant",
+  "grok": false,
+  "mention": null,
+  "beaute": null,
+  "empreinte": "c97a0cb836d39c8a",
+  "ratio": null,
+  "largeurs": [
+   240,
+   480
+  ],
+  "mobile": null,
+  "cadrage": null,
+  "sujet": null,
+  "zones_calmes": null,
+  "zone_texte": null,
+  "recadrage": null,
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "logo-240.webp",
+   "logo-480.webp"
+  ],
+  "poids": {
+   "logo-240.webp": 3138,
+   "logo-480.webp": 6998
+  },
+  "media": "c.media({ nom: 'logo', alt: \"L'Osmose, gastronomie et vins, restaurant\", sizes: '240px' })"
+ },
+ "accueil-ouverture": {
+  "nom": "accueil-ouverture",
+  "source": "recu/site/losmose-recu/menu-3-services-all.png",
+  "role": "ouverture",
+  "alt": "Deux boules vertes enveloppées de feuilles, une feuille de capucine et des points de sauce dans un bol en céramique mouchetée",
+  "grok": false,
+  "mention": null,
+  "beaute": 4,
+  "empreinte": "57e3a1386c1de41e",
+  "ratio": "4:5",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "mobile": {
+   "ratio": "4:5",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "49% 42%"
+  },
+  "cadrage": "49% 49%",
+  "sujet": {
+   "x": 0,
+   "y": 27,
+   "l": 95.1,
+   "h": 56.3
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.28,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.1,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.09,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.09,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1024,
+   "height": 1280,
+   "source": [
+    1024,
+    1536
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1920",
+   "1024 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,25 fois (source de 1024 px après recadrage)"
+  ],
+  "fichiers": [
+   "accueil-ouverture-640.webp",
+   "accueil-ouverture-1280.webp",
+   "accueil-ouverture-mobile-640.webp",
+   "accueil-ouverture-mobile-1080.webp"
+  ],
+  "poids": {
+   "accueil-ouverture-640.webp": 48332,
+   "accueil-ouverture-1280.webp": 107282,
+   "accueil-ouverture-mobile-640.webp": 49272,
+   "accueil-ouverture-mobile-1080.webp": 91298
+  },
+  "media": "c.media({ nom: 'accueil-ouverture', alt: \"Deux boules vertes enveloppées de feuilles, une feuille de capucine et des points de sauce dans un bol en céramique mouchetée\", cadrage: '49% 49%', cadrageMobile: '49% 42%', sizes: '100vw', priorite: true })"
+ },
+ "osmose-mets": {
+  "nom": "osmose-mets",
+  "source": "recu/site/losmose-recu/menus-partir-29-3.jpg",
+  "role": "vignette",
+  "alt": "Assiette vue du dessus : rondelles de concombre, boules glacées blanches, points verts et feuilles pourpres sur une assiette bleu ciel",
+  "grok": false,
+  "mention": null,
+  "beaute": 5,
+  "empreinte": "413291d2c1a0babe",
+  "ratio": "1:1",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "50% 48%",
+  "sujet": {
+   "x": 0,
+   "y": 4.8,
+   "l": 100,
+   "h": 85.3
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.43,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.4,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.26,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.22,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 238,
+   "top": 0,
+   "width": 1080,
+   "height": 1080,
+   "source": [
+    1620,
+    1080
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "osmose-mets-480.webp",
+   "osmose-mets-640.webp",
+   "osmose-mets-800.webp"
+  ],
+  "poids": {
+   "osmose-mets-480.webp": 21654,
+   "osmose-mets-640.webp": 34494,
+   "osmose-mets-800.webp": 50414
+  },
+  "media": "c.media({ nom: 'osmose-mets', alt: \"Assiette vue du dessus : rondelles de concombre, boules glacées blanches, points verts et feuilles pourpres sur une assiette bleu ciel\", cadrage: '50% 48%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+ },
+ "carte-jour": {
+  "nom": "carte-jour",
+  "source": "recu/site/losmose-recu/menus-partir-29-12.jpg",
+  "role": "carte-service",
+  "alt": "Bol en grès violet garni de légumes et de fleurs, posé sur une assiette mouchetée",
+  "grok": false,
+  "mention": null,
+  "beaute": 4,
+  "empreinte": "eb7469462c111c80",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "59% 49%",
+  "sujet": {
+   "x": 16.4,
+   "y": 7.4,
+   "l": 82.3,
+   "h": 88.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.05,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.02,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1620,
+   "height": 1080,
+   "source": [
+    1620,
+    1080
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "carte-jour-480.webp",
+   "carte-jour-640.webp",
+   "carte-jour-784.webp"
+  ],
+  "poids": {
+   "carte-jour-480.webp": 28270,
+   "carte-jour-640.webp": 46754,
+   "carte-jour-784.webp": 66452
+  },
+  "media": "c.media({ nom: 'carte-jour', alt: \"Bol en grès violet garni de légumes et de fleurs, posé sur une assiette mouchetée\", cadrage: '59% 49%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+ },
+ "carte-quatre": {
+  "nom": "carte-quatre",
+  "source": "recu/site/losmose-recu/menus-partir-29-7.png",
+  "role": "carte-service",
+  "alt": "Noix de Saint-Jacques dorées et points de crème sur une ardoise noire",
+  "grok": false,
+  "mention": null,
+  "beaute": 5,
+  "empreinte": "3827589b24584502",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "50% 47%",
+  "sujet": {
+   "x": 3.5,
+   "y": 9.9,
+   "l": 89.2,
+   "h": 80.1
+  },
+  "zones_calmes": [
+   {
+    "cote": "droite",
+    "score": 0.21,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.07,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0.03,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 44,
+   "top": 0,
+   "width": 1331,
+   "height": 887,
+   "source": [
+    1774,
+    887
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "carte-quatre-480.webp",
+   "carte-quatre-640.webp",
+   "carte-quatre-784.webp"
+  ],
+  "poids": {
+   "carte-quatre-480.webp": 33220,
+   "carte-quatre-640.webp": 52348,
+   "carte-quatre-784.webp": 72020
+  },
+  "media": "c.media({ nom: 'carte-quatre', alt: \"Noix de Saint-Jacques dorées et points de crème sur une ardoise noire\", cadrage: '50% 47%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+ },
+ "carte-cinq": {
+  "nom": "carte-cinq",
+  "source": "recu/site/losmose-recu/menu-5-services-all.jpg",
+  "role": "carte-service",
+  "alt": "Cinq bouchées dorées alignées sur une grande assiette blanche",
+  "grok": false,
+  "mention": null,
+  "beaute": 4,
+  "empreinte": "109b5a54a0add7bc",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "54% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 13.3,
+   "l": 99.3,
+   "h": 84.8
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.3,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.15,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.13,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.08,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1620,
+   "height": 1080,
+   "source": [
+    1620,
+    1080
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "carte-cinq-480.webp",
+   "carte-cinq-640.webp",
+   "carte-cinq-784.webp"
+  ],
+  "poids": {
+   "carte-cinq-480.webp": 14580,
+   "carte-cinq-640.webp": 23596,
+   "carte-cinq-784.webp": 33670
+  },
+  "media": "c.media({ nom: 'carte-cinq', alt: \"Cinq bouchées dorées alignées sur une grande assiette blanche\", cadrage: '54% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+ },
+ "chef-assiette": {
+  "nom": "chef-assiette",
+  "source": "recu/site/losmose-recu/menus-partir-29-6.jpg",
+  "role": "produit",
+  "alt": "Filet de poisson à la peau croustillante, petits pois et grande tuile dorée sur une sauce verte",
+  "grok": false,
+  "mention": null,
+  "beaute": 5,
+  "empreinte": "6bfaa0afd8f780b1",
+  "ratio": "1:1",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "49% 56%",
+  "sujet": {
+   "x": 12,
+   "y": 28.2,
+   "l": 88,
+   "h": 69.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.68,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.64,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.27,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.2,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 480,
+   "top": 0,
+   "width": 1080,
+   "height": 1080,
+   "source": [
+    1620,
+    1080
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,48 fois (source de 1080 px après recadrage)"
+  ],
+  "fichiers": [
+   "chef-assiette-480.webp",
+   "chef-assiette-640.webp",
+   "chef-assiette-1600.webp"
+  ],
+  "poids": {
+   "chef-assiette-480.webp": 29688,
+   "chef-assiette-640.webp": 49598,
+   "chef-assiette-1600.webp": 194500
+  },
+  "media": "c.media({ nom: 'chef-assiette', alt: \"Filet de poisson à la peau croustillante, petits pois et grande tuile dorée sur une sauce verte\", cadrage: '49% 56%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+ },
+ "salle-arche": {
+  "nom": "salle-arche",
+  "source": "recu/site/losmose-recu/menus-partir-29-2.jpg",
+  "role": "galerie",
+  "alt": "La salle de L'Osmose : grande fenêtre en arche à vitraux colorés, tables dressées et boiseries",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "fb3bfe6a2c39bcbd",
+  "ratio": "16:9",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "51% 57%",
+  "sujet": {
+   "x": 13.2,
+   "y": 39.7,
+   "l": 72.1,
+   "h": 33.8
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.49,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.22,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.19,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.16,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1280,
+   "height": 720,
+   "source": [
+    1280,
+    720
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "compression visible"
+  ],
+  "avertissements": [],
+  "fichiers": [
+   "salle-arche-480.webp",
+   "salle-arche-640.webp",
+   "salle-arche-960.webp"
+  ],
+  "poids": {
+   "salle-arche-480.webp": 15452,
+   "salle-arche-640.webp": 21996,
+   "salle-arche-960.webp": 37638
+  },
+  "media": "c.media({ nom: 'salle-arche', alt: \"La salle de L'Osmose : grande fenêtre en arche à vitraux colorés, tables dressées et boiseries\", cadrage: '51% 57%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '16 / 9' })"
+ },
+ "nouvel-an": {
+  "nom": "nouvel-an",
+  "source": "recu/site/losmose-recu/menus-partir-29.png",
+  "role": "carte-service",
+  "alt": "Poisson doré, cheveux d'ange croustillants et baies rouges sur une assiette blanche, bougies et décor de fêtes derrière",
+  "grok": false,
+  "mention": null,
+  "beaute": 5,
+  "empreinte": "e548c3a05be414f3",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   784
+  ],
+  "mobile": null,
+  "cadrage": "50% 48%",
+  "sujet": {
+   "x": 4.6,
+   "y": 23.8,
+   "l": 91.5,
+   "h": 60.3
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.34,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.1,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.05,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.05,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 1,
+   "top": 0,
+   "width": 1535,
+   "height": 1023,
+   "source": [
+    1537,
+    1023
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "nouvel-an-480.webp",
+   "nouvel-an-640.webp",
+   "nouvel-an-784.webp"
+  ],
+  "poids": {
+   "nouvel-an-480.webp": 33450,
+   "nouvel-an-640.webp": 51778,
+   "nouvel-an-784.webp": 70542
+  },
+  "media": "c.media({ nom: 'nouvel-an', alt: \"Poisson doré, cheveux d'ange croustillants et baies rouges sur une assiette blanche, bougies et décor de fêtes derrière\", cadrage: '50% 48%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+ },
+ "cadeau-morilles": {
+  "nom": "cadeau-morilles",
+  "source": "recu/site/losmose-recu/bon-cadeau-valeur-100.jpg",
+  "role": "produit",
+  "alt": "Morilles, viande glacée et chapelure dorée en arc sur une assiette blanche texturée",
+  "grok": false,
+  "mention": null,
+  "beaute": 5,
+  "empreinte": "8e4258a0e80e7c3c",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "57% 43%",
+  "sujet": {
+   "x": 23.5,
+   "y": 10.8,
+   "l": 75.4,
+   "h": 68.8
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.48,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.32,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.3,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1620,
+   "height": 1080,
+   "source": [
+    1620,
+    1080
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "cadeau-morilles-480.webp",
+   "cadeau-morilles-640.webp",
+   "cadeau-morilles-1600.webp"
+  ],
+  "poids": {
+   "cadeau-morilles-480.webp": 24366,
+   "cadeau-morilles-640.webp": 39702,
+   "cadeau-morilles-1600.webp": 171702
+  },
+  "media": "c.media({ nom: 'cadeau-morilles', alt: \"Morilles, viande glacée et chapelure dorée en arc sur une assiette blanche texturée\", cadrage: '57% 43%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "menus-ouverture": {
+  "nom": "menus-ouverture",
+  "source": "recu/site/losmose-recu/menus-partir-29-10.png",
+  "role": "ouverture",
+  "alt": "Dessert : sphère jaune au citron, meringues dorées, raisins verts et crumble sur fond bleu nuit",
+  "grok": false,
+  "mention": null,
+  "beaute": 5,
+  "empreinte": "bc8c5741a6735749",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": null,
+  "cadrage": "46% 42%",
+  "sujet": {
+   "x": 0,
+   "y": 10.3,
+   "l": 93.3,
+   "h": 68.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.42,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.24,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.17,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.05,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1536,
+   "height": 1024,
+   "source": [
+    1536,
+    1024
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,25 fois (source de 1536 px après recadrage)"
+  ],
+  "fichiers": [
+   "menus-ouverture-640.webp",
+   "menus-ouverture-1280.webp",
+   "menus-ouverture-1920.webp"
+  ],
+  "poids": {
+   "menus-ouverture-640.webp": 34500,
+   "menus-ouverture-1280.webp": 130046,
+   "menus-ouverture-1920.webp": 226504
+  },
+  "media": "c.media({ nom: 'menus-ouverture', alt: \"Dessert : sphère jaune au citron, meringues dorées, raisins verts et crumble sur fond bleu nuit\", cadrage: '46% 42%', sizes: '100vw', priorite: true })"
+ },
+ "menus-jour": {
+  "nom": "menus-jour",
+  "source": "recu/site/losmose-recu/menus-partir-29-11.jpg",
+  "role": "produit",
+  "alt": "Disque de biscuit doré entrouvert sur un cœur jaune, éclats de sauce jaune sur assiette blanche",
+  "grok": false,
+  "mention": null,
+  "beaute": 4,
+  "empreinte": "1300655fb32356f8",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "43% 46%",
+  "sujet": {
+   "x": 22.7,
+   "y": 26.4,
+   "l": 33.2,
+   "h": 51.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "droite",
+    "score": 0.75,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.64,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.6,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.41,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1620,
+   "height": 1080,
+   "source": [
+    1620,
+    1080
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "menus-jour-480.webp",
+   "menus-jour-640.webp",
+   "menus-jour-1600.webp"
+  ],
+  "poids": {
+   "menus-jour-480.webp": 17078,
+   "menus-jour-640.webp": 28010,
+   "menus-jour-1600.webp": 138550
+  },
+  "media": "c.media({ nom: 'menus-jour', alt: \"Disque de biscuit doré entrouvert sur un cœur jaune, éclats de sauce jaune sur assiette blanche\", cadrage: '43% 46%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+ },
+ "menus-chocolat": {
+  "nom": "menus-chocolat",
+  "source": "recu/site/losmose-recu/menus-partir-29-14.jpg",
+  "role": "produit",
+  "alt": "Sphère de chocolat sur un lit de crumble avec une goutte de coulis orange",
+  "grok": false,
+  "mention": null,
+  "beaute": 4,
+  "empreinte": "07644164101d2468",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "33% 49%",
+  "sujet": {
+   "x": 4.6,
+   "y": 21.1,
+   "l": 48.4,
+   "h": 66
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.43,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.29,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.26,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.2,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1440,
+   "height": 1080,
+   "source": [
+    1440,
+    1080
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,11 fois (source de 1440 px après recadrage)"
+  ],
+  "fichiers": [
+   "menus-chocolat-480.webp",
+   "menus-chocolat-640.webp",
+   "menus-chocolat-1600.webp"
+  ],
+  "poids": {
+   "menus-chocolat-480.webp": 10594,
+   "menus-chocolat-640.webp": 15806,
+   "menus-chocolat-1600.webp": 56020
+  },
+  "media": "c.media({ nom: 'menus-chocolat', alt: \"Sphère de chocolat sur un lit de crumble avec une goutte de coulis orange\", cadrage: '33% 49%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "menus-spheres": {
+  "nom": "menus-spheres",
+  "source": "recu/site/losmose-recu/menus-partir-29-4.jpg",
+  "role": "produit",
+  "alt": "Sphères vertes et bâtonnets de pomme dans des bols sombres alignés",
+  "grok": false,
+  "mention": null,
+  "beaute": 4,
+  "empreinte": "f831705f20cba5f6",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "58% 50%",
+  "sujet": {
+   "x": 23,
+   "y": 17.2,
+   "l": 73.4,
+   "h": 69.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.25,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.1,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.07,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1440,
+   "height": 1080,
+   "source": [
+    1440,
+    1080
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,11 fois (source de 1440 px après recadrage)"
+  ],
+  "fichiers": [
+   "menus-spheres-480.webp",
+   "menus-spheres-640.webp",
+   "menus-spheres-1600.webp"
+  ],
+  "poids": {
+   "menus-spheres-480.webp": 23558,
+   "menus-spheres-640.webp": 33652,
+   "menus-spheres-1600.webp": 96396
+  },
+  "media": "c.media({ nom: 'menus-spheres', alt: \"Sphères vertes et bâtonnets de pomme dans des bols sombres alignés\", cadrage: '58% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "aperitif": {
+  "nom": "aperitif",
+  "source": "recu/site/losmose-recu/menus-partir-29-13.jpg",
+  "role": "vignette",
+  "alt": "Cocktail ambré à la mousse claire dans un verre à pied, sur le comptoir",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "e89a32116f54795d",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "57% 35%",
+  "sujet": {
+   "x": 32.3,
+   "y": 22.9,
+   "l": 49.3,
+   "h": 30.2
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.62,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.52,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.25,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.14,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1080,
+   "height": 1440,
+   "source": [
+    1080,
+    1440
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "1080 px de large"
+  ],
+  "avertissements": [],
+  "fichiers": [
+   "aperitif-480.webp",
+   "aperitif-640.webp",
+   "aperitif-800.webp"
+  ],
+  "poids": {
+   "aperitif-480.webp": 20150,
+   "aperitif-640.webp": 29380,
+   "aperitif-800.webp": 37898
+  },
+  "media": "c.media({ nom: 'aperitif', alt: \"Cocktail ambré à la mousse claire dans un verre à pied, sur le comptoir\", cadrage: '57% 35%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 4' })"
+ },
+ "assiette-cuilleres": {
+  "nom": "assiette-cuilleres",
+  "source": "recu/site/losmose-recu/menus-partir-29-15.jpg",
+  "role": "galerie",
+  "alt": "Tasses noires et cuillères de bouchées roses sur un plateau d'ardoise",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "b51471fb6f1df549",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "53% 36%",
+  "sujet": {
+   "x": 10.3,
+   "y": 10.3,
+   "l": 84.9,
+   "h": 49.7
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.54,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.33,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.15,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.02,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1440,
+   "height": 1080,
+   "source": [
+    1440,
+    1080
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "assiette-cuilleres-480.webp",
+   "assiette-cuilleres-640.webp",
+   "assiette-cuilleres-960.webp"
+  ],
+  "poids": {
+   "assiette-cuilleres-480.webp": 18750,
+   "assiette-cuilleres-640.webp": 28426,
+   "assiette-cuilleres-960.webp": 50014
+  },
+  "media": "c.media({ nom: 'assiette-cuilleres', alt: \"Tasses noires et cuillères de bouchées roses sur un plateau d'ardoise\", cadrage: '53% 36%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+ },
+ "galerie-1": {
+  "nom": "galerie-1",
+  "source": "recu/site/losmose-recu/menus-partir-29-16.jpg",
+  "role": "vignette",
+  "alt": "Dôme vert sur un nid sombre, présenté sur une coupelle blanche",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "83524ad786173398",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "41% 45%",
+  "sujet": {
+   "x": 11.9,
+   "y": 13.8,
+   "l": 54.4,
+   "h": 86.2
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.43,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.4,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.24,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.1,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 50,
+   "width": 1200,
+   "height": 900,
+   "source": [
+    1200,
+    995
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "1200 px de large"
+  ],
+  "avertissements": [],
+  "fichiers": [
+   "galerie-1-480.webp",
+   "galerie-1-640.webp",
+   "galerie-1-800.webp"
+  ],
+  "poids": {
+   "galerie-1-480.webp": 20742,
+   "galerie-1-640.webp": 32268,
+   "galerie-1-800.webp": 45998
+  },
+  "media": "c.media({ nom: 'galerie-1', alt: \"Dôme vert sur un nid sombre, présenté sur une coupelle blanche\", cadrage: '41% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "galerie-2": {
+  "nom": "galerie-2",
+  "source": "recu/site/losmose-recu/menus-partir-29-18.jpg",
+  "role": "vignette",
+  "alt": "Nid de chocolat garni de jaune d'œuf sur une grande assiette blanche",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "c6975d341f92e2cd",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "55% 55%",
+  "sujet": {
+   "x": 42,
+   "y": 39.7,
+   "l": 26.4,
+   "h": 29.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.41,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.34,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.19,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.17,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 107,
+   "top": 0,
+   "width": 853,
+   "height": 640,
+   "source": [
+    960,
+    640
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "960 px de large"
+  ],
+  "avertissements": [],
+  "fichiers": [
+   "galerie-2-480.webp",
+   "galerie-2-640.webp",
+   "galerie-2-800.webp"
+  ],
+  "poids": {
+   "galerie-2-480.webp": 27910,
+   "galerie-2-640.webp": 44776,
+   "galerie-2-800.webp": 62784
+  },
+  "media": "c.media({ nom: 'galerie-2', alt: \"Nid de chocolat garni de jaune d'œuf sur une grande assiette blanche\", cadrage: '55% 55%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "galerie-3": {
+  "nom": "galerie-3",
+  "source": "recu/site/losmose-recu/menus-partir-29-19.jpg",
+  "role": "vignette",
+  "alt": "Viande rosée et moules sur une assiette blanche",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "d646656b452db23f",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "50% 50%",
+  "sujet": {
+   "x": 22,
+   "y": 22.8,
+   "l": 62.1,
+   "h": 59.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.46,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.46,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.32,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.27,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 70,
+   "top": 0,
+   "width": 733,
+   "height": 550,
+   "source": [
+    824,
+    550
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "824 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,09 fois (source de 733 px après recadrage)"
+  ],
+  "fichiers": [
+   "galerie-3-480.webp",
+   "galerie-3-640.webp",
+   "galerie-3-800.webp"
+  ],
+  "poids": {
+   "galerie-3-480.webp": 10104,
+   "galerie-3-640.webp": 14400,
+   "galerie-3-800.webp": 18316
+  },
+  "media": "c.media({ nom: 'galerie-3', alt: \"Viande rosée et moules sur une assiette blanche\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "galerie-4": {
+  "nom": "galerie-4",
+  "source": "recu/site/losmose-recu/menus-partir-29-20.jpg",
+  "role": "vignette",
+  "alt": "Dessert éclaté : crème grise, meringues, fruits rouges et carrés de chocolat",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "33d5fc2e3e6da3ee",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "53% 49%",
+  "sujet": {
+   "x": 0.2,
+   "y": 6.2,
+   "l": 99.4,
+   "h": 91.1
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.42,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.12,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.09,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 90,
+   "top": 0,
+   "width": 731,
+   "height": 548,
+   "source": [
+    821,
+    548
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "821 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,09 fois (source de 731 px après recadrage)"
+  ],
+  "fichiers": [
+   "galerie-4-480.webp",
+   "galerie-4-640.webp",
+   "galerie-4-800.webp"
+  ],
+  "poids": {
+   "galerie-4-480.webp": 21288,
+   "galerie-4-640.webp": 30988,
+   "galerie-4-800.webp": 40528
+  },
+  "media": "c.media({ nom: 'galerie-4', alt: \"Dessert éclaté : crème grise, meringues, fruits rouges et carrés de chocolat\", cadrage: '53% 49%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "galerie-5": {
+  "nom": "galerie-5",
+  "source": "recu/site/losmose-recu/menus-partir-29-21.jpg",
+  "role": "vignette",
+  "alt": "Lamelles croisées et points de sauce jaune sur assiette blanche",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "ceb8021d7e506a50",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "52% 54%",
+  "sujet": {
+   "x": 0,
+   "y": 29.3,
+   "l": 92.9,
+   "h": 70.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.73,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.5,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.42,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.41,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 16,
+   "top": 0,
+   "width": 731,
+   "height": 548,
+   "source": [
+    821,
+    548
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "821 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,09 fois (source de 731 px après recadrage)"
+  ],
+  "fichiers": [
+   "galerie-5-480.webp",
+   "galerie-5-640.webp",
+   "galerie-5-800.webp"
+  ],
+  "poids": {
+   "galerie-5-480.webp": 12452,
+   "galerie-5-640.webp": 18726,
+   "galerie-5-800.webp": 24820
+  },
+  "media": "c.media({ nom: 'galerie-5', alt: \"Lamelles croisées et points de sauce jaune sur assiette blanche\", cadrage: '52% 54%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "galerie-6": {
+  "nom": "galerie-6",
+  "source": "recu/site/losmose-recu/menus-partir-29-25.jpg",
+  "role": "vignette",
+  "alt": "Viande glacée, épinards, chips de volaille et légumes rôtis",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "ade902077f806fcc",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "48% 55%",
+  "sujet": {
+   "x": 4,
+   "y": 13.4,
+   "l": 96,
+   "h": 81.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.33,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.1,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.07,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 28,
+   "top": 0,
+   "width": 647,
+   "height": 485,
+   "source": [
+    726,
+    485
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "726 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,24 fois (source de 647 px après recadrage)"
+  ],
+  "fichiers": [
+   "galerie-6-480.webp",
+   "galerie-6-640.webp",
+   "galerie-6-800.webp"
+  ],
+  "poids": {
+   "galerie-6-480.webp": 20878,
+   "galerie-6-640.webp": 33314,
+   "galerie-6-800.webp": 42496
+  },
+  "media": "c.media({ nom: 'galerie-6', alt: \"Viande glacée, épinards, chips de volaille et légumes rôtis\", cadrage: '48% 55%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "galerie-7": {
+  "nom": "galerie-7",
+  "source": "recu/site/losmose-recu/menus-partir-29-26.jpg",
+  "role": "vignette",
+  "alt": "Magret rosé, purée et pomme fondante sur une assiette longue, verres derrière",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "32c87265fa3283d8",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "50% 63%",
+  "sujet": {
+   "x": 4.9,
+   "y": 52.2,
+   "l": 95.1,
+   "h": 31.2
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.59,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.33,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.27,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.05,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 11,
+   "top": 0,
+   "width": 605,
+   "height": 454,
+   "source": [
+    667,
+    454
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "667 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,32 fois (source de 605 px après recadrage)"
+  ],
+  "fichiers": [
+   "galerie-7-480.webp",
+   "galerie-7-640.webp",
+   "galerie-7-800.webp"
+  ],
+  "poids": {
+   "galerie-7-480.webp": 24532,
+   "galerie-7-640.webp": 36990,
+   "galerie-7-800.webp": 49936
+  },
+  "media": "c.media({ nom: 'galerie-7', alt: \"Magret rosé, purée et pomme fondante sur une assiette longue, verres derrière\", cadrage: '50% 63%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "galerie-8": {
+  "nom": "galerie-8",
+  "source": "recu/site/losmose-recu/menu-saint-sylvestre-200.jpg",
+  "role": "vignette",
+  "alt": "Rangée d'assiettes dressées sur le passe, prêtes à partir en salle",
+  "grok": false,
+  "mention": null,
+  "beaute": 3,
+  "empreinte": "4bce6fe83f63dee4",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "46% 47%",
+  "sujet": {
+   "x": 6.7,
+   "y": 34.1,
+   "l": 65.1,
+   "h": 37.7
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.43,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.25,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.22,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.22,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1080,
+   "height": 810,
+   "source": [
+    1080,
+    810
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "1080 px de large"
+  ],
+  "avertissements": [],
+  "fichiers": [
+   "galerie-8-480.webp",
+   "galerie-8-640.webp",
+   "galerie-8-800.webp"
+  ],
+  "poids": {
+   "galerie-8-480.webp": 13510,
+   "galerie-8-640.webp": 19434,
+   "galerie-8-800.webp": 24956
+  },
+  "media": "c.media({ nom: 'galerie-8', alt: \"Rangée d'assiettes dressées sur le passe, prêtes à partir en salle\", cadrage: '46% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+ },
+ "maison-ouverture": {
+  "nom": "maison-ouverture",
+  "source": "recu/grok/maison-ouverture.jpg",
+  "role": "ouverture",
+  "alt": "Mur de grès rose et poutres de chêne, taché de la lumière colorée d'un vitrail",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "acd35c2f0f3d7cc9",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": {
+   "ratio": "4:5",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "50% 56%"
+  },
+  "cadrage": "48% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 97.1
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.41,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.23,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.23,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0.13,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 151,
+   "width": 1600,
+   "height": 900,
+   "source": [
+    1600,
+    1074
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,2 fois (source de 1600 px après recadrage)"
+  ],
+  "fichiers": [
+   "maison-ouverture-640.webp",
+   "maison-ouverture-1280.webp",
+   "maison-ouverture-1920.webp",
+   "maison-ouverture-mobile-640.webp",
+   "maison-ouverture-mobile-1080.webp"
+  ],
+  "poids": {
+   "maison-ouverture-640.webp": 27890,
+   "maison-ouverture-1280.webp": 94252,
+   "maison-ouverture-1920.webp": 153640,
+   "maison-ouverture-mobile-640.webp": 65054,
+   "maison-ouverture-mobile-1080.webp": 120560
+  },
+  "media": "c.media({ nom: 'maison-ouverture', alt: \"Mur de grès rose et poutres de chêne, taché de la lumière colorée d'un vitrail\", cadrage: '48% 50%', cadrageMobile: '50% 56%', sizes: '100vw', priorite: true })"
+ },
+ "reserver-ouverture": {
+  "nom": "reserver-ouverture",
+  "source": "recu/grok/reserver-ouverture.jpg",
+  "role": "ouverture",
+  "alt": "Table dressée pour deux, nappe blanche, verres en cristal et bougie, devant un mur de grès rose",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "08dac036b7752827",
+  "ratio": "4:5",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "mobile": {
+   "ratio": "4:5",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "39% 52%"
+  },
+  "cadrage": "39% 52%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 95.5,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.18,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.12,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.05,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 257,
+   "width": 1074,
+   "height": 1343,
+   "source": [
+    1074,
+    1600
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1920",
+   "1074 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,19 fois (source de 1074 px après recadrage)"
+  ],
+  "fichiers": [
+   "reserver-ouverture-640.webp",
+   "reserver-ouverture-1280.webp",
+   "reserver-ouverture-mobile-640.webp",
+   "reserver-ouverture-mobile-1080.webp"
+  ],
+  "poids": {
+   "reserver-ouverture-640.webp": 32336,
+   "reserver-ouverture-1280.webp": 75940,
+   "reserver-ouverture-mobile-640.webp": 32336,
+   "reserver-ouverture-mobile-1080.webp": 63752
+  },
+  "media": "c.media({ nom: 'reserver-ouverture', alt: \"Table dressée pour deux, nappe blanche, verres en cristal et bougie, devant un mur de grès rose\", cadrage: '39% 52%', cadrageMobile: '39% 52%', sizes: '100vw', priorite: true })"
+ },
+ "osmose-vin": {
+  "nom": "osmose-vin",
+  "source": "recu/grok/osmose-vin.jpg",
+  "role": "vignette",
+  "alt": "Vin rouge qui tourne dans un verre en cristal, vu du dessus",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 5,
+  "empreinte": "ac8e058c0329d16c",
+  "ratio": "1:1",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "mobile": null,
+  "cadrage": "50% 53%",
+  "sujet": {
+   "x": 0,
+   "y": 4.5,
+   "l": 100,
+   "h": 90.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.21,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.1,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.01,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 247,
+   "top": 0,
+   "width": 1074,
+   "height": 1074,
+   "source": [
+    1600,
+    1074
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "osmose-vin-480.webp",
+   "osmose-vin-640.webp",
+   "osmose-vin-800.webp"
+  ],
+  "poids": {
+   "osmose-vin-480.webp": 20638,
+   "osmose-vin-640.webp": 29862,
+   "osmose-vin-800.webp": 38766
+  },
+  "media": "c.media({ nom: 'osmose-vin', alt: \"Vin rouge qui tourne dans un verre en cristal, vu du dessus\", cadrage: '50% 53%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+ },
+ "accord-verres": {
+  "nom": "accord-verres",
+  "source": "recu/grok/accord-verres.jpg",
+  "role": "produit",
+  "alt": "Trois verres de vin, blanc, rosé et rouge, sur un comptoir de chêne sombre",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 5,
+  "empreinte": "518f3f271e3f3452",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   640,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "34% 50%",
+  "sujet": {
+   "x": 4.5,
+   "y": 0.5,
+   "l": 86.4,
+   "h": 74.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.55,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.54,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.49,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.27,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 193,
+   "width": 1074,
+   "height": 1343,
+   "source": [
+    1074,
+    1600
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "1074 px de large"
+  ],
+  "avertissements": [
+   "agrandie 1,49 fois (source de 1074 px après recadrage)"
+  ],
+  "fichiers": [
+   "accord-verres-480.webp",
+   "accord-verres-640.webp",
+   "accord-verres-1600.webp"
+  ],
+  "poids": {
+   "accord-verres-480.webp": 31840,
+   "accord-verres-640.webp": 52144,
+   "accord-verres-1600.webp": 164068
+  },
+  "media": "c.media({ nom: 'accord-verres', alt: \"Trois verres de vin, blanc, rosé et rouge, sur un comptoir de chêne sombre\", cadrage: '34% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+ },
+ "recevoir-tablee": {
+  "nom": "recevoir-tablee",
+  "source": "recu/grok/recevoir-tablee.jpg",
+  "role": "section-fond",
+  "alt": "Longue table de fête dressée, nappe blanche, verres et bougies, entre murs de grès et poutres",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "ea20376b5065fbdb",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": null,
+  "cadrage": "58% 59%",
+  "sujet": {
+   "x": 18.8,
+   "y": 13,
+   "l": 81.2,
+   "h": 82.3
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.37,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.28,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.02,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 7,
+   "width": 1600,
+   "height": 1067,
+   "source": [
+    1600,
+    1074
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,2 fois (source de 1600 px après recadrage)"
+  ],
+  "fichiers": [
+   "recevoir-tablee-640.webp",
+   "recevoir-tablee-1280.webp",
+   "recevoir-tablee-1920.webp"
+  ],
+  "poids": {
+   "recevoir-tablee-640.webp": 31948,
+   "recevoir-tablee-1280.webp": 77716,
+   "recevoir-tablee-1920.webp": 121166
+  },
+  "media": "c.media({ nom: 'recevoir-tablee', alt: \"Longue table de fête dressée, nappe blanche, verres et bougies, entre murs de grès et poutres\", cadrage: '58% 59%', sizes: '100vw' })"
+ },
+ "cadeaux-fond": {
+  "nom": "cadeaux-fond",
+  "source": "recu/grok/cadeaux-fond.jpg",
+  "role": "ouverture",
+  "alt": "Nappe de lin crème, brin de sapin, ruban rouge et lueur de bougie",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "cc910d45d6775013",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "mobile": {
+   "ratio": "4:5",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "50% 48%"
+  },
+  "cadrage": "63% 50%",
+  "sujet": {
+   "x": 25,
+   "y": 0,
+   "l": 75,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.45,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.24,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.22,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 66,
+   "width": 1600,
+   "height": 900,
+   "source": [
+    1600,
+    1074
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,2 fois (source de 1600 px après recadrage)"
+  ],
+  "fichiers": [
+   "cadeaux-fond-640.webp",
+   "cadeaux-fond-1280.webp",
+   "cadeaux-fond-1920.webp",
+   "cadeaux-fond-mobile-640.webp",
+   "cadeaux-fond-mobile-1080.webp"
+  ],
+  "poids": {
+   "cadeaux-fond-640.webp": 33770,
+   "cadeaux-fond-1280.webp": 132804,
+   "cadeaux-fond-1920.webp": 216840,
+   "cadeaux-fond-mobile-640.webp": 82368,
+   "cadeaux-fond-mobile-1080.webp": 154638
+  },
+  "media": "c.media({ nom: 'cadeaux-fond', alt: \"Nappe de lin crème, brin de sapin, ruban rouge et lueur de bougie\", cadrage: '63% 50%', cadrageMobile: '50% 48%', sizes: '100vw', priorite: true })"
+ },
+ "page-404": {
+  "nom": "page-404",
+  "source": "recu/grok/page-404.jpg",
+  "role": "404",
+  "alt": "Assiette blanche vide, un dernier trait de sauce et une cuillère posée",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "f3ecd4a36c487468",
+  "ratio": "16:9",
+  "largeurs": [
+   800,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "51% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.3,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0.12,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.1,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.07,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 44,
+   "width": 1600,
+   "height": 900,
+   "source": [
+    1600,
+    1074
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "page-404-800.webp",
+   "page-404-1600.webp"
+  ],
+  "poids": {
+   "page-404-800.webp": 20328,
+   "page-404-1600.webp": 53460
+  },
+  "media": "c.media({ nom: 'page-404', alt: \"Assiette blanche vide, un dernier trait de sauce et une cuillère posée\", cadrage: '51% 50%', sizes: '100vw', ratio: '16 / 9' })"
+ }
+}

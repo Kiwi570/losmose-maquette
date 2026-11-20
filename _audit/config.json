@@ -1,0 +1,6 @@
+{
+  "siteActuel": "restaurantlosmose.fr",
+  "pagesTypes": ["/", "/la-maison", "/menus", "/bons-cadeaux", "/reserver", "/contact"],
+  "effets": ["gouttes", "osmose", "verres", "vitrail", "aiguille", "repere", "bon", "bandeau"],
+  "grille": { "dispenses": {} }
+}

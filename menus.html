@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les menus de L&#39;Osmose : du jour, 4 et 5 services, All Inclusive</title>
+<meta name="description" content="Menu du jour à 29 €, menus en 4 services à 64 € et en 5 services à 79 €, accords mets et vins et formules All Inclusive.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://losmose-maquette.vercel.app/menus">
+<style>:root{--fond:#F5EEE6;--texte:#2A1B18;--voile-fond:#2B1518;--ouverture-fond:#2B1518;--menu-fond:#2B1518}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/gloock-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="stylesheet" href="/assets/css/apercus.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F5EEE6">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="L&#39;Osmose">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Les menus de L&#39;Osmose : du jour, 4 et 5 services, All Inclusive">
+<meta property="og:description" content="Menu du jour à 29 €, menus en 4 services à 64 € et en 5 services à 79 €, accords mets et vins et formules All Inclusive.">
+<meta property="og:url" content="https://losmose-maquette.vercel.app/menus">
+<meta property="og:image" content="https://losmose-maquette.vercel.app/assets/partage/menus-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Les menus de L&#39;Osmose et un dessert au citron">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"L'Osmose","description":"Restaurant gastronomique à Obernai : menus par nombre de services et accords mets et vins.","servesCuisine":"Française moderne","priceRange":"29 € à 122 €","telephone":"+33388993889","email":"contact@restaurantlosmose.fr","address":{"@type":"PostalAddress","streetAddress":"18 rue du Général Gouraud","postalCode":"67210","addressLocality":"Obernai","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"12:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"19:00","closes":"21:00"}],"acceptsReservations":"True","paymentAccepted":"American Express, Chèques-Vacances, ANCV Connect"}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img class="voile-logo" src="/assets/images/logo-clair.webp" alt="" width="640" height="274"><span data-voile-libelle>Les menus</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-effet="gouttes">
+  <svg class="ouverture-gouttes" viewBox="0 0 240 240" width="240" height="240" data-ouverture-objet>
+    <defs><filter id="goo" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
+    <g filter="url(#goo)"><circle class="goutte goutte--mets" cx="120" cy="120" r="34"/><circle class="goutte goutte--vin" cx="120" cy="120" r="34"/><circle class="goutte goutte--coeur" cx="120" cy="120" r="0"/></g>
+    <circle class="goutte-trou" cx="120" cy="120" r="0"/>
+  </svg>
+  <img class="ouverture-mot" src="/assets/images/logo-clair.webp" alt="" width="640" height="274">
+  <p class="ouverture-ligne">Gastronomie &amp; Vins · Obernai</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="L&#39;Osmose, retour à l&#39;accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-sombre.webp" alt="L&#39;Osmose, gastronomie et vins, restaurant" width="640" height="274">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-maison" data-libelle="La maison">La maison</a></li><li><a href="/menus" data-libelle="Les menus" aria-current="page">Les menus</a></li><li><a href="/bons-cadeaux" data-libelle="Bons cadeaux">Bons cadeaux</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/la-maison" class="menu-lien" data-libelle="La maison">La maison</a></li><li style="--i:2"><a href="/menus" class="menu-lien" data-libelle="Les menus" aria-current="page">Les menus</a></li><li style="--i:3"><a href="/bons-cadeaux" class="menu-lien" data-libelle="Bons cadeaux">Bons cadeaux</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:5"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p class="menu-contact"><a class="bouton bouton--clair" href="tel:+33388993889">Appeler 03 88 99 38 89</a></p>
+  <p class="menu-horaires">Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-haut conteneur menus-tete" id="debut">
+  <div>
+    <p class="surtitre entree masque-ecran-tres-bas" data-anime="gsap">Les menus</p>
+    <h1 class="page-titre entree" data-anime="gsap">Choisir son nombre de services</h1>
+    <p class="chapo entree masque-ecran-bas" data-anime="gsap">Le midi en semaine, le menu du jour. Midi et soir, les menus en 4 ou 5 services, avec ou sans l&#39;accord du sommelier.</p>
+    <ul class="grands-prix entree" data-anime="gsap" data-info-cle>
+      <li><strong data-prix><span data-compteur="29">29</span>€</strong><span>Menu du jour<small>Le midi, du mardi au vendredi</small></span></li><li><strong data-prix><span data-compteur="64">64</span>€</strong><span>Menu en 4 services<small>Midi et soir, du mardi au samedi</small></span></li><li><strong data-prix><span data-compteur="79">79</span>€</strong><span>Menu en 5 services<small>Midi et soir, du mardi au samedi</small></span></li>
+    </ul>
+    <p class="actions entree" data-anime="gsap"><a href="/reserver" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Réserver une table</a><a class="lien-fleche" href="#all-inclusive" data-sans-transition>All Inclusive</a></p>
+  </div>
+  <figure class="media menus-tete-media apercu--menus-ouverture" data-iris-centre data-fx="parallaxe" style="--cadrage:46% 42%">
+  <picture>
+    <img src="/assets/images/menus-ouverture-1280.webp" srcset="/assets/images/menus-ouverture-640.webp 640w, /assets/images/menus-ouverture-1280.webp 1280w, /assets/images/menus-ouverture-1920.webp 1920w" sizes="(max-width: 900px) 92vw, 50vw" alt="Dessert : sphère jaune au citron, meringues dorées, raisins verts et crumble sur fond bleu nuit" width="1280" height="853" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+</section>
+<section class="section gres" id="menu-du-jour">
+  <div class="conteneur carte-jour">
+    <figure class="media " data-anime="rideau" style="--cadrage:43% 46%">
+  <picture>
+    <img src="/assets/images/menus-jour-1600.webp" srcset="/assets/images/menus-jour-480.webp 480w, /assets/images/menus-jour-640.webp 640w, /assets/images/menus-jour-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 46vw" alt="Disque de biscuit doré entrouvert sur un cœur jaune, éclats de sauce jaune sur assiette blanche" width="1600" height="1067" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div>
+      <p class="surtitre" data-anime>Le midi, du mardi au vendredi</p>
+      <h2 data-anime="lignes">Le menu du jour</h2>
+      <p class="chapo" data-anime>Entrée, plat et dessert, à découvrir sur notre ardoise, le midi du mardi au vendredi.</p>
+      <p class="prix" data-anime data-prix><span data-compteur="29">29</span> €<small>par personne</small></p>
+      <p data-anime><a href="/reserver?formule=jour" class="lien-fleche" data-libelle="Réserver">Réserver une table</a></p>
+    </div>
+  </div>
+</section>
+<section class="section conteneur" id="carte">
+  <div class="tete-section"><div><p class="surtitre" data-anime>Les menus</p><h2 data-anime="lignes">Les menus en 4 et 5 services</h2></div><p class="doux" data-anime style="max-width:28em;margin:0">La carte change avec les saisons. Voici la carte en cours.</p></div>
+  <div class="services-grille">
+    <div>
+      <div class="tableau-menus" data-anime="cascade" role="table" aria-label="Les menus en 4 et 5 services">
+        <div role="row" style="display:contents"><p class="entete" role="columnheader">Les menus</p><p class="entete" role="columnheader" style="text-align:center">4 services</p><p class="entete" role="columnheader" style="text-align:center">5 services</p></div>
+        <div role="row" style="display:contents"><p class="plat" role="cell"><strong>Foie gras</strong><span>Foie gras de canard et chutney exotique</span></p><p class="coche coche--non" role="cell"><span class="visuellement-cache">Dans le menu en 5 services seulement</span><span aria-hidden="true">·</span></p><p class="coche" role="cell">✓</p></div><div role="row" style="display:contents"><p class="plat" role="cell"><strong>Saint-Jacques</strong><span>Noix de Saint-Jacques et radis daïkon</span></p><p class="coche" role="cell">✓</p><p class="coche" role="cell">✓</p></div><div role="row" style="display:contents"><p class="plat" role="cell"><strong>Sandre</strong><span>Sandre, maki de poireau, œufs de saumon et bouillon miso</span></p><p class="coche" role="cell">✓</p><p class="coche" role="cell">✓</p></div><div role="row" style="display:contents"><p class="plat" role="cell"><strong>Canard</strong><span>Magret de canard, butternut et orange</span></p><p class="coche" role="cell">✓</p><p class="coche" role="cell">✓</p></div><div role="row" style="display:contents"><p class="plat" role="cell"><strong>Chocolat</strong><span>Sponge cake, chocolat, mandarine et glace</span></p><p class="coche" role="cell">✓</p><p class="coche" role="cell">✓</p></div>
+        <div role="row" style="display:contents"><p class="plat" role="cell"><strong>Prix du menu</strong></p><p class="total" role="cell" data-prix>64 €</p><p class="total" role="cell" data-prix>79 €</p></div>
+        <div role="row" style="display:contents"><p class="plat" role="cell"><strong>Accord mets et vins</strong><span>3 ou 4 verres de 10 cl</span></p><p class="total" role="cell" data-prix>96 €<small>3 verres de 10 cl</small></p><p class="total" role="cell" data-prix>122 €<small>4 verres de 10 cl</small></p></div>
+      </div>
+      <p class="allergenes">Informations sur les allergènes disponibles sur demande.</p>
+      <div class="enfant" data-anime><h3>Menu enfant</h3><p class="prix" data-prix>17 €</p><p class="doux">Jusqu&#39;à 12 ans : un plat et un dessert.</p></div>
+      <p class="actions" style="margin-top:24px"><a href="/reserver?formule=quatre" class="bouton" data-libelle="Réserver">Réserver une table</a></p>
+    </div>
+    <div class="services-images">
+      <figure class="media " data-fx="vitesse" style="--cadrage:50% 47%">
+  <picture>
+    <img src="/assets/images/carte-quatre-784.webp" srcset="/assets/images/carte-quatre-480.webp 480w, /assets/images/carte-quatre-640.webp 640w, /assets/images/carte-quatre-784.webp 784w" sizes="(max-width: 900px) 92vw, 30vw" alt="Noix de Saint-Jacques dorées et points de crème sur une ardoise noire" width="784" height="522" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media " data-fx="vitesse" style="--cadrage:33% 49%">
+  <picture>
+    <img src="/assets/images/menus-chocolat-1600.webp" srcset="/assets/images/menus-chocolat-480.webp 480w, /assets/images/menus-chocolat-640.webp 640w, /assets/images/menus-chocolat-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 30vw" alt="Sphère de chocolat sur un lit de crumble avec une goutte de coulis orange" width="1600" height="1200" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="section sombre" id="all-inclusive">
+  <div class="conteneur">
+    <div class="tete-section"><div><p class="surtitre" data-anime>All Inclusive</p><h2 data-anime="lignes">Tout compris, de l&#39;apéritif au café</h2></div><p class="doux" data-anime style="max-width:30em;margin:0">Un apéritif au choix, le menu en accord mets et vins, l&#39;eau plate ou pétillante, le café ou le thé. Payé à l&#39;avance, jusqu&#39;à 30 % de moins que le prix habituel.</p></div>
+    <div class="composeur" data-composeur>
+      <div>
+        <fieldset>
+          <legend>Nombre de services</legend>
+          <div class="formules" data-anime="cascade"><div class="formule"><input type="radio" name="services" id="ai-3" value="3" data-prix="64" data-avant="88"><label for="ai-3"><span>3 services</span><strong data-prix>64 €</strong><s>au lieu de 88 €</s></label></div><div class="formule"><input type="radio" name="services" id="ai-4" value="4" data-prix="78" data-avant="115" checked><label for="ai-4"><span>4 services</span><strong data-prix>78 €</strong><s>au lieu de 115 €</s></label></div><div class="formule"><input type="radio" name="services" id="ai-5" value="5" data-prix="95" data-avant="140"><label for="ai-5"><span>5 services</span><strong data-prix>95 €</strong><s>au lieu de 140 €</s></label></div></div>
+        </fieldset>
+        <fieldset>
+          <legend>Nombre de personnes</legend>
+          <div class="nombre"><button type="button" data-nombre="-1" aria-label="Une personne de moins">−</button><output data-nombre-sortie value="2" aria-live="polite">2</output><button type="button" data-nombre="1" aria-label="Une personne de plus">+</button></div>
+        </fieldset>
+        <div class="aperitif"><figure class="media " style="--cadrage:57% 35%">
+  <picture>
+    <img src="/assets/images/aperitif-800.webp" srcset="/assets/images/aperitif-480.webp 480w, /assets/images/aperitif-640.webp 640w, /assets/images/aperitif-800.webp 800w" sizes="140px" alt="Cocktail ambré à la mousse claire dans un verre à pied, sur le comptoir" width="800" height="1067" loading="lazy" decoding="async">
+  </picture>
+</figure><p>Un apéritif au choix ouvre chaque All Inclusive.<br>Champagne à l&#39;apéritif et digestif : en option, sur place.</p></div>
+      </div>
+      <aside class="recap" aria-live="polite">
+        <h3>Total</h3>
+        <ul><li><span data-recap-formule>4 services · 2 personnes</span></li></ul>
+        <p class="prix" data-prix><span data-recap-total>156</span> €</p>
+        <p class="doux" data-recap-avant>au lieu de 230 €</p>
+        <p class="economie" data-recap-economie>Vous économisez 74 €</p>
+        <p class="petit">À réserver dans le mois qui suit l&#39;achat, une offre par personne. Paiement en 4 fois sans frais possible.</p>
+        <a href="/reserver?formule=all-inclusive-4&amp;couverts=2" class="bouton" data-libelle="Réserver" data-composeur-lien>Réserver cette formule</a>
+        <p class="petit" style="margin-top:12px">Prix du site actuel ; achat simulé dans la maquette.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+<section class="section galerie-assiettes" id="assiettes">
+  <div class="conteneur tete-section"><div><p class="surtitre" data-anime>Dans l&#39;assiette</p><h2 data-anime="lignes">Quelques assiettes de la maison</h2></div><p class="glisser" data-anime>Faites glisser →</p></div>
+  <div class="piste-assiettes" tabindex="0" role="region" aria-label="Assiettes de la maison, défilement horizontal" data-galerie data-anime="cascade">
+    <figure class="media " style="--cadrage:41% 45%">
+  <picture>
+    <img src="/assets/images/galerie-1-800.webp" srcset="/assets/images/galerie-1-480.webp 480w, /assets/images/galerie-1-640.webp 640w, /assets/images/galerie-1-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Dôme vert sur un nid sombre, présenté sur une coupelle blanche" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media " style="--cadrage:55% 55%">
+  <picture>
+    <img src="/assets/images/galerie-2-800.webp" srcset="/assets/images/galerie-2-480.webp 480w, /assets/images/galerie-2-640.webp 640w, /assets/images/galerie-2-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Nid de chocolat garni de jaune d&#39;œuf sur une grande assiette blanche" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media " style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/galerie-3-800.webp" srcset="/assets/images/galerie-3-480.webp 480w, /assets/images/galerie-3-640.webp 640w, /assets/images/galerie-3-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Viande rosée et moules sur une assiette blanche" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media " style="--cadrage:53% 49%">
+  <picture>
+    <img src="/assets/images/galerie-4-800.webp" srcset="/assets/images/galerie-4-480.webp 480w, /assets/images/galerie-4-640.webp 640w, /assets/images/galerie-4-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Dessert éclaté : crème grise, meringues, fruits rouges et carrés de chocolat" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media " style="--cadrage:52% 54%">
+  <picture>
+    <img src="/assets/images/galerie-5-800.webp" srcset="/assets/images/galerie-5-480.webp 480w, /assets/images/galerie-5-640.webp 640w, /assets/images/galerie-5-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Lamelles croisées et points de sauce jaune sur assiette blanche" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media " style="--cadrage:48% 55%">
+  <picture>
+    <img src="/assets/images/galerie-6-800.webp" srcset="/assets/images/galerie-6-480.webp 480w, /assets/images/galerie-6-640.webp 640w, /assets/images/galerie-6-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Viande glacée, épinards, chips de volaille et légumes rôtis" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media " style="--cadrage:50% 63%">
+  <picture>
+    <img src="/assets/images/galerie-7-800.webp" srcset="/assets/images/galerie-7-480.webp 480w, /assets/images/galerie-7-640.webp 640w, /assets/images/galerie-7-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Magret rosé, purée et pomme fondante sur une assiette longue, verres derrière" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure><figure class="media " style="--cadrage:46% 47%">
+  <picture>
+    <img src="/assets/images/galerie-8-800.webp" srcset="/assets/images/galerie-8-480.webp 480w, /assets/images/galerie-8-640.webp 640w, /assets/images/galerie-8-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Rangée d&#39;assiettes dressées sur le passe, prêtes à partir en salle" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="section sombre fin" id="fin">
+  <div class="conteneur">
+    <svg class="fin-gouttes" viewBox="0 0 240 160" aria-hidden="true" data-effet="gouttes" data-visuel>
+  <defs><filter id="goo-menus" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
+  <g filter="url(#goo-menus)"><circle class="fg-mets" cx="78" cy="80" r="36" fill="#F5EEE6"/><circle class="fg-vin" cx="162" cy="80" r="36" fill="#B23A48"/></g>
+</svg>
+    <h2 data-anime="lignes">Votre menu est choisi ?</h2>
+    <p class="chapo" data-anime>Indiquez-le en réservant : le service le préparera.</p>
+    <div class="actions" data-anime><a href="/reserver" class="bouton bouton--clair" data-libelle="Réserver" data-survol="magnetique">Réserver une table</a><a class="bouton bouton--contour" href="tel:+33388993889">Appeler 03 88 99 38 89</a></div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied" data-masque-barre>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img class="pied-logo" src="/assets/images/logo-clair.webp" alt="L&#39;Osmose, gastronomie et vins, restaurant" width="640" height="274" loading="lazy">
+      <p>18 rue du Général Gouraud, 67210 Obernai<br>Entrée par l&#39;avenue de Gail</p>
+      <p><a href="tel:+33388993889">03 88 99 38 89</a> · <a href="tel:+33755610261">07 55 61 02 61</a><br><span class="courriel">contact@restaurantlosmose.fr</span></p>
+    </div>
+    <div>
+      <p class="pied-titre">Horaires</p>
+      <p>Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p>
+      <p class="pied-titre">Paiements acceptés</p>
+      <p>American Express, Chèques-Vacances, ANCV Connect</p>
+    </div>
+    <nav aria-label="Le site">
+      <p class="pied-titre">Le site</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/la-maison" data-libelle="La maison">La maison</a></li><li><a href="/menus" data-libelle="Les menus" aria-current="page">Les menus</a></li><li><a href="/bons-cadeaux" data-libelle="Bons cadeaux">Bons cadeaux</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <form class="pied-lettre" data-formulaire novalidate>
+      <p class="pied-titre" id="lettre-titre">Recevez chaque mois notre nouvelle carte</p>
+      <div class="champ"><label for="lettre-email">Votre adresse e-mail</label>
+      <div class="pied-lettre-ligne"><input id="lettre-email" name="email" type="email" required autocomplete="email"><button class="bouton" type="submit">S&#39;abonner</button></div></div>
+      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte. Politique de confidentialité : à compléter.</p>
+      <p data-message-envoi hidden></p>
+    </form>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales · Politique de confidentialité : à compléter</p><p>Maquette de démonstration : réservations, bons cadeaux et formulaires sont simulés, rien n&#39;est envoyé.</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33388993889">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+<script type="application/json" id="horaires-donnees">{"fuseau":"Europe/Paris","seuil_ferme_bientot":30,"regle_feries":"ouvert","feries":[],"adresses":[{"id":"restaurant","nom":"L'Osmose","adresse":"18 rue du Général Gouraud, 67210 Obernai","telephone":"03 88 99 38 89","semaine":{"lundi":[],"mardi":["12:00-14:00","19:00-21:00"],"mercredi":["12:00-14:00","19:00-21:00"],"jeudi":["12:00-14:00","19:00-21:00"],"vendredi":["12:00-14:00","19:00-21:00"],"samedi":["12:00-14:00","19:00-21:00"],"dimanche":[]},"exceptions":[]}]}</script>
+</body>
+</html>

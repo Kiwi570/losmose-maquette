@@ -1,0 +1,3345 @@
+{
+  "dossier": "/Users/paul/Downloads/losmose-recu",
+  "date": "2026-11-20T15:17:21.758Z",
+  "detection": "Vision (macOS) + mesures sharp",
+  "planches": [
+    "planche.jpg",
+    "planche-2.jpg",
+    "planche-3.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "logo.jpg",
+      "nom": "logo",
+      "drapeau": "logo",
+      "largeur": 662,
+      "hauteur": 320,
+      "ratio": "2.07",
+      "ratio_valeur": 2.069,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 49642,
+      "transparence": false,
+      "sujet": {
+        "x": 15.9,
+        "y": 16.2,
+        "l": 72.3,
+        "h": 61.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        48
+      ],
+      "cadrage_css": "51% 48%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.77,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "gauche",
+          "score": 0.38,
+          "ton": "clair",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "haut",
+          "score": 0.33,
+          "ton": "clair",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "droite",
+          "score": 0.3,
+          "ton": "clair",
+          "recouvre_sujet": 0.44
+        }
+      ],
+      "qualite": {
+        "nettete": 78.4,
+        "bruit": 0.18,
+        "compression": 0.81,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "logo",
+        "a_verifier": false,
+        "texte": "osmose · 'Castronomie & Vins. · estaurant",
+        "blocs": 3,
+        "surface": 27.5,
+        "details": [
+          {
+            "texte": "osmose",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "'Castronomie & Vins.",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "estaurant",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "32330f1b576f2b00",
+      "drapeaux": [
+        "logo",
+        "texte du logo",
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "logo-fra-2x-clair.png",
+      "nom": "logo-fra-2x-clair",
+      "drapeau": "logo",
+      "largeur": 64,
+      "hauteur": 64,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "png",
+      "poids": 2447,
+      "transparence": true,
+      "sujet": {
+        "x": 29.4,
+        "y": 26.5,
+        "l": 45.6,
+        "h": 30.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        42
+      ],
+      "cadrage_css": "51% 42%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.59,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.55,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "gauche",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "droite",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.12
+        }
+      ],
+      "qualite": {
+        "nettete": 52,
+        "bruit": 0.51,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "3333717171713333",
+      "drapeaux": [
+        "logo"
+      ]
+    },
+    {
+      "fichier": "logo-2.png",
+      "nom": "logo-2",
+      "drapeau": "logo",
+      "largeur": 300,
+      "hauteur": 225,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 19554,
+      "transparence": false,
+      "sujet": {
+        "x": 24.9,
+        "y": 11.5,
+        "l": 52.5,
+        "h": 53.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        41
+      ],
+      "cadrage_css": "55% 41%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.47,
+          "ton": "clair",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "gauche",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.23
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        }
+      ],
+      "qualite": {
+        "nettete": 66.8,
+        "bruit": 0.4,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "logo",
+        "a_verifier": false,
+        "texte": "Chèque-Vacances · ancv",
+        "blocs": 2,
+        "surface": 23.7,
+        "details": [
+          {
+            "texte": "Chèque-Vacances",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "ancv",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "04258e5b45175d65",
+      "drapeaux": [
+        "logo",
+        "texte du logo"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29.png",
+      "nom": "menus-partir-29",
+      "drapeau": "plat",
+      "largeur": 1537,
+      "hauteur": 1023,
+      "ratio": "3:2",
+      "ratio_valeur": 1.502,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 2433020,
+      "transparence": false,
+      "sujet": {
+        "x": 4.7,
+        "y": 23.8,
+        "l": 91.4,
+        "h": 60.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        48
+      ],
+      "cadrage_css": "50% 48%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.34,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "haut",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "gauche",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "droite",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.54
+        }
+      ],
+      "qualite": {
+        "nettete": 35.4,
+        "bruit": 1.19,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "1e18cc4f4714a2cc",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-2.jpg",
+      "nom": "menus-partir-29-2",
+      "drapeau": "plat",
+      "largeur": 1280,
+      "hauteur": 720,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 148957,
+      "transparence": false,
+      "sujet": {
+        "x": 13.2,
+        "y": 39.7,
+        "l": 72.1,
+        "h": 33.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        57
+      ],
+      "cadrage_css": "51% 57%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.49,
+          "ton": "sombre",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "haut",
+          "score": 0.22,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.19,
+          "ton": "sombre",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "gauche",
+          "score": 0.16,
+          "ton": "sombre",
+          "recouvre_sujet": 0.23
+        }
+      ],
+      "qualite": {
+        "nettete": 32.4,
+        "bruit": 0.41,
+        "compression": 1.45,
+        "faible": true,
+        "raisons": [
+          "compression visible"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "a5f1e3e1d19b3036",
+      "drapeaux": [
+        "plat",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-3.jpg",
+      "nom": "menus-partir-29-3",
+      "drapeau": "plat",
+      "largeur": 1620,
+      "hauteur": 1080,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 230404,
+      "transparence": false,
+      "sujet": {
+        "x": 7.5,
+        "y": 4.8,
+        "l": 83.6,
+        "h": 85.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        48
+      ],
+      "cadrage_css": "48% 48%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "droite",
+          "score": 0.4,
+          "ton": "clair",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "bas",
+          "score": 0.26,
+          "ton": "clair",
+          "recouvre_sujet": 0.6
+        },
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.69
+        }
+      ],
+      "qualite": {
+        "nettete": 34.8,
+        "bruit": 0.87,
+        "compression": 0.95,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "b138985949aa26a4",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "contact-restaurant-osmose.webp",
+      "nom": "contact-restaurant-osmose",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 22984,
+      "transparence": false,
+      "sujet": {
+        "x": 53.7,
+        "y": 37.9,
+        "l": 45.9,
+        "h": 26.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        65,
+        45
+      ],
+      "cadrage_css": "65% 45%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.92,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.77,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "gauche",
+          "score": 0.67,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        }
+      ],
+      "qualite": {
+        "nettete": 48.5,
+        "bruit": 0.43,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "rc de stationnement · s Remparts · Parc de stationnement · - Rue Poincaré",
+        "blocs": 4,
+        "surface": 8.2,
+        "details": [
+          {
+            "texte": "rc de stationnement",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "s Remparts",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Parc de stationnement",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "- Rue Poincaré",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "7e664b8ca3f0706a",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme bas/droite/gauche"
+      ]
+    },
+    {
+      "fichier": "contact-restaurant-osmose-2.webp",
+      "nom": "contact-restaurant-osmose-2",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 20704,
+      "transparence": false,
+      "sujet": {
+        "x": 72.9,
+        "y": 62.8,
+        "l": 23.7,
+        "h": 37.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        79,
+        72
+      ],
+      "cadrage_css": "79% 72%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.75,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.7,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.53,
+          "ton": "clair",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "bas",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        }
+      ],
+      "qualite": {
+        "nettete": 53.8,
+        "bruit": 0.38,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "Salle des fêtes · Rue de l'Abbé Oesterle · PERSPECTIVE - © · I F DOMAINF DES",
+        "blocs": 4,
+        "surface": 16.3,
+        "details": [
+          {
+            "texte": "Salle des fêtes",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Rue de l'Abbé Oesterle",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "PERSPECTIVE - ©",
+            "niveau": "marque"
+          },
+          {
+            "texte": "I F DOMAINF DES",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "54f3009010084513",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "filigrane ou marque",
+        "calme gauche/haut"
+      ]
+    },
+    {
+      "fichier": "contact-restaurant-osmose-3.webp",
+      "nom": "contact-restaurant-osmose-3",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 13636,
+      "transparence": false,
+      "sujet": {
+        "x": 32.4,
+        "y": 2.9,
+        "l": 54.4,
+        "h": 57.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        37
+      ],
+      "cadrage_css": "53% 37%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.91,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.71,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "droite",
+          "score": 0.66,
+          "ton": "clair",
+          "recouvre_sujet": 0.38
+        },
+        {
+          "cote": "haut",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        }
+      ],
+      "qualite": {
+        "nettete": 38.4,
+        "bruit": 0.29,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "étiers · Victor · Tabac · Av. de Gail",
+        "blocs": 4,
+        "surface": 7.8,
+        "details": [
+          {
+            "texte": "étiers",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Victor",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Tabac",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Av. de Gail",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "237769df97373263",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme bas/gauche/droite"
+      ]
+    },
+    {
+      "fichier": "contact-restaurant-osmose-4.webp",
+      "nom": "contact-restaurant-osmose-4",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 31420,
+      "transparence": false,
+      "sujet": {
+        "x": 44.1,
+        "y": 37.5,
+        "l": 33.3,
+        "h": 39,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        60,
+        59
+      ],
+      "cadrage_css": "60% 59%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.67,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.59,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "droite",
+          "score": 0.58,
+          "ton": "clair",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "haut",
+          "score": 0.5,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        }
+      ],
+      "qualite": {
+        "nettete": 56.9,
+        "bruit": 0.68,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "Rue Goessli · Rue du Gen · Lycée des m · Paul-Émile · le Murner · Obernai",
+        "blocs": 6,
+        "surface": 20.2,
+        "details": [
+          {
+            "texte": "Rue Goessli",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Rue du Gen",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Lycée des m",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Paul-Émile",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "le Murner",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Obernai",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "ed1892b22a524d86",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme gauche"
+      ]
+    },
+    {
+      "fichier": "contact-restaurant-osmose-5.webp",
+      "nom": "contact-restaurant-osmose-5",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 23152,
+      "transparence": false,
+      "sujet": {
+        "x": 10.3,
+        "y": 7.4,
+        "l": 79.4,
+        "h": 55.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        33
+      ],
+      "cadrage_css": "59% 33%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.64,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "gauche",
+          "score": 0.44,
+          "ton": "clair",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "haut",
+          "score": 0.26,
+          "ton": "clair",
+          "recouvre_sujet": 0.63
+        }
+      ],
+      "qualite": {
+        "nettete": 51.3,
+        "bruit": 0.46,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "Socio-Culturel · thur Rimbaud · ral Gouraud · Pl. de l' · Halle des Sp · La p'tite pause · stade · D422",
+        "blocs": 8,
+        "surface": 17.1,
+        "details": [
+          {
+            "texte": "Socio-Culturel",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "thur Rimbaud",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "ral Gouraud",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Pl. de l'",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Halle des Sp",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "La p'tite pause",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "stade",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "D422",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "74168e8c9a3b07ca",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "contact-restaurant-osmose-6.webp",
+      "nom": "contact-restaurant-osmose-6",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 29358,
+      "transparence": false,
+      "sujet": {
+        "x": 16,
+        "y": 0.3,
+        "l": 61.8,
+        "h": 62.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        38
+      ],
+      "cadrage_css": "46% 38%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.68,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.67,
+          "ton": "clair",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "haut",
+          "score": 0.51,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "gauche",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.38
+        }
+      ],
+      "qualite": {
+        "nettete": 50.6,
+        "bruit": 0.59,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "Rem Maréchal P · Remparts d'Obernai · nai · *Maréchal Foch- · L'Ehn",
+        "blocs": 5,
+        "surface": 15.3,
+        "details": [
+          {
+            "texte": "Rem Maréchal P",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Remparts d'Obernai",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "nai",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "*Maréchal Foch-",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "L'Ehn",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "d8b6b876564c89b3",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme bas/droite"
+      ]
+    },
+    {
+      "fichier": "contact-restaurant-osmose-7.webp",
+      "nom": "contact-restaurant-osmose-7",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 21856,
+      "transparence": false,
+      "sujet": {
+        "x": 8.8,
+        "y": 35.3,
+        "l": 60.3,
+        "h": 44.1,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        59
+      ],
+      "cadrage_css": "40% 59%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.76,
+          "ton": "clair",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "haut",
+          "score": 0.68,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.57,
+          "ton": "clair",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "gauche",
+          "score": 0.49,
+          "ton": "clair",
+          "recouvre_sujet": 0.34
+        }
+      ],
+      "qualite": {
+        "nettete": 47,
+        "bruit": 0.42,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "nuspfad · Sent. Dubhuspfad · Winstub Le Freiberg · 400",
+        "blocs": 4,
+        "surface": 15.1,
+        "details": [
+          {
+            "texte": "nuspfad",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Sent. Dubhuspfad",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Winstub Le Freiberg",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "400",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "749d285893ed9dd6",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme droite/haut"
+      ]
+    },
+    {
+      "fichier": "contact-restaurant-osmose-8.webp",
+      "nom": "contact-restaurant-osmose-8",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 24884,
+      "transparence": false,
+      "sujet": {
+        "x": 17.6,
+        "y": 13.2,
+        "l": 54.4,
+        "h": 35.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        28
+      ],
+      "cadrage_css": "48% 28%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.82,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.74,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "droite",
+          "score": 0.55,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "haut",
+          "score": 0.53,
+          "ton": "clair",
+          "recouvre_sujet": 0.34
+        }
+      ],
+      "qualite": {
+        "nettete": 41.8,
+        "bruit": 0.44,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "L'Enn · Rue du · MMA Obernai Tenchido. · Cosec · Mode A",
+        "blocs": 5,
+        "surface": 9.3,
+        "details": [
+          {
+            "texte": "L'Enn",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Rue du",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "MMA Obernai Tenchido.",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Cosec",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Mode A",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "aaa889697230888c",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme bas/gauche"
+      ]
+    },
+    {
+      "fichier": "contact-restaurant-osmose-9.webp",
+      "nom": "contact-restaurant-osmose-9",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 33502,
+      "transparence": false,
+      "sujet": {
+        "x": 33.9,
+        "y": 37.6,
+        "l": 40.9,
+        "h": 44.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        60,
+        49
+      ],
+      "cadrage_css": "60% 49%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.72,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "gauche",
+          "score": 0.7,
+          "ton": "clair",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "haut",
+          "score": 0.58,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.45,
+          "ton": "clair",
+          "recouvre_sujet": 0.17
+        }
+      ],
+      "qualite": {
+        "nettete": 54.4,
+        "bruit": 0.68,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "D422 · Centre · Restaurant · Gastronomique L'Osmose · Rue Poincaré · Rue du Gén",
+        "blocs": 6,
+        "surface": 18.7,
+        "details": [
+          {
+            "texte": "D422",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Centre",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Restaurant",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Gastronomique L'Osmose",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Rue Poincaré",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Rue du Gén",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "aab01483cacc4f10",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme bas/gauche"
+      ]
+    },
+    {
+      "fichier": "staticmapservice.png",
+      "nom": "staticmapservice",
+      "drapeau": "autre",
+      "largeur": 500,
+      "hauteur": 350,
+      "ratio": "1.43",
+      "ratio_valeur": 1.429,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 33943,
+      "transparence": false,
+      "sujet": {
+        "x": 4.4,
+        "y": 4.4,
+        "l": 88.2,
+        "h": 86.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        48
+      ],
+      "cadrage_css": "45% 48%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "droite",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "gauche",
+          "score": 0.34,
+          "ton": "clair",
+          "recouvre_sujet": 0.77
+        },
+        {
+          "cote": "haut",
+          "score": 0.33,
+          "ton": "clair",
+          "recouvre_sujet": 0.77
+        }
+      ],
+      "qualite": {
+        "nettete": 68.6,
+        "bruit": 0.74,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "500 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "document",
+        "a_verifier": true,
+        "texte": "Obernai · D422] · Rue Poincaré · Parc de stationnement · des Remparts · Halle de · Centre Socio-Culturell · Arthur Rimbaud · Av. de Gail · Rue du Général Gourau",
+        "blocs": 12,
+        "surface": 18.4,
+        "details": [
+          {
+            "texte": "Obernai",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "D422]",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Rue Poincaré",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Parc de stationnement",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "des Remparts",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Halle de",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Centre Socio-Culturell",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Arthur Rimbaud",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Av. de Gail",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Rue du Général Gouraud",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "La p'tite p",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "du Stade",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "36b4e72b9aa63968",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "document lisible"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-4.jpg",
+      "nom": "menus-partir-29-4",
+      "drapeau": "plat",
+      "largeur": 1440,
+      "hauteur": 1080,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 157157,
+      "transparence": false,
+      "sujet": {
+        "x": 23,
+        "y": 17.2,
+        "l": 73.4,
+        "h": 69.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        58,
+        50
+      ],
+      "cadrage_css": "58% 50%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.25,
+          "ton": "sombre",
+          "recouvre_sujet": 0.46
+        },
+        {
+          "cote": "gauche",
+          "score": 0.1,
+          "ton": "sombre",
+          "recouvre_sujet": 0.3
+        },
+        {
+          "cote": "haut",
+          "score": 0.07,
+          "ton": "sombre",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.64
+        }
+      ],
+      "qualite": {
+        "nettete": 18.9,
+        "bruit": 0.55,
+        "compression": 1.33,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "8d0cb1fc6c698af2",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "menu-saint-sylvestre-200.jpg",
+      "nom": "menu-saint-sylvestre-200",
+      "drapeau": "produit",
+      "largeur": 1080,
+      "hauteur": 810,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 44892,
+      "transparence": false,
+      "sujet": {
+        "x": 6.7,
+        "y": 34.1,
+        "l": 65.1,
+        "h": 37.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        47
+      ],
+      "cadrage_css": "46% 47%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.43,
+          "ton": "sombre",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "haut",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.02
+        }
+      ],
+      "qualite": {
+        "nettete": 18.1,
+        "bruit": 0.34,
+        "compression": 0.95,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "89c0d35ac4d07196",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-5.jpg",
+      "nom": "menus-partir-29-5",
+      "drapeau": "plat",
+      "largeur": 810,
+      "hauteur": 607,
+      "ratio": "4:3",
+      "ratio_valeur": 1.334,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 38231,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 22.7,
+        "l": 78.7,
+        "h": 66.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        48
+      ],
+      "cadrage_css": "46% 48%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.47,
+          "ton": "sombre",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "haut",
+          "score": 0.47,
+          "ton": "sombre",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "bas",
+          "score": 0.32,
+          "ton": "sombre",
+          "recouvre_sujet": 0.54
+        },
+        {
+          "cote": "gauche",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.56
+        }
+      ],
+      "qualite": {
+        "nettete": 31.9,
+        "bruit": 0.62,
+        "compression": 1.6,
+        "faible": true,
+        "raisons": [
+          "810 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "70322915c4c13109",
+      "drapeaux": [
+        "plat",
+        "petite",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "menu-5-services-all.jpg",
+      "nom": "menu-5-services-all",
+      "drapeau": "produit",
+      "largeur": 1620,
+      "hauteur": 1080,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 127491,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 13.3,
+        "l": 99.3,
+        "h": 84.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        50
+      ],
+      "cadrage_css": "54% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.3,
+          "ton": "clair",
+          "recouvre_sujet": 0.62
+        },
+        {
+          "cote": "gauche",
+          "score": 0.15,
+          "ton": "clair",
+          "recouvre_sujet": 0.85
+        },
+        {
+          "cote": "bas",
+          "score": 0.13,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "droite",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 0.83
+        }
+      ],
+      "qualite": {
+        "nettete": 50.1,
+        "bruit": 0.53,
+        "compression": 0.94,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "fff8a321071e30e8",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "bon-cadeau-valeur-100.jpg",
+      "nom": "bon-cadeau-valeur-100",
+      "drapeau": "produit",
+      "largeur": 1620,
+      "hauteur": 1080,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 194478,
+      "transparence": false,
+      "sujet": {
+        "x": 23.5,
+        "y": 10.8,
+        "l": 75.4,
+        "h": 68.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        57,
+        43
+      ],
+      "cadrage_css": "57% 43%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "haut",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 0.52
+        },
+        {
+          "cote": "bas",
+          "score": 0.3,
+          "ton": "clair",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.67
+        }
+      ],
+      "qualite": {
+        "nettete": 68.5,
+        "bruit": 0.97,
+        "compression": 0.97,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "0967838b97864f32",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-6.jpg",
+      "nom": "menus-partir-29-6",
+      "drapeau": "plat",
+      "largeur": 1620,
+      "hauteur": 1080,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 272290,
+      "transparence": false,
+      "sujet": {
+        "x": 37.6,
+        "y": 28.2,
+        "l": 58.7,
+        "h": 69.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        62,
+        56
+      ],
+      "cadrage_css": "62% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.68,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "gauche",
+          "score": 0.64,
+          "ton": "clair",
+          "recouvre_sujet": 0.04
+        },
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.63
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.56
+        }
+      ],
+      "qualite": {
+        "nettete": 45.6,
+        "bruit": 1,
+        "compression": 0.94,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "878100ccc69b87cf",
+      "drapeaux": [
+        "plat",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-7.png",
+      "nom": "menus-partir-29-7",
+      "drapeau": "plat",
+      "largeur": 1774,
+      "hauteur": 887,
+      "ratio": "2:1",
+      "ratio_valeur": 2,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 2366635,
+      "transparence": false,
+      "sujet": {
+        "x": 5.1,
+        "y": 9.9,
+        "l": 66.9,
+        "h": 80.1,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        47
+      ],
+      "cadrage_css": "40% 47%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.21,
+          "ton": "sombre",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "haut",
+          "score": 0.07,
+          "ton": "sombre",
+          "recouvre_sujet": 0.48
+        },
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "sombre",
+          "recouvre_sujet": 0.48
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.7
+        }
+      ],
+      "qualite": {
+        "nettete": 64.7,
+        "bruit": 1.12,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "a0b1e0f9d198b071",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "menu-3-services-all.png",
+      "nom": "menu-3-services-all",
+      "drapeau": "produit",
+      "largeur": 1024,
+      "hauteur": 1536,
+      "ratio": "2:3",
+      "ratio_valeur": 0.667,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 1885410,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 22.5,
+        "l": 95.1,
+        "h": 46.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        41
+      ],
+      "cadrage_css": "49% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.28,
+          "ton": "sombre",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "haut",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.34
+        },
+        {
+          "cote": "gauche",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.47
+        },
+        {
+          "cote": "droite",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.41
+        }
+      ],
+      "qualite": {
+        "nettete": 20.9,
+        "bruit": 1.01,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1024 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "52b3321387e4f067",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-8.jpg",
+      "nom": "menus-partir-29-8",
+      "drapeau": "plat",
+      "largeur": 1414,
+      "hauteur": 2000,
+      "ratio": "0.71",
+      "ratio_valeur": 0.707,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 165672,
+      "transparence": false,
+      "sujet": {
+        "x": 30.9,
+        "y": 2.9,
+        "l": 27.9,
+        "h": 60.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        31
+      ],
+      "cadrage_css": "45% 31%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.76,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.71,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "bas",
+          "score": 0.69,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.5,
+          "ton": "clair",
+          "recouvre_sujet": 0.26
+        }
+      ],
+      "qualite": {
+        "nettete": 85.7,
+        "bruit": 0.26,
+        "compression": 0.97,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "document",
+        "a_verifier": true,
+        "texte": "FR EN DE · Menu du jour à 29€ · Ce menu comprend l'entrée, le plat, le dessert · Le Menu du jour est à découvrir sur notre ardoise du mardi au vendredi le midi ",
+        "blocs": 28,
+        "surface": 16.3,
+        "details": [
+          {
+            "texte": "FR EN DE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Menu du jour à 29€",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Ce menu comprend l'entrée, le plat, le dessert",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Le Menu du jour est à découvrir sur notre ardoise du mardi au vendredi le midi",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Menu en 4 Services à 64€",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Le Menu en Accord Mets & Vins (3 verres de 10 cl) à 96 €",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Saint-Jacques",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Noix de Saint-Jacques & Radis Daïkon",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Sandre",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Sandre, Maki de Poireau, Œuf de Saumon & Bouillon Miso",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Canard",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Magret de Canard, Butternut & Orange",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "170e0e060e0e0e0e",
+      "drapeaux": [
+        "plat",
+        "document lisible",
+        "calme droite/gauche/bas"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-9.jpg",
+      "nom": "menus-partir-29-9",
+      "drapeau": "plat",
+      "largeur": 1414,
+      "hauteur": 2000,
+      "ratio": "0.71",
+      "ratio_valeur": 0.707,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 156651,
+      "transparence": false,
+      "sujet": {
+        "x": 27.6,
+        "y": 1.5,
+        "l": 48.7,
+        "h": 27.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        17
+      ],
+      "cadrage_css": "48% 17%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.76,
+          "ton": "clair",
+          "recouvre_sujet": 0.09
+        },
+        {
+          "cote": "droite",
+          "score": 0.76,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "bas",
+          "score": 0.7,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.39
+        }
+      ],
+      "qualite": {
+        "nettete": 86.8,
+        "bruit": 0.23,
+        "compression": 1.13,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "document",
+        "a_verifier": true,
+        "texte": "FREN DE · Menu of the day at 29€ · This menu includes starter, main course, dessert · The menu of the day is to be discovered on our slate from Tuesday to Frida",
+        "blocs": 28,
+        "surface": 15.9,
+        "details": [
+          {
+            "texte": "FREN DE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Menu of the day at 29€",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "This menu includes starter, main course, dessert",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "The menu of the day is to be discovered on our slate from Tuesday to Friday at lunchtime",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "4-course menu at 64€",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "The Food & Wine Pairing Menu (3 glasses of 10 cl) at €96",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Saint-Jacques",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Scallops & Daikon Radish",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Zander",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Zaperch, Leek Maki, Salmon Egg & Miso Broth",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Duck",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Duck Breast, Butternut & Orange",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "860e0e0e0e0c0e16",
+      "drapeaux": [
+        "plat",
+        "document lisible",
+        "calme gauche/droite/bas"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-10.png",
+      "nom": "menus-partir-29-10",
+      "drapeau": "plat",
+      "largeur": 1536,
+      "hauteur": 1024,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 2667754,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 10.3,
+        "l": 93.3,
+        "h": 68.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        42
+      ],
+      "cadrage_css": "46% 42%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.42,
+          "ton": "sombre",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "haut",
+          "score": 0.24,
+          "ton": "sombre",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "sombre",
+          "recouvre_sujet": 0.57
+        },
+        {
+          "cote": "gauche",
+          "score": 0.05,
+          "ton": "sombre",
+          "recouvre_sujet": 0.69
+        }
+      ],
+      "qualite": {
+        "nettete": 37.9,
+        "bruit": 1.91,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "1039b8b8982c2d02",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-11.jpg",
+      "nom": "menus-partir-29-11",
+      "drapeau": "plat",
+      "largeur": 1620,
+      "hauteur": 1080,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 184963,
+      "transparence": false,
+      "sujet": {
+        "x": 22.7,
+        "y": 26.4,
+        "l": 33.2,
+        "h": 51.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        46
+      ],
+      "cadrage_css": "43% 46%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.75,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.64,
+          "ton": "clair",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "bas",
+          "score": 0.6,
+          "ton": "clair",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.41,
+          "ton": "clair",
+          "recouvre_sujet": 0.22
+        }
+      ],
+      "qualite": {
+        "nettete": 50.1,
+        "bruit": 0.79,
+        "compression": 0.97,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "d0908cb62c9a9ac4",
+      "drapeaux": [
+        "plat",
+        "calme droite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-12.jpg",
+      "nom": "menus-partir-29-12",
+      "drapeau": "plat",
+      "largeur": 1620,
+      "hauteur": 1080,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 311935,
+      "transparence": false,
+      "sujet": {
+        "x": 16.4,
+        "y": 7.4,
+        "l": 82.3,
+        "h": 88.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        49
+      ],
+      "cadrage_css": "59% 49%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "gauche",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.52
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.73
+        }
+      ],
+      "qualite": {
+        "nettete": 49.6,
+        "bruit": 1.33,
+        "compression": 0.96,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "4787983476303903",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-13.jpg",
+      "nom": "menus-partir-29-13",
+      "drapeau": "plat",
+      "largeur": 1080,
+      "hauteur": 1440,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 111189,
+      "transparence": false,
+      "sujet": {
+        "x": 32.3,
+        "y": 22.9,
+        "l": 49.3,
+        "h": 30.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        57,
+        35
+      ],
+      "cadrage_css": "57% 35%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.62,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.52,
+          "ton": "sombre",
+          "recouvre_sujet": 0.06
+        },
+        {
+          "cote": "droite",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "haut",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.17
+        }
+      ],
+      "qualite": {
+        "nettete": 12.7,
+        "bruit": 0.43,
+        "compression": 0.98,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "7eeef8dce6f0f173",
+      "drapeaux": [
+        "plat",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-14.jpg",
+      "nom": "menus-partir-29-14",
+      "drapeau": "plat",
+      "largeur": 1440,
+      "hauteur": 1080,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 112574,
+      "transparence": false,
+      "sujet": {
+        "x": 4.6,
+        "y": 21.1,
+        "l": 48.4,
+        "h": 66,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        33,
+        49
+      ],
+      "cadrage_css": "33% 49%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "gauche",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.58
+        },
+        {
+          "cote": "droite",
+          "score": 0.26,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.19
+        }
+      ],
+      "qualite": {
+        "nettete": 15.6,
+        "bruit": 0.45,
+        "compression": 1.41,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "488cb43c3932b9e9",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-15.jpg",
+      "nom": "menus-partir-29-15",
+      "drapeau": "plat",
+      "largeur": 1440,
+      "hauteur": 1080,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 151860,
+      "transparence": false,
+      "sujet": {
+        "x": 10.3,
+        "y": 10.3,
+        "l": 84.9,
+        "h": 49.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        36
+      ],
+      "cadrage_css": "53% 36%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.54,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.33,
+          "ton": "moyen",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "droite",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "haut",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.6
+        }
+      ],
+      "qualite": {
+        "nettete": 26.6,
+        "bruit": 0.73,
+        "compression": 1.25,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "06060a253396cf4f",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-16.jpg",
+      "nom": "menus-partir-29-16",
+      "drapeau": "plat",
+      "largeur": 1200,
+      "hauteur": 995,
+      "ratio": "1.21",
+      "ratio_valeur": 1.206,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 141505,
+      "transparence": false,
+      "sujet": {
+        "x": 11.9,
+        "y": 17.5,
+        "l": 54.4,
+        "h": 78,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        41,
+        46
+      ],
+      "cadrage_css": "41% 46%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.43,
+          "ton": "moyen",
+          "recouvre_sujet": 0.47
+        },
+        {
+          "cote": "droite",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "haut",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.27
+        }
+      ],
+      "qualite": {
+        "nettete": 26,
+        "bruit": 0.82,
+        "compression": 1.3,
+        "faible": true,
+        "raisons": [
+          "1200 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "a032208ccac0c664",
+      "drapeaux": [
+        "plat",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-17.jpg",
+      "nom": "menus-partir-29-17",
+      "drapeau": "plat",
+      "largeur": 960,
+      "hauteur": 720,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 36012,
+      "transparence": false,
+      "sujet": {
+        "x": 10.1,
+        "y": 23.4,
+        "l": 66.1,
+        "h": 63.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        51
+      ],
+      "cadrage_css": "43% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.58,
+          "ton": "moyen",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "droite",
+          "score": 0.47,
+          "ton": "moyen",
+          "recouvre_sujet": 0.26
+        },
+        {
+          "cote": "gauche",
+          "score": 0.34,
+          "ton": "moyen",
+          "recouvre_sujet": 0.48
+        },
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.42
+        }
+      ],
+      "qualite": {
+        "nettete": 18.8,
+        "bruit": 0.36,
+        "compression": 1.87,
+        "faible": true,
+        "raisons": [
+          "960 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "e3b03c6636366e18",
+      "drapeaux": [
+        "plat",
+        "petite",
+        "compression visible"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-18.jpg",
+      "nom": "menus-partir-29-18",
+      "drapeau": "plat",
+      "largeur": 960,
+      "hauteur": 640,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 82559,
+      "transparence": false,
+      "sujet": {
+        "x": 48.5,
+        "y": 39.7,
+        "l": 23.5,
+        "h": 29.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        60,
+        55
+      ],
+      "cadrage_css": "60% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.41,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.34,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.19,
+          "ton": "clair",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "clair",
+          "recouvre_sujet": 0.09
+        }
+      ],
+      "qualite": {
+        "nettete": 84.4,
+        "bruit": 0.79,
+        "compression": 1.15,
+        "faible": true,
+        "raisons": [
+          "960 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "97b0c6c78f8f8786",
+      "drapeaux": [
+        "plat",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-19.jpg",
+      "nom": "menus-partir-29-19",
+      "drapeau": "plat",
+      "largeur": 824,
+      "hauteur": 550,
+      "ratio": "3:2",
+      "ratio_valeur": 1.498,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 77376,
+      "transparence": false,
+      "sujet": {
+        "x": 28.1,
+        "y": 22.8,
+        "l": 55.2,
+        "h": 59.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        50
+      ],
+      "cadrage_css": "53% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "haut",
+          "score": 0.46,
+          "ton": "moyen",
+          "recouvre_sujet": 0.19
+        },
+        {
+          "cote": "bas",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.35
+        }
+      ],
+      "qualite": {
+        "nettete": 16.5,
+        "bruit": 0.44,
+        "compression": 1.21,
+        "faible": true,
+        "raisons": [
+          "824 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "07d89c8e97979361",
+      "drapeaux": [
+        "plat",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-20.jpg",
+      "nom": "menus-partir-29-20",
+      "drapeau": "plat",
+      "largeur": 821,
+      "hauteur": 548,
+      "ratio": "3:2",
+      "ratio_valeur": 1.498,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 48754,
+      "transparence": false,
+      "sujet": {
+        "x": 11.1,
+        "y": 6.2,
+        "l": 88.5,
+        "h": 91.1,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        58,
+        49
+      ],
+      "cadrage_css": "58% 49%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "haut",
+          "score": 0.12,
+          "ton": "clair",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "bas",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.9
+        }
+      ],
+      "qualite": {
+        "nettete": 26.8,
+        "bruit": 0.66,
+        "compression": 1.31,
+        "faible": true,
+        "raisons": [
+          "821 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "e68709221221a1c9",
+      "drapeaux": [
+        "plat",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-21.jpg",
+      "nom": "menus-partir-29-21",
+      "drapeau": "plat",
+      "largeur": 821,
+      "hauteur": 548,
+      "ratio": "3:2",
+      "ratio_valeur": 1.498,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 32338,
+      "transparence": false,
+      "sujet": {
+        "x": 1.9,
+        "y": 29.3,
+        "l": 82.8,
+        "h": 70.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        54
+      ],
+      "cadrage_css": "48% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.73,
+          "ton": "clair",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "droite",
+          "score": 0.5,
+          "ton": "clair",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "bas",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "gauche",
+          "score": 0.41,
+          "ton": "clair",
+          "recouvre_sujet": 0.67
+        }
+      ],
+      "qualite": {
+        "nettete": 50.3,
+        "bruit": 0.39,
+        "compression": 1.37,
+        "faible": true,
+        "raisons": [
+          "821 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "aeb9c69793399ce2",
+      "drapeaux": [
+        "plat",
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-22.jpg",
+      "nom": "menus-partir-29-22",
+      "drapeau": "plat",
+      "largeur": 821,
+      "hauteur": 548,
+      "ratio": "3:2",
+      "ratio_valeur": 1.498,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 29369,
+      "transparence": false,
+      "sujet": {
+        "x": 22,
+        "y": 35.7,
+        "l": 65.2,
+        "h": 41.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        52
+      ],
+      "cadrage_css": "54% 52%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.19
+        },
+        {
+          "cote": "droite",
+          "score": 0.38,
+          "ton": "moyen",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "bas",
+          "score": 0.3,
+          "ton": "clair",
+          "recouvre_sujet": 0.23
+        }
+      ],
+      "qualite": {
+        "nettete": 22.8,
+        "bruit": 0.33,
+        "compression": 1.74,
+        "faible": true,
+        "raisons": [
+          "821 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "bc8cf0cc9c3d9cf0",
+      "drapeaux": [
+        "plat",
+        "petite",
+        "compression visible",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-23.jpg",
+      "nom": "menus-partir-29-23",
+      "drapeau": "plat",
+      "largeur": 821,
+      "hauteur": 548,
+      "ratio": "3:2",
+      "ratio_valeur": 1.498,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 34820,
+      "transparence": false,
+      "sujet": {
+        "x": 4.7,
+        "y": 40.9,
+        "l": 89.9,
+        "h": 49,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        58
+      ],
+      "cadrage_css": "49% 58%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.88,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0.43
+        },
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "bas",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.64
+        }
+      ],
+      "qualite": {
+        "nettete": 33.4,
+        "bruit": 0.46,
+        "compression": 1.5,
+        "faible": true,
+        "raisons": [
+          "821 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "c88cd8cc2733f0e0",
+      "drapeaux": [
+        "plat",
+        "petite",
+        "compression visible",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-24.jpg",
+      "nom": "menus-partir-29-24",
+      "drapeau": "plat",
+      "largeur": 828,
+      "hauteur": 508,
+      "ratio": "16:10",
+      "ratio_valeur": 1.63,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 36696,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 23.2,
+        "l": 79.8,
+        "h": 71.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        39,
+        54
+      ],
+      "cadrage_css": "39% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.76,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "droite",
+          "score": 0.69,
+          "ton": "clair",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "bas",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "gauche",
+          "score": 0.13,
+          "ton": "clair",
+          "recouvre_sujet": 0.72
+        }
+      ],
+      "qualite": {
+        "nettete": 38.5,
+        "bruit": 0.59,
+        "compression": 1.53,
+        "faible": true,
+        "raisons": [
+          "828 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "1840981d77765e5c",
+      "drapeaux": [
+        "plat",
+        "petite",
+        "compression visible",
+        "calme haut/droite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-25.jpg",
+      "nom": "menus-partir-29-25",
+      "drapeau": "plat",
+      "largeur": 726,
+      "hauteur": 485,
+      "ratio": "3:2",
+      "ratio_valeur": 1.497,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 40433,
+      "transparence": false,
+      "sujet": {
+        "x": 7.4,
+        "y": 13.4,
+        "l": 85.6,
+        "h": 81.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        55
+      ],
+      "cadrage_css": "47% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.33,
+          "ton": "moyen",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "droite",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.67
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "clair",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.73
+        }
+      ],
+      "qualite": {
+        "nettete": 79.2,
+        "bruit": 0.66,
+        "compression": 1.2,
+        "faible": true,
+        "raisons": [
+          "726 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "70e0b03c393323e3",
+      "drapeaux": [
+        "plat",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "menus-partir-29-26.jpg",
+      "nom": "menus-partir-29-26",
+      "drapeau": "plat",
+      "largeur": 667,
+      "hauteur": 454,
+      "ratio": "3:2",
+      "ratio_valeur": 1.469,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 50162,
+      "transparence": false,
+      "sujet": {
+        "x": 6.1,
+        "y": 52.2,
+        "l": 90.9,
+        "h": 31.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        63
+      ],
+      "cadrage_css": "47% 63%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.59,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.33,
+          "ton": "moyen",
+          "recouvre_sujet": 0.26
+        },
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.48
+        }
+      ],
+      "qualite": {
+        "nettete": 85.3,
+        "bruit": 1,
+        "compression": 1.08,
+        "faible": true,
+        "raisons": [
+          "667 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "c8c621f08c8c8aa0",
+      "drapeaux": [
+        "plat",
+        "petite"
+      ]
+    }
+  ]
+}

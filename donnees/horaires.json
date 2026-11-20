@@ -1,0 +1,24 @@
+{
+  "fuseau": "Europe/Paris",
+  "seuil_ferme_bientot": 30,
+  "regle_feries": "ouvert",
+  "feries": [],
+  "adresses": [
+    {
+      "id": "restaurant",
+      "nom": "L'Osmose",
+      "adresse": "18 rue du Général Gouraud, 67210 Obernai",
+      "telephone": "03 88 99 38 89",
+      "semaine": {
+        "lundi": [],
+        "mardi": ["12:00-14:00", "19:00-21:00"],
+        "mercredi": ["12:00-14:00", "19:00-21:00"],
+        "jeudi": ["12:00-14:00", "19:00-21:00"],
+        "vendredi": ["12:00-14:00", "19:00-21:00"],
+        "samedi": ["12:00-14:00", "19:00-21:00"],
+        "dimanche": []
+      },
+      "exceptions": []
+    }
+  ]
+}

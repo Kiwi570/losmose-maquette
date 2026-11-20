@@ -1,0 +1,79 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "sansJs",
+      "selecteur": "section#debut > div.hero-texte:nth-of-type(1) > p.hero-info:nth-of-type(3) « Du mardi au samedi Menus dès 29 € »",
+      "lieux": [
+        "844×390 sansJs",
+        "1000×560 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/contact",
+      "taille": "1000×560",
+      "mode": "sansJs",
+      "selecteur": "section#debut > div.coord:nth-of-type(2) > p.hero-info.entree:nth-of-type(4) « Du mardi au samedi »",
+      "lieux": [
+        "1000×560 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : bouton principal hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/menus",
+      "taille": "375×667",
+      "mode": "normal",
+      "selecteur": "section#debut > div > p.actions.entree:nth-of-type(3) > a.bouton:nth-of-type(1) « Réserver une table »",
+      "lieux": [
+        "375×667 normal",
+        "375×667 sansJs",
+        "375×667 sansWebgl",
+        "1000×560 sansJs",
+        "1440×900 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/menus",
+      "taille": "375×667",
+      "mode": "normal",
+      "selecteur": "section#debut > div > ul.grands-prix.entree « 29€ Menu du jour Le midi, du mardi au vendredi 64€ »",
+      "lieux": [
+        "375×667 normal",
+        "375×667 sansJs",
+        "375×667 sansWebgl"
+      ]
+    }
+  ],
+  "aRegarder": [],
+  "nonLances": [],
+  "oks": {
+    "mesures": 273,
+    "balayage": 6
+  },
+  "infos": [
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Tient dans l'écran / : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /bons-cadeaux : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /contact : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /la-maison : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /menus : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /reserver : aucune section épinglée ou plein écran."
+  ],
+  "grille": []
+}

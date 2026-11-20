@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bons cadeaux : offrir L&#39;Osmose</title>
+<meta name="description" content="Bons cadeaux de 100 à 250 €, personnalisés, envoyés en PDF et valables 6 mois.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://losmose-maquette.vercel.app/bons-cadeaux">
+<style>:root{--fond:#F5EEE6;--texte:#2A1B18;--voile-fond:#2B1518;--ouverture-fond:#2B1518;--menu-fond:#2B1518}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/gloock-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="stylesheet" href="/assets/css/apercus.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F5EEE6">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="L&#39;Osmose">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Bons cadeaux : offrir L&#39;Osmose">
+<meta property="og:description" content="Bons cadeaux de 100 à 250 €, personnalisés, envoyés en PDF et valables 6 mois.">
+<meta property="og:url" content="https://losmose-maquette.vercel.app/bons-cadeaux">
+<meta property="og:image" content="https://losmose-maquette.vercel.app/assets/partage/bons-cadeaux-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bon cadeau de L&#39;Osmose sur une nappe de fêtes">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"L'Osmose","description":"Restaurant gastronomique à Obernai : menus par nombre de services et accords mets et vins.","servesCuisine":"Française moderne","priceRange":"29 € à 122 €","telephone":"+33388993889","email":"contact@restaurantlosmose.fr","address":{"@type":"PostalAddress","streetAddress":"18 rue du Général Gouraud","postalCode":"67210","addressLocality":"Obernai","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"12:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"19:00","closes":"21:00"}],"acceptsReservations":"True","paymentAccepted":"American Express, Chèques-Vacances, ANCV Connect"}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img class="voile-logo" src="/assets/images/logo-clair.webp" alt="" width="640" height="274"><span data-voile-libelle>Bons cadeaux</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-effet="gouttes">
+  <svg class="ouverture-gouttes" viewBox="0 0 240 240" width="240" height="240" data-ouverture-objet>
+    <defs><filter id="goo" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
+    <g filter="url(#goo)"><circle class="goutte goutte--mets" cx="120" cy="120" r="34"/><circle class="goutte goutte--vin" cx="120" cy="120" r="34"/><circle class="goutte goutte--coeur" cx="120" cy="120" r="0"/></g>
+    <circle class="goutte-trou" cx="120" cy="120" r="0"/>
+  </svg>
+  <img class="ouverture-mot" src="/assets/images/logo-clair.webp" alt="" width="640" height="274">
+  <p class="ouverture-ligne">Gastronomie &amp; Vins · Obernai</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="L&#39;Osmose, retour à l&#39;accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-sombre.webp" alt="L&#39;Osmose, gastronomie et vins, restaurant" width="640" height="274">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-maison" data-libelle="La maison">La maison</a></li><li><a href="/menus" data-libelle="Les menus">Les menus</a></li><li><a href="/bons-cadeaux" data-libelle="Bons cadeaux" aria-current="page">Bons cadeaux</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/la-maison" class="menu-lien" data-libelle="La maison">La maison</a></li><li style="--i:2"><a href="/menus" class="menu-lien" data-libelle="Les menus">Les menus</a></li><li style="--i:3"><a href="/bons-cadeaux" class="menu-lien" data-libelle="Bons cadeaux" aria-current="page">Bons cadeaux</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:5"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p class="menu-contact"><a class="bouton bouton--clair" href="tel:+33388993889">Appeler 03 88 99 38 89</a></p>
+  <p class="menu-horaires">Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="cadeaux-tete" id="debut">
+  <figure class="media  apercu--cadeaux-fond" data-grok data-fx="parallaxe" data-fx-force="6" style="--cadrage:63% 50%;--cadrage-mobile:50% 48%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/cadeaux-fond-mobile-640.webp 640w, /assets/images/grok/cadeaux-fond-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/cadeaux-fond-1280.webp" srcset="/assets/images/grok/cadeaux-fond-640.webp 640w, /assets/images/grok/cadeaux-fond-1280.webp 1280w, /assets/images/grok/cadeaux-fond-1920.webp 1920w" sizes="100vw" alt="Nappe de lin crème, brin de sapin, ruban rouge et lueur de bougie" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="cadeaux-tete-grille">
+    <div class="cadeaux-texte">
+      <p class="surtitre entree" data-anime="gsap">Bons cadeaux</p>
+      <h1 class="page-titre entree" data-anime="gsap">Offrir L&#39;Osmose</h1>
+      <p class="chapo entree" data-anime="gsap" data-info-cle>Un bon de 100 à 250 €, personnalisé à vos noms, envoyé en PDF et valable 6 mois.</p>
+      <form class="entree" data-anime="gsap" data-bon-form data-formulaire novalidate id="composer">
+        <p class="etiquette" id="montant-titre">Montant</p>
+        <div class="montants" role="group" aria-labelledby="montant-titre"><button type="button" data-montant="100" aria-pressed="true" data-action-principale>100 €</button><button type="button" data-montant="150" aria-pressed="false">150 €</button><button type="button" data-montant="200" aria-pressed="false">200 €</button><button type="button" data-montant="250" aria-pressed="false">250 €</button></div>
+        <input type="hidden" name="montant" value="100">
+        <p class="doux" style="margin:12px 0 18px">Le bon est valable 6 mois : pensez à réserver tôt.</p>
+        <div class="champ"><label for="bon-de">De la part de (prénom et nom)</label><input id="bon-de" name="de" autocomplete="name" required></div>
+        <div class="champ"><label for="bon-pour">Pour (prénom et nom)</label><input id="bon-pour" name="pour" required></div>
+        <div class="champ"><label for="bon-mot">Votre petit mot</label><input id="bon-mot" name="mot" maxlength="60" aria-describedby="bon-mot-aide"><p class="aide" id="bon-mot-aide">Par exemple : joyeux Noël, bon anniversaire.</p></div>
+        <div class="champ"><label for="bon-email">Votre e-mail, pour recevoir le PDF</label><input id="bon-email" name="email" type="email" autocomplete="email" required></div>
+        <p class="mention-donnees">Vos coordonnées servent seulement à vous répondre. Politique de confidentialité : à compléter.</p>
+        <button class="bouton" type="submit">Commander ce bon</button>
+        <p data-message-envoi hidden>Commande simulée : dans la maquette, rien n&#39;est débité ni envoyé.</p>
+      </form>
+    </div>
+    <div class="bon-colonne">
+      <div class="bon" data-effet="bon" data-bon-cible data-iris-centre data-visuel>
+        <span class="bon-reflet" aria-hidden="true" data-audit-ignorer></span>
+        <div class="bon-haut"><img src="/assets/images/logo-clair.webp" alt="L&#39;Osmose, gastronomie et vins, restaurant" width="640" height="274"><p class="bon-marque">Bon cadeau</p></div>
+        <p class="bon-montant" data-bon-montant data-prix>100 €</p>
+        <div class="bon-bas">
+          <p>Pour<b data-bon-pour>…</b></p>
+          <p>De la part de<b data-bon-de>…</b></p>
+          <p class="bon-mot" data-bon-mot>Valable 6 mois</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section conteneur" id="comment">
+  <div class="tete-section"><div><p class="surtitre" data-anime>Comment ça marche</p><h2 data-anime="lignes">En trois temps</h2></div></div>
+  <ol class="etapes" data-anime="cascade">
+    <li><h3>Vous choisissez</h3><p>Le montant : 100, 150, 200 ou 250 €.</p></li>
+    <li><h3>Vous personnalisez</h3><p>Vos noms et un petit mot, imprimés sur le bon.</p></li>
+    <li><h3>Vous l&#39;offrez</h3><p>Le bon arrive en PDF par e-mail, à imprimer et à glisser dans une enveloppe.</p></li>
+  </ol>
+  <div class="duo-image" style="margin-top:clamp(40px,6vw,80px)">
+    <figure class="media " data-fx="parallaxe" style="--cadrage:57% 43%">
+  <picture>
+    <img src="/assets/images/cadeau-morilles-1600.webp" srcset="/assets/images/cadeau-morilles-480.webp 480w, /assets/images/cadeau-morilles-640.webp 640w, /assets/images/cadeau-morilles-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 50vw" alt="Morilles, viande glacée et chapelure dorée en arc sur une assiette blanche texturée" width="1600" height="1067" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div>
+      <h3 data-anime>Une idée de montant</h3>
+      <p class="doux" data-anime>Le menu du jour est à 29 €, les menus en 4 et 5 services à 64 et 79 €, ou 96 et 122 € avec l&#39;accord mets et vins.</p>
+      <p data-anime><a href="/menus" class="lien-fleche" data-libelle="Les menus">Toute la carte</a></p>
+    </div>
+  </div>
+</section>
+<section class="section sombre fin" id="fin">
+  <div class="conteneur">
+    <svg class="fin-gouttes" viewBox="0 0 240 160" aria-hidden="true" data-effet="gouttes" data-visuel>
+  <defs><filter id="goo-cadeaux" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
+  <g filter="url(#goo-cadeaux)"><circle class="fg-mets" cx="78" cy="80" r="36" fill="#F5EEE6"/><circle class="fg-vin" cx="162" cy="80" r="36" fill="#B23A48"/></g>
+</svg>
+    <h2 data-anime="lignes">Une question sur un bon ?</h2>
+    <p class="chapo" data-anime>Appelez-nous du mardi au samedi.</p>
+    <div class="actions" data-anime><a class="bouton bouton--clair" href="tel:+33388993889">Appeler 03 88 99 38 89</a><a href="/reserver" class="bouton bouton--contour" data-libelle="Réserver">Réserver une table</a></div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied" data-masque-barre>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img class="pied-logo" src="/assets/images/logo-clair.webp" alt="L&#39;Osmose, gastronomie et vins, restaurant" width="640" height="274" loading="lazy">
+      <p>18 rue du Général Gouraud, 67210 Obernai<br>Entrée par l&#39;avenue de Gail</p>
+      <p><a href="tel:+33388993889">03 88 99 38 89</a> · <a href="tel:+33755610261">07 55 61 02 61</a><br><span class="courriel">contact@restaurantlosmose.fr</span></p>
+    </div>
+    <div>
+      <p class="pied-titre">Horaires</p>
+      <p>Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p>
+      <p class="pied-titre">Paiements acceptés</p>
+      <p>American Express, Chèques-Vacances, ANCV Connect</p>
+    </div>
+    <nav aria-label="Le site">
+      <p class="pied-titre">Le site</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/la-maison" data-libelle="La maison">La maison</a></li><li><a href="/menus" data-libelle="Les menus">Les menus</a></li><li><a href="/bons-cadeaux" data-libelle="Bons cadeaux" aria-current="page">Bons cadeaux</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <form class="pied-lettre" data-formulaire novalidate>
+      <p class="pied-titre" id="lettre-titre">Recevez chaque mois notre nouvelle carte</p>
+      <div class="champ"><label for="lettre-email">Votre adresse e-mail</label>
+      <div class="pied-lettre-ligne"><input id="lettre-email" name="email" type="email" required autocomplete="email"><button class="bouton" type="submit">S&#39;abonner</button></div></div>
+      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte. Politique de confidentialité : à compléter.</p>
+      <p data-message-envoi hidden></p>
+    </form>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales · Politique de confidentialité : à compléter</p><p>Maquette de démonstration : réservations, bons cadeaux et formulaires sont simulés, rien n&#39;est envoyé.</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33388993889">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+<script type="application/json" id="horaires-donnees">{"fuseau":"Europe/Paris","seuil_ferme_bientot":30,"regle_feries":"ouvert","feries":[],"adresses":[{"id":"restaurant","nom":"L'Osmose","adresse":"18 rue du Général Gouraud, 67210 Obernai","telephone":"03 88 99 38 89","semaine":{"lundi":[],"mardi":["12:00-14:00","19:00-21:00"],"mercredi":["12:00-14:00","19:00-21:00"],"jeudi":["12:00-14:00","19:00-21:00"],"vendredi":["12:00-14:00","19:00-21:00"],"samedi":["12:00-14:00","19:00-21:00"],"dimanche":[]},"exceptions":[]}]}</script>
+</body>
+</html>

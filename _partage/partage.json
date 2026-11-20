@@ -1,0 +1,215 @@
+{
+  "avertissements": [],
+  "cartes": [
+    {
+      "page": "accueil",
+      "langue": "fr",
+      "fichier": "assets/partage/accueil-fr.jpg",
+      "gabarit": "droite",
+      "image": "accueil-ouverture-1280.webp",
+      "poids": 74286,
+      "sujet": {
+        "x": 600,
+        "y": 137,
+        "l": 571,
+        "h": 422
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "bons-cadeaux",
+      "langue": "fr",
+      "fichier": "assets/partage/bons-cadeaux-fr.jpg",
+      "gabarit": "droite",
+      "image": "cadeaux-fond-1280.webp",
+      "poids": 83877,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 299,
+          "l": 480,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "contact",
+      "langue": "fr",
+      "fichier": "assets/partage/contact-fr.jpg",
+      "gabarit": "droite",
+      "image": "salle-arche-960.webp",
+      "poids": 58231,
+      "sujet": {
+        "x": 600,
+        "y": 250,
+        "l": 600,
+        "h": 213
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "la-maison",
+      "langue": "fr",
+      "fichier": "assets/partage/la-maison-fr.jpg",
+      "gabarit": "droite",
+      "image": "maison-ouverture-1280.webp",
+      "poids": 80581,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 612
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "menus",
+      "langue": "fr",
+      "fichier": "assets/partage/menus-fr.jpg",
+      "gabarit": "droite",
+      "image": "menus-ouverture-1280.webp",
+      "poids": 73207,
+      "sujet": {
+        "x": 600,
+        "y": 65,
+        "l": 600,
+        "h": 432
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 299,
+          "l": 480,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "reserver",
+      "langue": "fr",
+      "fichier": "assets/partage/reserver-fr.jpg",
+      "gabarit": "droite",
+      "image": "reserver-ouverture-1280.webp",
+      "poids": 58005,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 573,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}

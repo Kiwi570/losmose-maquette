@@ -1,0 +1,21 @@
+{
+  "nom": "L'Osmose",
+  "adresse": "https://losmose-maquette.vercel.app",
+  "siteActuel": "restaurantlosmose.fr",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "la-maison", "menus", "bons-cadeaux", "contact"],
+  "actionEntete": { "page": "reserver" },
+  "couleurs": { "fond": "#F5EEE6", "texte": "#2A1B18", "voile": "#2B1518", "theme": "#F5EEE6", "ouverture": "#2B1518", "menu": "#2B1518" },
+  "formeVoile": "iris",
+  "contact": {
+    "telephone": "03 88 99 38 89", "telephoneLien": "+33388993889",
+    "telephone2": "07 55 61 02 61", "telephone2Lien": "+33755610261",
+    "email": "contact@restaurantlosmose.fr",
+    "adresse": "18 rue du Général Gouraud, 67210 Obernai",
+    "entree": "Entrée par l'avenue de Gail"
+  },
+  "polices": ["/assets/fonts/gloock-400.woff2", "/assets/fonts/manrope-400.woff2"],
+  "imagePartage": "accueil-ouverture-1280.webp",
+  "curseur": true
+}

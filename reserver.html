@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réserver une table à L&#39;Osmose</title>
+<meta name="description" content="Réservez votre table à L&#39;Osmose, à Obernai : du mardi au samedi, midi et soir, ou la soirée du Nouvel An.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://losmose-maquette.vercel.app/reserver">
+<style>:root{--fond:#F5EEE6;--texte:#2A1B18;--voile-fond:#2B1518;--ouverture-fond:#2B1518;--menu-fond:#2B1518}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/gloock-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="stylesheet" href="/assets/css/apercus.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F5EEE6">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="L&#39;Osmose">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Réserver une table à L&#39;Osmose">
+<meta property="og:description" content="Réservez votre table à L&#39;Osmose, à Obernai : du mardi au samedi, midi et soir, ou la soirée du Nouvel An.">
+<meta property="og:url" content="https://losmose-maquette.vercel.app/reserver">
+<meta property="og:image" content="https://losmose-maquette.vercel.app/assets/partage/reserver-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Table dressée pour deux à L&#39;Osmose">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"L'Osmose","description":"Restaurant gastronomique à Obernai : menus par nombre de services et accords mets et vins.","servesCuisine":"Française moderne","priceRange":"29 € à 122 €","telephone":"+33388993889","email":"contact@restaurantlosmose.fr","address":{"@type":"PostalAddress","streetAddress":"18 rue du Général Gouraud","postalCode":"67210","addressLocality":"Obernai","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"12:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"19:00","closes":"21:00"}],"acceptsReservations":"True","paymentAccepted":"American Express, Chèques-Vacances, ANCV Connect"}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img class="voile-logo" src="/assets/images/logo-clair.webp" alt="" width="640" height="274"><span data-voile-libelle>Réserver</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-effet="gouttes">
+  <svg class="ouverture-gouttes" viewBox="0 0 240 240" width="240" height="240" data-ouverture-objet>
+    <defs><filter id="goo" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
+    <g filter="url(#goo)"><circle class="goutte goutte--mets" cx="120" cy="120" r="34"/><circle class="goutte goutte--vin" cx="120" cy="120" r="34"/><circle class="goutte goutte--coeur" cx="120" cy="120" r="0"/></g>
+    <circle class="goutte-trou" cx="120" cy="120" r="0"/>
+  </svg>
+  <img class="ouverture-mot" src="/assets/images/logo-clair.webp" alt="" width="640" height="274">
+  <p class="ouverture-ligne">Gastronomie &amp; Vins · Obernai</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="L&#39;Osmose, retour à l&#39;accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-sombre.webp" alt="L&#39;Osmose, gastronomie et vins, restaurant" width="640" height="274">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-maison" data-libelle="La maison">La maison</a></li><li><a href="/menus" data-libelle="Les menus">Les menus</a></li><li><a href="/bons-cadeaux" data-libelle="Bons cadeaux">Bons cadeaux</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/la-maison" class="menu-lien" data-libelle="La maison">La maison</a></li><li style="--i:2"><a href="/menus" class="menu-lien" data-libelle="Les menus">Les menus</a></li><li style="--i:3"><a href="/bons-cadeaux" class="menu-lien" data-libelle="Bons cadeaux">Bons cadeaux</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:5"><a href="/reserver" class="menu-lien" data-libelle="Réserver" aria-current="page">Réserver</a></li></ul>
+  <p class="menu-contact"><a class="bouton bouton--clair" href="tel:+33388993889">Appeler 03 88 99 38 89</a></p>
+  <p class="menu-horaires">Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-haut conteneur resa-tete" id="debut">
+  <div>
+    <p class="surtitre entree masque-ecran-tres-bas" data-anime="gsap">Réserver</p>
+    <h1 class="page-titre entree" data-anime="gsap">Votre table à L&#39;Osmose</h1>
+    <p class="chapo entree masque-ecran-bas" data-anime="gsap">Choisissez le jour, le service et le nombre de couverts : nous confirmons votre demande par téléphone ou par e-mail.</p>
+    <p class="hero-info entree" data-anime="gsap" data-info-cle><span class="pastille" data-statut-lieu><span class="point"></span><span data-statut-texte>Du mardi au samedi</span></span><a href="tel:+33388993889">03 88 99 38 89</a></p>
+    <form class="formulaire-resa entree" data-anime="gsap" data-resa data-formulaire novalidate id="reservation">
+      <p class="etiquette" id="jour-titre">Le jour</p>
+      <noscript><div class="champ"><label for="jour-sansjs">Le jour</label><input id="jour-sansjs" type="date" name="jour-sansjs" data-action-principale></div><div class="champ"><label for="heure-sansjs">L&#39;heure d&#39;arrivée</label><input id="heure-sansjs" type="time" name="heure-sansjs" min="12:00" max="20:30"></div></noscript>
+      <div class="jours" data-jours role="group" aria-labelledby="jour-titre" data-action-principale><noscript><style>.jours{display:none}</style></noscript></div>
+      <p class="etiquette">L&#39;heure d&#39;arrivée</p>
+      <div class="creneaux" data-creneaux role="group" aria-label="L&#39;heure d&#39;arrivée"></div>
+      <input type="hidden" name="jour"><input type="hidden" name="heure">
+      <div class="resa-ligne">
+        <div class="champ"><p class="etiquette" id="couverts-titre">Couverts</p><div class="nombre nombre--clair" role="group" aria-labelledby="couverts-titre"><button type="button" data-couvert="-1" aria-label="Un couvert de moins">−</button><output data-couverts aria-live="polite">2</output><button type="button" data-couvert="1" aria-label="Un couvert de plus">+</button></div></div>
+        <div class="champ"><label for="formule">Votre menu (facultatif)</label><select id="formule" name="formule"><option value="">À choisir sur place</option><option value="jour">Menu du jour (midi, du mardi au vendredi)</option><option value="quatre">Menu en 4 services</option><option value="quatre-accord">Menu en 4 services, accord mets et vins</option><option value="cinq">Menu en 5 services</option><option value="cinq-accord">Menu en 5 services, accord mets et vins</option><option value="all-inclusive-3">All Inclusive, 3 services</option><option value="all-inclusive-4">All Inclusive, 4 services</option><option value="all-inclusive-5">All Inclusive, 5 services</option><option value="nouvel-an">Soirée du Nouvel An, menu</option><option value="nouvel-an-all-inclusive">Soirée du Nouvel An, All Inclusive</option></select></div>
+      </div>
+      <div class="resa-ligne">
+        <div class="champ"><label for="resa-nom">Votre nom</label><input id="resa-nom" name="nom" autocomplete="name" required></div>
+        <div class="champ"><label for="resa-tel">Votre téléphone</label><input id="resa-tel" name="telephone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="champ"><label for="resa-email">Votre e-mail</label><input id="resa-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="champ"><label for="resa-note">Une demande particulière ? (allergie, occasion, chaise haute…)</label><textarea id="resa-note" name="note" rows="3"></textarea></div>
+      <p class="resa-recap" data-resa-recap aria-live="polite">Choisissez un jour et une heure.</p>
+      <p class="mention-donnees">Vos coordonnées servent seulement à vous répondre. Politique de confidentialité : à compléter. Créneaux d&#39;arrivée donnés à titre indicatif : à confirmer par la maison.</p>
+      <button class="bouton" type="submit">Envoyer ma demande</button>
+      <p data-message-envoi hidden></p>
+    </form>
+  </div>
+  <figure class="media resa-media apercu--reserver-ouverture" data-grok data-iris-centre data-fx="parallaxe" style="--cadrage:39% 52%;--cadrage-mobile:39% 52%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/reserver-ouverture-mobile-640.webp 640w, /assets/images/grok/reserver-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 900px) 92vw, 32vw">
+    <img src="/assets/images/grok/reserver-ouverture-1280.webp" srcset="/assets/images/grok/reserver-ouverture-640.webp 640w, /assets/images/grok/reserver-ouverture-1280.webp 1280w" sizes="(max-width: 900px) 92vw, 32vw" alt="Table dressée pour deux, nappe blanche, verres en cristal et bougie, devant un mur de grès rose" width="1280" height="1601" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+</section>
+<section class="section sombre" id="nouvel-an">
+  <div class="conteneur nouvel-an">
+    <div>
+      <p class="surtitre" data-anime>Le 31 décembre</p>
+      <h2 data-anime="lignes">La soirée du Nouvel An</h2>
+      <figure class="media " data-anime="rideau" style="--cadrage:50% 48%">
+  <picture>
+    <img src="/assets/images/nouvel-an-784.webp" srcset="/assets/images/nouvel-an-480.webp 480w, /assets/images/nouvel-an-640.webp 640w, /assets/images/nouvel-an-784.webp 784w" sizes="(max-width: 900px) 92vw, 46vw" alt="Poisson doré, cheveux d&#39;ange croustillants et baies rouges sur une assiette blanche, bougies et décor de fêtes derrière" width="784" height="522" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <p class="chapo" data-anime style="margin-top:24px">Sept services dès 19 h 30, à la harpe avec Claire Augier de Lajallet. Menu à 200 €, All Inclusive à 300 € (Champagne, un verre de vin par plat hors dessert, eau, café, coupe de Crémant à minuit).</p>
+      <p class="doux" data-anime>Uniquement sur réservation, avec un acompte de 50 %.</p>
+      <p data-anime><a class="bouton bouton--clair" href="#reservation" data-nouvel-an>Réserver le 31 décembre</a></p>
+    </div>
+    <div>
+      <h3 data-anime>Le menu de la soirée</h3>
+      <ol class="plats-soiree" data-anime="cascade"><li><p style="margin:0"><strong>L&#39;Amuse-bouche</strong><span>et sa coupe de Champagne</span></p></li><li><p style="margin:0"><strong>Le Kiwuitre</strong><span>Huître et kiwi</span></p></li><li><p style="margin:0"><strong>L&#39;Œuf parfait et le Maïs</strong><span>Œuf parfait et espuma de maïs</span></p></li><li><p style="margin:0"><strong>La Saint-Jacques et le Chocolat blanc</strong><span>Noix de Saint-Jacques, panais au chocolat blanc</span></p></li><li><p style="margin:0"><strong>Le Turbot à la manière du duc de Wellington</strong><span>Turbot Wellington, espuma de volaille au safran</span></p></li><li><p style="margin:0"><strong>Le Pigeon façon Rossini</strong><span>Pigeon, foie gras et pomme de terre Anna</span></p></li><li><p style="margin:0"><strong>La Surprise de minuit</strong><span>Gardée secrète jusqu&#39;au dernier moment</span></p></li></ol>
+      <p class="tarifs" data-anime data-prix style="font-family:var(--police-titres);font-size:1.6rem;margin-top:20px">Menu 200 € · All Inclusive 300 €</p>
+    </div>
+  </div>
+</section>
+<section class="section conteneur" id="bon-a-savoir">
+  <div class="tete-section"><div><p class="surtitre" data-anime>Bon à savoir</p><h2 data-anime="lignes">Avant de venir</h2></div></div>
+  <div class="duo-image">
+    <ul class="savoir" data-anime="cascade">
+      <li>Le menu du jour est servi le midi, du mardi au vendredi.</li><li>Un All Inclusive acheté à l&#39;avance se réserve dans le mois qui suit l&#39;achat.</li><li>Groupes de 25 à 30 personnes : la salle se privatise, appelez le 07 55 61 02 61.</li><li>Parking privé au restaurant, entrée par l&#39;avenue de Gail.</li>
+    </ul>
+    <figure class="media " data-fx="zoom" style="--cadrage:54% 50%">
+  <picture>
+    <img src="/assets/images/carte-cinq-784.webp" srcset="/assets/images/carte-cinq-480.webp 480w, /assets/images/carte-cinq-640.webp 640w, /assets/images/carte-cinq-784.webp 784w" sizes="(max-width: 900px) 92vw, 40vw" alt="Cinq bouchées dorées alignées sur une grande assiette blanche" width="784" height="523" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="section sombre fin" id="fin">
+  <div class="conteneur">
+    <svg class="fin-gouttes" viewBox="0 0 240 160" aria-hidden="true" data-effet="gouttes" data-visuel>
+  <defs><filter id="goo-reserver" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
+  <g filter="url(#goo-reserver)"><circle class="fg-mets" cx="78" cy="80" r="36" fill="#F5EEE6"/><circle class="fg-vin" cx="162" cy="80" r="36" fill="#B23A48"/></g>
+</svg>
+    <h2 data-anime="lignes">Vous préférez appeler ?</h2>
+    <p class="chapo" data-anime>Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p>
+    <div class="actions" data-anime><a class="bouton bouton--clair" href="tel:+33388993889">03 88 99 38 89</a><a class="bouton bouton--contour" href="tel:+33755610261">07 55 61 02 61</a></div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied" data-masque-barre>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img class="pied-logo" src="/assets/images/logo-clair.webp" alt="L&#39;Osmose, gastronomie et vins, restaurant" width="640" height="274" loading="lazy">
+      <p>18 rue du Général Gouraud, 67210 Obernai<br>Entrée par l&#39;avenue de Gail</p>
+      <p><a href="tel:+33388993889">03 88 99 38 89</a> · <a href="tel:+33755610261">07 55 61 02 61</a><br><span class="courriel">contact@restaurantlosmose.fr</span></p>
+    </div>
+    <div>
+      <p class="pied-titre">Horaires</p>
+      <p>Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p>
+      <p class="pied-titre">Paiements acceptés</p>
+      <p>American Express, Chèques-Vacances, ANCV Connect</p>
+    </div>
+    <nav aria-label="Le site">
+      <p class="pied-titre">Le site</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/la-maison" data-libelle="La maison">La maison</a></li><li><a href="/menus" data-libelle="Les menus">Les menus</a></li><li><a href="/bons-cadeaux" data-libelle="Bons cadeaux">Bons cadeaux</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver" aria-current="page">Réserver</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <form class="pied-lettre" data-formulaire novalidate>
+      <p class="pied-titre" id="lettre-titre">Recevez chaque mois notre nouvelle carte</p>
+      <div class="champ"><label for="lettre-email">Votre adresse e-mail</label>
+      <div class="pied-lettre-ligne"><input id="lettre-email" name="email" type="email" required autocomplete="email"><button class="bouton" type="submit">S&#39;abonner</button></div></div>
+      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte. Politique de confidentialité : à compléter.</p>
+      <p data-message-envoi hidden></p>
+    </form>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales · Politique de confidentialité : à compléter</p><p>Maquette de démonstration : réservations, bons cadeaux et formulaires sont simulés, rien n&#39;est envoyé.</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33388993889">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+<script type="application/json" id="horaires-donnees">{"fuseau":"Europe/Paris","seuil_ferme_bientot":30,"regle_feries":"ouvert","feries":[],"adresses":[{"id":"restaurant","nom":"L'Osmose","adresse":"18 rue du Général Gouraud, 67210 Obernai","telephone":"03 88 99 38 89","semaine":{"lundi":[],"mardi":["12:00-14:00","19:00-21:00"],"mercredi":["12:00-14:00","19:00-21:00"],"jeudi":["12:00-14:00","19:00-21:00"],"vendredi":["12:00-14:00","19:00-21:00"],"samedi":["12:00-14:00","19:00-21:00"],"dimanche":[]},"exceptions":[]}]}</script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>L&#39;Osmose : restaurant gastronomique à Obernai</title>
+<meta name="description" content="Menus de 3 à 5 services, accords mets et vins du sommelier et menu du jour à 29 €, du mardi au samedi à Obernai.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://losmose-maquette.vercel.app/">
+<style>:root{--fond:#F5EEE6;--texte:#2A1B18;--voile-fond:#2B1518;--ouverture-fond:#2B1518;--menu-fond:#2B1518}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/gloock-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="stylesheet" href="/assets/css/apercus.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F5EEE6">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="L&#39;Osmose">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="L&#39;Osmose : restaurant gastronomique à Obernai">
+<meta property="og:description" content="Menus de 3 à 5 services, accords mets et vins du sommelier et menu du jour à 29 €, du mardi au samedi à Obernai.">
+<meta property="og:url" content="https://losmose-maquette.vercel.app/">
+<meta property="og:image" content="https://losmose-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="L&#39;Osmose, restaurant gastronomique à Obernai, et une de ses assiettes">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"L'Osmose","description":"Restaurant gastronomique à Obernai : menus par nombre de services et accords mets et vins.","servesCuisine":"Française moderne","priceRange":"29 € à 122 €","telephone":"+33388993889","email":"contact@restaurantlosmose.fr","address":{"@type":"PostalAddress","streetAddress":"18 rue du Général Gouraud","postalCode":"67210","addressLocality":"Obernai","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"12:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"19:00","closes":"21:00"}],"acceptsReservations":"True","paymentAccepted":"American Express, Chèques-Vacances, ANCV Connect"}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img class="voile-logo" src="/assets/images/logo-clair.webp" alt="" width="640" height="274"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true" data-effet="gouttes">
+  <svg class="ouverture-gouttes" viewBox="0 0 240 240" width="240" height="240" data-ouverture-objet>
+    <defs><filter id="goo" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
+    <g filter="url(#goo)"><circle class="goutte goutte--mets" cx="120" cy="120" r="34"/><circle class="goutte goutte--vin" cx="120" cy="120" r="34"/><circle class="goutte goutte--coeur" cx="120" cy="120" r="0"/></g>
+    <circle class="goutte-trou" cx="120" cy="120" r="0"/>
+  </svg>
+  <img class="ouverture-mot" src="/assets/images/logo-clair.webp" alt="" width="640" height="274">
+  <p class="ouverture-ligne">Gastronomie &amp; Vins · Obernai</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="L&#39;Osmose, retour à l&#39;accueil" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo-sombre.webp" alt="L&#39;Osmose, gastronomie et vins, restaurant" width="640" height="274">
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/la-maison" data-libelle="La maison">La maison</a></li><li><a href="/menus" data-libelle="Les menus">Les menus</a></li><li><a href="/bons-cadeaux" data-libelle="Bons cadeaux">Bons cadeaux</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/la-maison" class="menu-lien" data-libelle="La maison">La maison</a></li><li style="--i:2"><a href="/menus" class="menu-lien" data-libelle="Les menus">Les menus</a></li><li style="--i:3"><a href="/bons-cadeaux" class="menu-lien" data-libelle="Bons cadeaux">Bons cadeaux</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:5"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p class="menu-contact"><a class="bouton bouton--clair" href="tel:+33388993889">Appeler 03 88 99 38 89</a></p>
+  <p class="menu-horaires">Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero" id="debut">
+  <div class="hero-texte">
+    <p class="surtitre" data-anime="gsap">Table de Chef · Gault&amp;Millau 2026 · Obernai</p>
+    <h1 class="hero-titre" data-anime="gsap"><span class="titre-masque"><span class="titre-ligne">L’<span class="o">O</span>smose</span></span></h1>
+    <p class="chapo" data-anime="gsap">Le chef Antoine Botter cuisine, le sommelier accorde un vin à chaque assiette.</p>
+    <div class="actions" data-anime="gsap">
+      <a href="/reserver" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Réserver une table</a>
+      <a href="/menus" class="lien-fleche" data-libelle="Les menus">Voir les menus</a>
+    </div>
+    <p class="hero-info" data-info-cle data-anime="gsap"><span class="pastille" data-statut-lieu><span class="point"></span><span data-statut-texte>Du mardi au samedi</span></span><span>Menus dès 29 €</span></p>
+  </div>
+  <div class="hero-arche-cadre">
+    <span class="orbite" aria-hidden="true" data-effet="orbite" data-audit-ignorer><i class="orbite-mets"></i><i class="orbite-vin"></i></span>
+    <figure class="media arche apercu--accueil-ouverture" data-iris-centre data-fx="parallaxe" data-fx-force="8" style="--cadrage:49% 49%;--cadrage-mobile:49% 42%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-ouverture-mobile-640.webp 640w, /assets/images/accueil-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 760px) 64vw, 30vw">
+    <img src="/assets/images/accueil-ouverture-1280.webp" srcset="/assets/images/accueil-ouverture-640.webp 640w, /assets/images/accueil-ouverture-1280.webp 1280w" sizes="(max-width: 760px) 64vw, 30vw" alt="Deux boules vertes enveloppées de feuilles, une feuille de capucine et des points de sauce dans un bol en céramique mouchetée" width="1280" height="1600" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="section conteneur manifeste" id="philosophie">
+  <div>
+    <p class="surtitre" data-anime>Notre philosophie</p>
+    <p class="manifeste-citation" data-anime="mots">Vivre le plaisir pour le plaisir de vivre</p>
+    <p class="chapo doux" data-anime>Depuis 2017, Antoine Botter et le sommelier Frédéric Voné servent ensemble une cuisine minutieuse et des vins choisis pour elle : une osmose entre mets et vins.</p>
+  </div>
+  <div class="disques" data-effet="osmose">
+    <div class="disque disque--mets"><figure class="media " style="--cadrage:50% 48%">
+  <picture>
+    <img src="/assets/images/osmose-mets-800.webp" srcset="/assets/images/osmose-mets-480.webp 480w, /assets/images/osmose-mets-640.webp 640w, /assets/images/osmose-mets-800.webp 800w" sizes="(max-width: 900px) 56vw, 24vw" alt="Assiette vue du dessus : rondelles de concombre, boules glacées blanches, points verts et feuilles pourpres sur une assiette bleu ciel" width="800" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure><span class="disque-legende">Le mets</span></div>
+    <div class="disque disque--vin"><figure class="media " data-grok style="--cadrage:50% 53%">
+  <picture>
+    <img src="/assets/images/grok/osmose-vin-800.webp" srcset="/assets/images/grok/osmose-vin-480.webp 480w, /assets/images/grok/osmose-vin-640.webp 640w, /assets/images/grok/osmose-vin-800.webp 800w" sizes="(max-width: 900px) 56vw, 24vw" alt="Vin rouge qui tourne dans un verre en cristal, vu du dessus" width="800" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure><span class="disque-legende">Le vin</span></div>
+  </div>
+</section>
+<section class="section gres" id="menus">
+  <div class="conteneur">
+    <div class="tete-section">
+      <div><p class="surtitre" data-anime>Les menus</p><h2 data-anime="lignes">Choisissez votre nombre de services</h2></div>
+      <a href="/menus" class="lien-fleche" data-libelle="Les menus">Toute la carte</a>
+    </div>
+    <ul class="cartes-menus" data-anime="cascade"><li class="carte-menu">
+      <figure class="media " style="--cadrage:59% 49%">
+  <picture>
+    <img src="/assets/images/carte-jour-784.webp" srcset="/assets/images/carte-jour-480.webp 480w, /assets/images/carte-jour-640.webp 640w, /assets/images/carte-jour-784.webp 784w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 46vw, 30vw" alt="Bol en grès violet garni de légumes et de fleurs, posé sur une assiette mouchetée" width="784" height="523" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="carte-menu-corps">
+        <h3>Menu du jour</h3>
+        <p class="quand">Le midi, du mardi au vendredi</p>
+        <p>Entrée, plat et dessert, à découvrir sur notre ardoise.</p>
+        <p class="prix" data-prix><span data-compteur="29">29</span> €<small>par personne</small></p>
+      </div>
+    </li><li class="carte-menu">
+      <figure class="media " style="--cadrage:50% 47%">
+  <picture>
+    <img src="/assets/images/carte-quatre-784.webp" srcset="/assets/images/carte-quatre-480.webp 480w, /assets/images/carte-quatre-640.webp 640w, /assets/images/carte-quatre-784.webp 784w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 46vw, 30vw" alt="Noix de Saint-Jacques dorées et points de crème sur une ardoise noire" width="784" height="522" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="carte-menu-corps">
+        <h3>Menu en 4 services</h3>
+        <p class="quand">Midi et soir, du mardi au samedi</p>
+        <p>Saint-Jacques, sandre, canard, chocolat.</p>
+        <p class="prix" data-prix><span data-compteur="64">64</span> €<small>par personne</small></p>
+        <p class="accord-ligne">En accord mets et vins : 96 €</p>
+      </div>
+    </li><li class="carte-menu">
+      <figure class="media " style="--cadrage:54% 50%">
+  <picture>
+    <img src="/assets/images/carte-cinq-784.webp" srcset="/assets/images/carte-cinq-480.webp 480w, /assets/images/carte-cinq-640.webp 640w, /assets/images/carte-cinq-784.webp 784w" sizes="(max-width: 760px) 92vw, (max-width: 1100px) 46vw, 30vw" alt="Cinq bouchées dorées alignées sur une grande assiette blanche" width="784" height="523" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="carte-menu-corps">
+        <h3>Menu en 5 services</h3>
+        <p class="quand">Midi et soir, du mardi au samedi</p>
+        <p>Le foie gras en ouverture, puis les quatre services.</p>
+        <p class="prix" data-prix><span data-compteur="79">79</span> €<small>par personne</small></p>
+        <p class="accord-ligne">En accord mets et vins : 122 €</p>
+      </div>
+    </li></ul>
+    <div class="menus-plus"><p>Menu enfant à 17 € jusqu&#39;à 12 ans · All Inclusive dès 64 €, apéritif, vins, eaux et café compris</p><a href="/reserver" class="bouton bouton--contour" data-libelle="Réserver">Réserver une table</a></div>
+  </div>
+</section>
+<section class="section sombre" id="accord">
+  <div class="conteneur accord">
+    <div>
+      <p class="surtitre" data-anime>L&#39;accord du sommelier</p>
+      <h2 data-anime="lignes">Un verre pour chaque assiette</h2>
+      <p class="chapo" data-anime>Pour chaque menu, le sommelier choisit un vin par plat, servi en verres de 10 cl. Les vins suivent la carte : demandez-lui de vous les raconter.</p>
+      <div class="choix" role="group" aria-label="Choisir un menu" data-choix-accord>
+        <button type="button" aria-pressed="true" data-verres="3" data-total="96" data-formule="quatre-accord">4 services</button>
+        <button type="button" aria-pressed="false" data-verres="4" data-total="122" data-formule="cinq-accord">5 services</button>
+      </div>
+      <div class="verres" data-effet="verres"><svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="0">
+  <defs><clipPath id="coupe-0"><path d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/></clipPath></defs>
+  <g clip-path="url(#coupe-0)"><rect class="vin" x="0" y="6" width="60" height="66" fill="#E9C46A"/></g>
+  <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+</svg><svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="1">
+  <defs><clipPath id="coupe-1"><path d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/></clipPath></defs>
+  <g clip-path="url(#coupe-1)"><rect class="vin" x="0" y="6" width="60" height="66" fill="#F2A27E"/></g>
+  <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+</svg><svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="2">
+  <defs><clipPath id="coupe-2"><path d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/></clipPath></defs>
+  <g clip-path="url(#coupe-2)"><rect class="vin" x="0" y="6" width="60" height="66" fill="#B23A48"/></g>
+  <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+</svg><svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="3">
+  <defs><clipPath id="coupe-3"><path d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/></clipPath></defs>
+  <g clip-path="url(#coupe-3)"><rect class="vin" x="0" y="6" width="60" height="66" fill="#7A1F2B"/></g>
+  <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+</svg></div>
+      <p class="accord-total" aria-live="polite"><strong class="prix" data-prix><span data-accord-total>96</span> €</strong><span data-accord-verres>3 verres de 10 cl</span></p>
+      <a href="/reserver?formule=quatre-accord" class="bouton bouton--clair" data-libelle="Réserver" data-accord-lien data-survol="magnetique">Réserver ce menu</a>
+    </div>
+    <figure class="media accord-media" data-grok data-fx="parallaxe" style="--cadrage:34% 50%">
+  <picture>
+    <img src="/assets/images/grok/accord-verres-1600.webp" srcset="/assets/images/grok/accord-verres-480.webp 480w, /assets/images/grok/accord-verres-640.webp 640w, /assets/images/grok/accord-verres-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 44vw" alt="Trois verres de vin, blanc, rosé et rouge, sur un comptoir de chêne sombre" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+<section class="section conteneur chef" id="chef">
+  <figure class="media chef-media" data-anime="rideau" style="--cadrage:49% 56%">
+  <picture>
+    <img src="/assets/images/chef-assiette-1600.webp" srcset="/assets/images/chef-assiette-480.webp 480w, /assets/images/chef-assiette-640.webp 640w, /assets/images/chef-assiette-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 40vw" alt="Filet de poisson à la peau croustillante, petits pois et grande tuile dorée sur une sauce verte" width="1600" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div>
+    <p class="surtitre" data-anime>En cuisine</p>
+    <h2 data-anime="lignes">Antoine Botter, un parcours de grandes maisons</h2>
+    <p class="chapo doux" data-anime>Formé au CFPPA d&#39;Illkirch, il a cuisiné dans des maisons étoilées en Belgique, en Suisse et en France avant d&#39;ouvrir L&#39;Osmose.</p>
+    <div class="frise">
+      <svg class="frise-trait" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M2 0 V 100" fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>
+      <ol><li data-anime><span class="quand">2002</span><strong>Médaille d&#39;or</strong><p>Grand Prix du Trophée Armand Weidman, Concours des jeunes cuisiniers.</p></li><li data-anime><span class="quand">Alsace</span><strong>Le Cheval Blanc, Lembach</strong><p>Une des grandes maisons de son parcours.</p></li><li data-anime><span class="quand">2017</span><strong>L&#39;Osmose</strong><p>Avec le sommelier Frédéric Voné, à Obernai.</p></li><li data-anime><span class="quand">2026</span><strong>Gault&amp;Millau</strong><p>13,5 sur 20, catégorie Table de Chef.</p></li></ol>
+    </div>
+    <a href="/la-maison" class="lien-fleche" data-libelle="La maison">Découvrir la maison</a>
+  </div>
+</section>
+<section class="section gres salle" id="salle">
+  <div class="vitrail" aria-hidden="true">
+    <span data-effet="vitrail" style="--c:#D8574A;--t:260px;left:6%;top:12%"></span><span data-effet="vitrail" style="--c:#E9B44C;--t:200px;left:22%;top:48%"></span>
+    <span data-effet="vitrail" style="--c:#7FA36B;--t:180px;left:48%;top:8%"></span><span data-effet="vitrail" style="--c:#C2457A;--t:240px;left:70%;top:52%"></span>
+    <span data-effet="vitrail" style="--c:#E9B44C;--t:160px;left:86%;top:16%"></span>
+  </div>
+  <div class="conteneur salle-grille">
+    <div>
+      <p class="surtitre" data-anime>La salle</p>
+      <h2 data-anime="lignes">Grès d&#39;Alsace, poutres et vitraux</h2>
+      <p class="chapo" data-anime>Une salle intime d&#39;une trentaine de couverts, où le grès, les poutres apparentes et les vitraux rencontrent un décor contemporain.</p>
+      <ul class="puces" data-anime="cascade"><li>Parking privé, et trois parkings publics à deux pas.</li><li>Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</li></ul>
+      <a href="/la-maison#salle" class="lien-fleche" data-libelle="La maison">Découvrir la maison</a>
+    </div>
+    <div class="salle-composition">
+      <figure class="media salle-mur" data-grok data-fx="zoom" style="--cadrage:48% 50%;--cadrage-mobile:50% 56%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/maison-ouverture-mobile-640.webp 640w, /assets/images/grok/maison-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 900px) 92vw, 50vw">
+    <img src="/assets/images/grok/maison-ouverture-1280.webp" srcset="/assets/images/grok/maison-ouverture-640.webp 640w, /assets/images/grok/maison-ouverture-1280.webp 1280w, /assets/images/grok/maison-ouverture-1920.webp 1920w" sizes="(max-width: 900px) 92vw, 50vw" alt="Mur de grès rose et poutres de chêne, taché de la lumière colorée d&#39;un vitrail" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <figure class="media salle-arche" data-superpose data-fx="vitesse" style="--cadrage:51% 57%">
+  <picture>
+    <img src="/assets/images/salle-arche-960.webp" srcset="/assets/images/salle-arche-480.webp 480w, /assets/images/salle-arche-640.webp 640w, /assets/images/salle-arche-960.webp 960w" sizes="(max-width: 900px) 48vw, 22vw" alt="La salle de L&#39;Osmose : grande fenêtre en arche à vitraux colorés, tables dressées et boiseries" width="960" height="540" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <p class="legende">La salle de L&#39;Osmose, côté vitraux</p>
+    </div>
+  </div>
+</section>
+<section class="section conteneur" id="en-ce-moment">
+  <div class="tete-section"><div><p class="surtitre" data-anime>En ce moment</p><h2 data-anime="lignes">Les fêtes à L&#39;Osmose</h2></div></div>
+  <div class="moment-grille" data-anime="cascade">
+    <article class="moment-carte moment-carte--nuit">
+      <figure class="media " style="--cadrage:50% 48%">
+  <picture>
+    <img src="/assets/images/nouvel-an-784.webp" srcset="/assets/images/nouvel-an-480.webp 480w, /assets/images/nouvel-an-640.webp 640w, /assets/images/nouvel-an-784.webp 784w" sizes="(max-width: 900px) 92vw, 58vw" alt="Poisson doré, cheveux d&#39;ange croustillants et baies rouges sur une assiette blanche, bougies et décor de fêtes derrière" width="784" height="522" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="moment-corps">
+        <span class="compte" data-compte="2026-12-31">Le 31 décembre</span>
+        <h3>La soirée du Nouvel An</h3>
+        <p class="date">Le 31 décembre, dès 19 h 30</p>
+        <p>Sept services, du Kiwuitre à la Surprise de minuit, accompagnés à la harpe par Claire Augier de Lajallet.</p>
+        <p class="tarifs" data-prix>Menu 200 € · All Inclusive 300 €</p>
+        <p class="doux">Sur réservation, avec un acompte de 50 %.</p>
+        <div class="actions"><a href="/reserver#nouvel-an" class="bouton bouton--clair" data-libelle="Réserver">Réserver la soirée</a></div>
+      </div>
+    </article>
+    <article class="moment-carte">
+      <figure class="media " style="--cadrage:57% 43%">
+  <picture>
+    <img src="/assets/images/cadeau-morilles-1600.webp" srcset="/assets/images/cadeau-morilles-480.webp 480w, /assets/images/cadeau-morilles-640.webp 640w, /assets/images/cadeau-morilles-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 36vw" alt="Morilles, viande glacée et chapelure dorée en arc sur une assiette blanche texturée" width="1600" height="1067" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="moment-corps">
+        <h3>Offrir L&#39;Osmose</h3>
+        <p>Bons de 100 à 250 €, personnalisés, envoyés en PDF et valables 6 mois.</p>
+        <div class="actions"><a href="/bons-cadeaux" class="lien-fleche" data-libelle="Bons cadeaux">Composer un bon cadeau</a></div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="section conteneur infos" id="infos">
+  <div class="cadran" data-visuel data-effet="aiguille" data-horaires-cadran><svg class="horaires__svg" viewBox="-36 -36 472 472" aria-hidden="true" focusable="false"><circle class="horaires__piste" cx="200" cy="200" r="158"/><line class="horaires__graduation est-forte" x1="200.0" y1="24.0" x2="200.0" y2="10.0"/><line class="horaires__graduation" x1="245.6" y1="30.0" x2="247.6" y2="22.3"/><line class="horaires__graduation" x1="288.0" y1="47.6" x2="292.0" y2="40.7"/><line class="horaires__graduation" x1="324.5" y1="75.5" x2="330.1" y2="69.9"/><line class="horaires__graduation" x1="352.4" y1="112.0" x2="359.3" y2="108.0"/><line class="horaires__graduation" x1="370.0" y1="154.4" x2="377.7" y2="152.4"/><line class="horaires__graduation est-forte" x1="376.0" y1="200.0" x2="390.0" y2="200.0"/><line class="horaires__graduation" x1="370.0" y1="245.6" x2="377.7" y2="247.6"/><line class="horaires__graduation" x1="352.4" y1="288.0" x2="359.3" y2="292.0"/><line class="horaires__graduation" x1="324.5" y1="324.5" x2="330.1" y2="330.1"/><line class="horaires__graduation" x1="288.0" y1="352.4" x2="292.0" y2="359.3"/><line class="horaires__graduation" x1="245.6" y1="370.0" x2="247.6" y2="377.7"/><line class="horaires__graduation est-forte" x1="200.0" y1="376.0" x2="200.0" y2="390.0"/><line class="horaires__graduation" x1="154.4" y1="370.0" x2="152.4" y2="377.7"/><line class="horaires__graduation" x1="112.0" y1="352.4" x2="108.0" y2="359.3"/><line class="horaires__graduation" x1="75.5" y1="324.5" x2="69.9" y2="330.1"/><line class="horaires__graduation" x1="47.6" y1="288.0" x2="40.7" y2="292.0"/><line class="horaires__graduation" x1="30.0" y1="245.6" x2="22.3" y2="247.6"/><line class="horaires__graduation est-forte" x1="24.0" y1="200.0" x2="10.0" y2="200.0"/><line class="horaires__graduation" x1="30.0" y1="154.4" x2="22.3" y2="152.4"/><line class="horaires__graduation" x1="47.6" y1="112.0" x2="40.7" y2="108.0"/><line class="horaires__graduation" x1="75.5" y1="75.5" x2="69.9" y2="69.9"/><line class="horaires__graduation" x1="112.0" y1="47.6" x2="108.0" y2="40.7"/><line class="horaires__graduation" x1="154.4" y1="30.0" x2="152.4" y2="22.3"/><text class="horaires__repere" x="200.0" y="-12.0">0 h</text><text class="horaires__repere" x="412.0" y="200.0">6 h</text><text class="horaires__repere" x="200.0" y="412.0">12 h</text><text class="horaires__repere" x="-12.0" y="200.0">18 h</text><path class="horaires__arc" d="M200.0 358.0A158 158 0 0 1 121.0 336.8"/><text class="horaires__plage" x="167.9" y="319.8">12 h – 14 h</text><path class="horaires__arc" d="M47.4 159.1A158 158 0 0 1 88.3 88.3"/><text class="horaires__plage" x="92.6" y="138.0">19 h – 21 h</text><g class="horaires__aiguille"><line x1="200" y1="112" x2="200" y2="52"/><circle class="horaires__pointe" cx="200" cy="42" r="9"/></g></svg><div class="cadran-centre"><strong data-statut-cadran>Du mardi au samedi</strong></div></div>
+  <div>
+    <p class="surtitre" data-anime>Infos pratiques</p>
+    <h2 data-anime="lignes">Venir à L&#39;Osmose</h2>
+    <div class="infos-liste" data-anime="cascade">
+      <div><h3>Horaires</h3><p>Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p></div>
+      <div><h3>Adresse</h3><p>18 rue du Général Gouraud, 67210 Obernai<br>Entrée par l&#39;avenue de Gail</p></div>
+      <div><h3>Se garer</h3><p>Parking privé au restaurant. Parkings publics à environ 50 m (centre Arthur Rimbaud), 200 m (gare) et 300 m (Pferschel).</p></div>
+      <div><h3>Paiements acceptés</h3><p>American Express, Chèques-Vacances, ANCV Connect</p></div>
+    </div>
+    <a href="/contact" class="lien-fleche" data-libelle="Contact">Plan et contact</a>
+  </div>
+</section>
+<section class="section sombre fin" id="reserver-fin">
+  <div class="conteneur">
+    <svg class="fin-gouttes" viewBox="0 0 240 160" aria-hidden="true" data-effet="gouttes" data-visuel>
+  <defs><filter id="goo-fin" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
+  <g filter="url(#goo-fin)"><circle class="fg-mets" cx="78" cy="80" r="36" fill="#F5EEE6"/><circle class="fg-vin" cx="162" cy="80" r="36" fill="#B23A48"/></g>
+</svg>
+    <h2 data-anime="lignes">Une table vous attend</h2>
+    <p class="chapo" data-anime>Réservez en ligne ou par téléphone, du mardi au samedi.</p>
+    <div class="actions" data-anime>
+      <a href="/reserver" class="bouton bouton--clair" data-libelle="Réserver" data-survol="magnetique">Réserver une table</a>
+      <a class="bouton bouton--contour" href="tel:+33388993889">Appeler 03 88 99 38 89</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied" data-masque-barre>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img class="pied-logo" src="/assets/images/logo-clair.webp" alt="L&#39;Osmose, gastronomie et vins, restaurant" width="640" height="274" loading="lazy">
+      <p>18 rue du Général Gouraud, 67210 Obernai<br>Entrée par l&#39;avenue de Gail</p>
+      <p><a href="tel:+33388993889">03 88 99 38 89</a> · <a href="tel:+33755610261">07 55 61 02 61</a><br><span class="courriel">contact@restaurantlosmose.fr</span></p>
+    </div>
+    <div>
+      <p class="pied-titre">Horaires</p>
+      <p>Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p>
+      <p class="pied-titre">Paiements acceptés</p>
+      <p>American Express, Chèques-Vacances, ANCV Connect</p>
+    </div>
+    <nav aria-label="Le site">
+      <p class="pied-titre">Le site</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/la-maison" data-libelle="La maison">La maison</a></li><li><a href="/menus" data-libelle="Les menus">Les menus</a></li><li><a href="/bons-cadeaux" data-libelle="Bons cadeaux">Bons cadeaux</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <form class="pied-lettre" data-formulaire novalidate>
+      <p class="pied-titre" id="lettre-titre">Recevez chaque mois notre nouvelle carte</p>
+      <div class="champ"><label for="lettre-email">Votre adresse e-mail</label>
+      <div class="pied-lettre-ligne"><input id="lettre-email" name="email" type="email" required autocomplete="email"><button class="bouton" type="submit">S&#39;abonner</button></div></div>
+      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte. Politique de confidentialité : à compléter.</p>
+      <p data-message-envoi hidden></p>
+    </form>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales · Politique de confidentialité : à compléter</p><p>Maquette de démonstration : réservations, bons cadeaux et formulaires sont simulés, rien n&#39;est envoyé.</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33388993889">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
+</div>
+<script type="application/json" id="horaires-donnees">{"fuseau":"Europe/Paris","seuil_ferme_bientot":30,"regle_feries":"ouvert","feries":[],"adresses":[{"id":"restaurant","nom":"L'Osmose","adresse":"18 rue du Général Gouraud, 67210 Obernai","telephone":"03 88 99 38 89","semaine":{"lundi":[],"mardi":["12:00-14:00","19:00-21:00"],"mercredi":["12:00-14:00","19:00-21:00"],"jeudi":["12:00-14:00","19:00-21:00"],"vendredi":["12:00-14:00","19:00-21:00"],"samedi":["12:00-14:00","19:00-21:00"],"dimanche":[]},"exceptions":[]}]}</script>
+</body>
+</html>
