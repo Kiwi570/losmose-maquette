@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-curseur>
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,15 +35,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/gloock-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="stylesheet" href="/assets/css/apercus.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="stylesheet" href="/assets/css/apercus.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F5EEE6">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -113,7 +113,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="page-haut conteneur menus-tete" id="debut">
   <div>
     <p class="surtitre entree masque-ecran-tres-bas" data-anime="gsap">Les menus</p>
-    <h1 class="page-titre entree" data-anime="gsap">Choisir son nombre de services</h1>
+    <h1 class="page-titre entree" data-anime="gsap" data-grille="typo">Choisir son nombre de <em>services</em></h1>
     <p class="chapo entree masque-ecran-bas" data-anime="gsap">Le midi en semaine, le menu du jour. Midi et soir, les menus en 4 ou 5 services, avec ou sans l&#39;accord du sommelier.</p>
     <ul class="grands-prix entree" data-anime="gsap" data-info-cle>
       <li><strong data-prix><span data-compteur="29">29</span>€</strong><span>Menu du jour<small>Le midi, du mardi au vendredi</small></span></li><li><strong data-prix><span data-compteur="64">64</span>€</strong><span>Menu en 4 services<small>Midi et soir, du mardi au samedi</small></span></li><li><strong data-prix><span data-compteur="79">79</span>€</strong><span>Menu en 5 services<small>Midi et soir, du mardi au samedi</small></span></li>
@@ -135,7 +135,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
     <div>
       <p class="surtitre" data-anime>Le midi, du mardi au vendredi</p>
-      <h2 data-anime="lignes">Le menu du jour</h2>
+      <h2 data-anime="lignes">Le menu <em>du jour</em></h2>
       <p class="chapo" data-anime>Entrée, plat et dessert, à découvrir sur notre ardoise, le midi du mardi au vendredi.</p>
       <p class="prix" data-anime data-prix><span data-compteur="29">29</span> €<small>par personne</small></p>
       <p data-anime><a href="/reserver?formule=jour" class="lien-fleche" data-libelle="Réserver">Réserver une table</a></p>
@@ -143,14 +143,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 <section class="section conteneur" id="carte">
-  <div class="tete-section"><div><p class="surtitre" data-anime>Les menus</p><h2 data-anime="lignes">Les menus en 4 et 5 services</h2></div><p class="doux" data-anime style="max-width:28em;margin:0">La carte change avec les saisons. Voici la carte en cours.</p></div>
+  <div class="tete-section"><div><p class="surtitre" data-anime>Les menus</p><h2 data-anime="lignes">Les menus en <em>4 et 5 services</em></h2></div><p class="doux" data-anime style="max-width:28em;margin:0">La carte change avec les saisons. Voici la carte en cours.</p></div>
   <div class="services-grille">
     <div>
       <div class="tableau-menus" data-anime="cascade" role="table" aria-label="Les menus en 4 et 5 services">
         <div role="row" style="display:contents"><p class="entete" role="columnheader">Les menus</p><p class="entete" role="columnheader" style="text-align:center">4 services</p><p class="entete" role="columnheader" style="text-align:center">5 services</p></div>
         <div role="row" style="display:contents"><p class="plat" role="cell"><strong>Foie gras</strong><span>Foie gras de canard et chutney exotique</span></p><p class="coche coche--non" role="cell"><span class="visuellement-cache">Dans le menu en 5 services seulement</span><span aria-hidden="true">·</span></p><p class="coche" role="cell">✓</p></div><div role="row" style="display:contents"><p class="plat" role="cell"><strong>Saint-Jacques</strong><span>Noix de Saint-Jacques et radis daïkon</span></p><p class="coche" role="cell">✓</p><p class="coche" role="cell">✓</p></div><div role="row" style="display:contents"><p class="plat" role="cell"><strong>Sandre</strong><span>Sandre, maki de poireau, œufs de saumon et bouillon miso</span></p><p class="coche" role="cell">✓</p><p class="coche" role="cell">✓</p></div><div role="row" style="display:contents"><p class="plat" role="cell"><strong>Canard</strong><span>Magret de canard, butternut et orange</span></p><p class="coche" role="cell">✓</p><p class="coche" role="cell">✓</p></div><div role="row" style="display:contents"><p class="plat" role="cell"><strong>Chocolat</strong><span>Sponge cake, chocolat, mandarine et glace</span></p><p class="coche" role="cell">✓</p><p class="coche" role="cell">✓</p></div>
         <div role="row" style="display:contents"><p class="plat" role="cell"><strong>Prix du menu</strong></p><p class="total" role="cell" data-prix>64 €</p><p class="total" role="cell" data-prix>79 €</p></div>
-        <div role="row" style="display:contents"><p class="plat" role="cell"><strong>Accord mets et vins</strong><span>3 ou 4 verres de 10 cl</span></p><p class="total" role="cell" data-prix>96 €<small>3 verres de 10 cl</small></p><p class="total" role="cell" data-prix>122 €<small>4 verres de 10 cl</small></p></div>
+        <div role="row" style="display:contents"><p class="plat" role="cell"><strong>Accord mets et vins</strong><span>3 ou 4 verres de 10 cl</span></p><p class="total" role="cell" data-prix>96 €<small>3 verres<span class="masque-tel"> de 10 cl</span></small></p><p class="total" role="cell" data-prix>122 €<small>4 verres<span class="masque-tel"> de 10 cl</span></small></p></div>
       </div>
       <p class="allergenes">Informations sur les allergènes disponibles sur demande.</p>
       <div class="enfant" data-anime><h3>Menu enfant</h3><p class="prix" data-prix>17 €</p><p class="doux">Jusqu&#39;à 12 ans : un plat et un dessert.</p></div>
@@ -172,7 +172,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="section sombre" id="all-inclusive">
   <div class="conteneur">
-    <div class="tete-section"><div><p class="surtitre" data-anime>All Inclusive</p><h2 data-anime="lignes">Tout compris, de l&#39;apéritif au café</h2></div><p class="doux" data-anime style="max-width:30em;margin:0">Un apéritif au choix, le menu en accord mets et vins, l&#39;eau plate ou pétillante, le café ou le thé. Payé à l&#39;avance, jusqu&#39;à 30 % de moins que le prix habituel.</p></div>
+    <div class="tete-section"><div><p class="surtitre" data-anime>All Inclusive</p><h2 data-anime="lignes">Tout compris, de l’apéritif <em>au café</em></h2></div><p class="doux" data-anime style="max-width:30em;margin:0">Un apéritif au choix, le menu en accord mets et vins, l&#39;eau plate ou pétillante, le café ou le thé. Payé à l&#39;avance, jusqu&#39;à 30 % de moins que le prix habituel.</p></div>
     <div class="composeur" data-composeur>
       <div>
         <fieldset>
@@ -203,41 +203,41 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 <section class="section galerie-assiettes" id="assiettes">
-  <div class="conteneur tete-section"><div><p class="surtitre" data-anime>Dans l&#39;assiette</p><h2 data-anime="lignes">Quelques assiettes de la maison</h2></div><p class="glisser" data-anime>Faites glisser →</p></div>
-  <div class="piste-assiettes" tabindex="0" role="region" aria-label="Assiettes de la maison, défilement horizontal" data-galerie data-anime="cascade">
-    <figure class="media " style="--cadrage:41% 45%">
+  <div class="conteneur tete-section"><div><p class="surtitre" data-anime>Dans l&#39;assiette</p><h2 data-anime="lignes">Quelques assiettes <em>de la maison</em></h2></div><p class="glisser" data-anime>Faites glisser →</p></div>
+  <div class="piste-assiettes" tabindex="0" role="region" aria-label="Assiettes de la maison, défilement horizontal" data-galerie>
+    <div class="rail-assiettes" data-anime="cascade"><figure class="media " data-survol="incline" data-survol-force="5" style="--cadrage:41% 45%">
   <picture>
     <img src="/assets/images/galerie-1-800.webp" srcset="/assets/images/galerie-1-480.webp 480w, /assets/images/galerie-1-640.webp 640w, /assets/images/galerie-1-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Dôme vert sur un nid sombre, présenté sur une coupelle blanche" width="800" height="600" loading="lazy" decoding="async">
   </picture>
-</figure><figure class="media " style="--cadrage:55% 55%">
+</figure><figure class="media " data-survol="incline" data-survol-force="5" style="--cadrage:55% 55%">
   <picture>
     <img src="/assets/images/galerie-2-800.webp" srcset="/assets/images/galerie-2-480.webp 480w, /assets/images/galerie-2-640.webp 640w, /assets/images/galerie-2-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Nid de chocolat garni de jaune d&#39;œuf sur une grande assiette blanche" width="800" height="600" loading="lazy" decoding="async">
   </picture>
-</figure><figure class="media " style="--cadrage:50% 50%">
+</figure><figure class="media " data-survol="incline" data-survol-force="5" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/galerie-3-800.webp" srcset="/assets/images/galerie-3-480.webp 480w, /assets/images/galerie-3-640.webp 640w, /assets/images/galerie-3-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Viande rosée et moules sur une assiette blanche" width="800" height="600" loading="lazy" decoding="async">
   </picture>
-</figure><figure class="media " style="--cadrage:53% 49%">
+</figure><figure class="media " data-survol="incline" data-survol-force="5" style="--cadrage:53% 49%">
   <picture>
     <img src="/assets/images/galerie-4-800.webp" srcset="/assets/images/galerie-4-480.webp 480w, /assets/images/galerie-4-640.webp 640w, /assets/images/galerie-4-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Dessert éclaté : crème grise, meringues, fruits rouges et carrés de chocolat" width="800" height="600" loading="lazy" decoding="async">
   </picture>
-</figure><figure class="media " style="--cadrage:52% 54%">
+</figure><figure class="media " data-survol="incline" data-survol-force="5" style="--cadrage:52% 54%">
   <picture>
     <img src="/assets/images/galerie-5-800.webp" srcset="/assets/images/galerie-5-480.webp 480w, /assets/images/galerie-5-640.webp 640w, /assets/images/galerie-5-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Lamelles croisées et points de sauce jaune sur assiette blanche" width="800" height="600" loading="lazy" decoding="async">
   </picture>
-</figure><figure class="media " style="--cadrage:48% 55%">
+</figure><figure class="media " data-survol="incline" data-survol-force="5" style="--cadrage:48% 55%">
   <picture>
     <img src="/assets/images/galerie-6-800.webp" srcset="/assets/images/galerie-6-480.webp 480w, /assets/images/galerie-6-640.webp 640w, /assets/images/galerie-6-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Viande glacée, épinards, chips de volaille et légumes rôtis" width="800" height="600" loading="lazy" decoding="async">
   </picture>
-</figure><figure class="media " style="--cadrage:50% 63%">
+</figure><figure class="media " data-survol="incline" data-survol-force="5" style="--cadrage:50% 63%">
   <picture>
     <img src="/assets/images/galerie-7-800.webp" srcset="/assets/images/galerie-7-480.webp 480w, /assets/images/galerie-7-640.webp 640w, /assets/images/galerie-7-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Magret rosé, purée et pomme fondante sur une assiette longue, verres derrière" width="800" height="600" loading="lazy" decoding="async">
   </picture>
-</figure><figure class="media " style="--cadrage:46% 47%">
+</figure><figure class="media " data-survol="incline" data-survol-force="5" style="--cadrage:46% 47%">
   <picture>
     <img src="/assets/images/galerie-8-800.webp" srcset="/assets/images/galerie-8-480.webp 480w, /assets/images/galerie-8-640.webp 640w, /assets/images/galerie-8-800.webp 800w" sizes="(max-width: 760px) 70vw, 26vw" alt="Rangée d&#39;assiettes dressées sur le passe, prêtes à partir en salle" width="800" height="600" loading="lazy" decoding="async">
   </picture>
-</figure>
+</figure></div>
   </div>
 </section>
 <section class="section sombre fin" id="fin">
@@ -246,7 +246,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <defs><filter id="goo-menus" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
   <g filter="url(#goo-menus)"><circle class="fg-mets" cx="78" cy="80" r="36" fill="#F5EEE6"/><circle class="fg-vin" cx="162" cy="80" r="36" fill="#B23A48"/></g>
 </svg>
-    <h2 data-anime="lignes">Votre menu est choisi ?</h2>
+    <h2 data-anime="lignes">Votre menu <em>est choisi ?</em></h2>
     <p class="chapo" data-anime>Indiquez-le en réservant : le service le préparera.</p>
     <div class="actions" data-anime><a href="/reserver" class="bouton bouton--clair" data-libelle="Réserver" data-survol="magnetique">Réserver une table</a><a class="bouton bouton--contour" href="tel:+33388993889">Appeler 03 88 99 38 89</a></div>
   </div>
@@ -273,7 +273,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="pied-titre" id="lettre-titre">Recevez chaque mois notre nouvelle carte</p>
       <div class="champ"><label for="lettre-email">Votre adresse e-mail</label>
       <div class="pied-lettre-ligne"><input id="lettre-email" name="email" type="email" required autocomplete="email"><button class="bouton" type="submit">S&#39;abonner</button></div></div>
-      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte. Politique de confidentialité : à compléter.</p>
+      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte, une fois par saison.</p>
       <p data-message-envoi hidden></p>
     </form>
   </div>
@@ -283,6 +283,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <a class="bouton bouton--contour" href="tel:+33388993889">Appeler</a>
   <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
 </div>
+<div class="fil" data-grille="fil" data-audit-ignorer aria-hidden="true"><span class="fil-trait"></span><span class="fil-vin"></span><span class="fil-points"></span><span class="fil-goutte"></span><span class="fil-nom"></span></div>
 <script type="application/json" id="horaires-donnees">{"fuseau":"Europe/Paris","seuil_ferme_bientot":30,"regle_feries":"ouvert","feries":[],"adresses":[{"id":"restaurant","nom":"L'Osmose","adresse":"18 rue du Général Gouraud, 67210 Obernai","telephone":"03 88 99 38 89","semaine":{"lundi":[],"mardi":["12:00-14:00","19:00-21:00"],"mercredi":["12:00-14:00","19:00-21:00"],"jeudi":["12:00-14:00","19:00-21:00"],"vendredi":["12:00-14:00","19:00-21:00"],"samedi":["12:00-14:00","19:00-21:00"],"dimanche":[]},"exceptions":[]}]}</script>
 </body>
 </html>

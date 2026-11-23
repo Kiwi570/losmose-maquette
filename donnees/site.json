@@ -2,7 +2,7 @@
   "nom": "L'Osmose",
   "adresse": "https://losmose-maquette.vercel.app",
   "siteActuel": "restaurantlosmose.fr",
-  "version": 1,
+  "version": 2,
   "langues": ["fr"],
   "navigation": ["accueil", "la-maison", "menus", "bons-cadeaux", "contact"],
   "actionEntete": { "page": "reserver" },

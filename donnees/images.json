@@ -2254,5 +2254,149 @@
    "page-404-1600.webp": 53460
   },
   "media": "c.media({ nom: 'page-404', alt: \"Assiette blanche vide, un dernier trait de sauce et une cuillère posée\", cadrage: '51% 50%', sizes: '100vw', ratio: '16 / 9' })"
+ },
+ "arche-gauche": {
+  "nom": "arche-gauche",
+  "source": "/home/claude/losmose-maquette/recu/site/losmose-recu/menus-partir-29-4.jpg",
+  "role": "ouverture",
+  "alt": "Sphères vertes et bâtonnets de pomme dans des bols sombres alignés",
+  "grok": false,
+  "mention": null,
+  "beaute": 4,
+  "empreinte": "97376b0e9518b063",
+  "ratio": "4:5",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "mobile": null,
+  "cadrage": "50% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 17.2,
+   "l": 100,
+   "h": 69.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.25,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.1,
+    "ton": "sombre"
+   },
+   {
+    "cote": "haut",
+    "score": 0.07,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 403,
+   "top": 0,
+   "width": 864,
+   "height": 1080,
+   "source": [
+    1440,
+    1080
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1920"
+  ],
+  "avertissements": [
+   "agrandie 1,48 fois (source de 864 px après recadrage)"
+  ],
+  "fichiers": [
+   "arche-gauche-640.webp",
+   "arche-gauche-1280.webp"
+  ],
+  "poids": {
+   "arche-gauche-640.webp": 41448,
+   "arche-gauche-1280.webp": 92614
+  },
+  "media": "c.media({ nom: 'arche-gauche', alt: \"Sphères vertes et bâtonnets de pomme dans des bols sombres alignés\", sizes: '100vw', priorite: true })"
+ },
+ "arche-droite": {
+  "nom": "arche-droite",
+  "source": "/home/claude/losmose-maquette/recu/site/losmose-recu/menus-partir-29-11.jpg",
+  "role": "ouverture",
+  "alt": "Disque de biscuit doré entrouvert sur un cœur jaune, éclats de sauce jaune sur assiette blanche",
+  "grok": false,
+  "mention": null,
+  "beaute": 4,
+  "empreinte": "bf958ce89ce96801",
+  "ratio": "4:5",
+  "largeurs": [
+   640,
+   1280
+  ],
+  "mobile": null,
+  "cadrage": "50% 52%",
+  "sujet": {
+   "x": 17.6,
+   "y": 26.4,
+   "l": 62.3,
+   "h": 51.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "droite",
+    "score": 0.75,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.64,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.6,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.41,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 216,
+   "top": 0,
+   "width": 864,
+   "height": 1080,
+   "source": [
+    1620,
+    1080
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "largeurs retirées (source trop petite) : 1920"
+  ],
+  "avertissements": [
+   "agrandie 1,48 fois (source de 864 px après recadrage)"
+  ],
+  "fichiers": [
+   "arche-droite-640.webp",
+   "arche-droite-1280.webp"
+  ],
+  "poids": {
+   "arche-droite-640.webp": 56698,
+   "arche-droite-1280.webp": 147476
+  },
+  "media": "c.media({ nom: 'arche-droite', alt: \"Disque de biscuit doré entrouvert sur un cœur jaune, éclats de sauce jaune sur assiette blanche\", cadrage: '50% 52%', sizes: '100vw', priorite: true })"
  }
 }

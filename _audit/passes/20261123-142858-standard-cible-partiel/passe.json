@@ -1,0 +1,17 @@
+{
+ "id": "20261123-142858-standard-cible-partiel",
+ "date": "2026-11-23T14:31:01.200Z",
+ "niveau": "standard",
+ "pages": "/,/bons-cadeaux,/menus,/contact",
+ "etapes": [
+  "fichiers",
+  "grille",
+  "mesures"
+ ],
+ "version": "2",
+ "echecs": 1,
+ "aRegarder": 1,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

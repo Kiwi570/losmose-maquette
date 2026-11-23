@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-curseur>
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,15 +35,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/gloock-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="stylesheet" href="/assets/css/apercus.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="stylesheet" href="/assets/css/apercus.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F5EEE6">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -113,7 +113,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="hero" id="debut">
   <div class="hero-texte">
     <p class="surtitre" data-anime="gsap">Table de Chef · Gault&amp;Millau 2026 · Obernai</p>
-    <h1 class="hero-titre" data-anime="gsap"><span class="titre-masque"><span class="titre-ligne">L’<span class="o">O</span>smose</span></span></h1>
+    <h1 class="hero-titre" data-anime="gsap"><span class="titre-masque"><span class="titre-ligne">L’<span class="o" data-effet="o-vin" data-grille="typo">O</span>smose</span></span></h1>
     <p class="chapo" data-anime="gsap">Le chef Antoine Botter cuisine, le sommelier accorde un vin à chaque assiette.</p>
     <div class="actions" data-anime="gsap">
       <a href="/reserver" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Réserver une table</a>
@@ -121,13 +121,22 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
     <p class="hero-info" data-info-cle data-anime="gsap"><span class="pastille" data-statut-lieu><span class="point"></span><span data-statut-texte>Du mardi au samedi</span></span><span>Menus dès 29 €</span></p>
   </div>
-  <div class="hero-arche-cadre">
-    <span class="orbite" aria-hidden="true" data-effet="orbite" data-audit-ignorer><i class="orbite-mets"></i><i class="orbite-vin"></i></span>
-    <figure class="media arche apercu--accueil-ouverture" data-iris-centre data-fx="parallaxe" data-fx-force="8" style="--cadrage:49% 49%;--cadrage-mobile:49% 42%">
-  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-ouverture-mobile-640.webp 640w, /assets/images/accueil-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 760px) 64vw, 30vw">
-    <img src="/assets/images/accueil-ouverture-1280.webp" srcset="/assets/images/accueil-ouverture-640.webp 640w, /assets/images/accueil-ouverture-1280.webp 1280w" sizes="(max-width: 760px) 64vw, 30vw" alt="Deux boules vertes enveloppées de feuilles, une feuille de capucine et des points de sauce dans un bol en céramique mouchetée" width="1280" height="1600" fetchpriority="high" loading="eager" decoding="async">
+  <div class="triptyque" data-effet="triptyque" data-souris>
+    <div class="arche-cadre arche-cadre--g"><div class="arche-clip"><figure class="media arche apercu--arche-gauche" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/arche-gauche-1280.webp" srcset="/assets/images/arche-gauche-640.webp 640w, /assets/images/arche-gauche-1280.webp 1280w" sizes="(max-width: 760px) 30vw, 18vw" alt="Sphères vertes et bâtonnets de pomme dans des bols sombres alignés" width="1280" height="1600" fetchpriority="high" loading="eager" decoding="async">
   </picture>
-</figure>
+</figure><span class="reflet" aria-hidden="true" data-audit-ignorer></span></div></div>
+    <div class="arche-cadre arche-cadre--c"><div class="arche-clip"><figure class="media arche apercu--accueil-ouverture" data-iris-centre style="--cadrage:49% 49%;--cadrage-mobile:49% 42%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-ouverture-mobile-640.webp 640w, /assets/images/accueil-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 760px) 38vw, 22vw">
+    <img src="/assets/images/accueil-ouverture-1280.webp" srcset="/assets/images/accueil-ouverture-640.webp 640w, /assets/images/accueil-ouverture-1280.webp 1280w" sizes="(max-width: 760px) 38vw, 22vw" alt="Deux boules vertes enveloppées de feuilles, une feuille de capucine et des points de sauce dans un bol en céramique mouchetée" width="1280" height="1600" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure><span class="reflet" aria-hidden="true" data-audit-ignorer></span></div></div>
+    <div class="arche-cadre arche-cadre--d"><div class="arche-clip"><figure class="media arche apercu--arche-droite" style="--cadrage:50% 52%">
+  <picture>
+    <img src="/assets/images/arche-droite-1280.webp" srcset="/assets/images/arche-droite-640.webp 640w, /assets/images/arche-droite-1280.webp 1280w" sizes="(max-width: 760px) 30vw, 18vw" alt="Disque de biscuit doré entrouvert sur un cœur jaune, éclats de sauce jaune sur assiette blanche" width="1280" height="1600" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure><span class="reflet" aria-hidden="true" data-audit-ignorer></span></div></div>
   </div>
 </section>
 <section class="section conteneur manifeste" id="philosophie">
@@ -147,12 +156,13 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/grok/osmose-vin-800.webp" srcset="/assets/images/grok/osmose-vin-480.webp 480w, /assets/images/grok/osmose-vin-640.webp 640w, /assets/images/grok/osmose-vin-800.webp 800w" sizes="(max-width: 900px) 56vw, 24vw" alt="Vin rouge qui tourne dans un verre en cristal, vu du dessus" width="800" height="800" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure><span class="disque-legende">Le vin</span></div>
+    <span class="disque-union" aria-hidden="true" data-audit-ignorer>L’Osmose</span>
   </div>
 </section>
 <section class="section gres" id="menus">
   <div class="conteneur">
     <div class="tete-section">
-      <div><p class="surtitre" data-anime>Les menus</p><h2 data-anime="lignes">Choisissez votre nombre de services</h2></div>
+      <div><p class="surtitre" data-anime>Les menus</p><h2 data-anime="lignes">Choisissez votre nombre de <em>services</em></h2></div>
       <a href="/menus" class="lien-fleche" data-libelle="Les menus">Toute la carte</a>
     </div>
     <ul class="cartes-menus" data-anime="cascade"><li class="carte-menu">
@@ -201,29 +211,46 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur accord">
     <div>
       <p class="surtitre" data-anime>L&#39;accord du sommelier</p>
-      <h2 data-anime="lignes">Un verre pour chaque assiette</h2>
+      <h2 data-anime="lignes">Un verre pour <em>chaque assiette</em></h2>
       <p class="chapo" data-anime>Pour chaque menu, le sommelier choisit un vin par plat, servi en verres de 10 cl. Les vins suivent la carte : demandez-lui de vous les raconter.</p>
       <div class="choix" role="group" aria-label="Choisir un menu" data-choix-accord>
         <button type="button" aria-pressed="true" data-verres="3" data-total="96" data-formule="quatre-accord">4 services</button>
         <button type="button" aria-pressed="false" data-verres="4" data-total="122" data-formule="cinq-accord">5 services</button>
       </div>
-      <div class="verres" data-effet="verres"><svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="0">
+      <div class="verres" data-effet="verres" data-grille="manipuler"><svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="0">
   <defs><clipPath id="coupe-0"><path d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/></clipPath></defs>
-  <g clip-path="url(#coupe-0)"><rect class="vin" x="0" y="6" width="60" height="66" fill="#E9C46A"/></g>
-  <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+  <g class="verre-corps">
+    <path class="coupe-fond" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/>
+    <g clip-path="url(#coupe-0)"><path class="vin" d="M0 40 L5 40 L10 40 L15 40 L20 40 L25 40 L30 40 L35 40 L40 40 L45 40 L50 40 L55 40 L60 40 V 80 H 0 Z" fill="#E9C46A"/></g>
+    <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+    <path class="eclat" d="M14 14 C 13 30, 16 46, 23 57"/>
+  </g>
 </svg><svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="1">
   <defs><clipPath id="coupe-1"><path d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/></clipPath></defs>
-  <g clip-path="url(#coupe-1)"><rect class="vin" x="0" y="6" width="60" height="66" fill="#F2A27E"/></g>
-  <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+  <g class="verre-corps">
+    <path class="coupe-fond" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/>
+    <g clip-path="url(#coupe-1)"><path class="vin" d="M0 40 L5 40 L10 40 L15 40 L20 40 L25 40 L30 40 L35 40 L40 40 L45 40 L50 40 L55 40 L60 40 V 80 H 0 Z" fill="#F2A27E"/></g>
+    <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+    <path class="eclat" d="M14 14 C 13 30, 16 46, 23 57"/>
+  </g>
 </svg><svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="2">
   <defs><clipPath id="coupe-2"><path d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/></clipPath></defs>
-  <g clip-path="url(#coupe-2)"><rect class="vin" x="0" y="6" width="60" height="66" fill="#B23A48"/></g>
-  <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+  <g class="verre-corps">
+    <path class="coupe-fond" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/>
+    <g clip-path="url(#coupe-2)"><path class="vin" d="M0 40 L5 40 L10 40 L15 40 L20 40 L25 40 L30 40 L35 40 L40 40 L45 40 L50 40 L55 40 L60 40 V 80 H 0 Z" fill="#B23A48"/></g>
+    <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+    <path class="eclat" d="M14 14 C 13 30, 16 46, 23 57"/>
+  </g>
 </svg><svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="3">
   <defs><clipPath id="coupe-3"><path d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/></clipPath></defs>
-  <g clip-path="url(#coupe-3)"><rect class="vin" x="0" y="6" width="60" height="66" fill="#7A1F2B"/></g>
-  <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+  <g class="verre-corps">
+    <path class="coupe-fond" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/>
+    <g clip-path="url(#coupe-3)"><path class="vin" d="M0 40 L5 40 L10 40 L15 40 L20 40 L25 40 L30 40 L35 40 L40 40 L45 40 L50 40 L55 40 L60 40 V 80 H 0 Z" fill="#7A1F2B"/></g>
+    <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+    <path class="eclat" d="M14 14 C 13 30, 16 46, 23 57"/>
+  </g>
 </svg></div>
+      <p class="verres-astuce" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v4h-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Glissez sur les verres : le vin tourne</p>
       <p class="accord-total" aria-live="polite"><strong class="prix" data-prix><span data-accord-total>96</span> €</strong><span data-accord-verres>3 verres de 10 cl</span></p>
       <a href="/reserver?formule=quatre-accord" class="bouton bouton--clair" data-libelle="Réserver" data-accord-lien data-survol="magnetique">Réserver ce menu</a>
     </div>
@@ -242,7 +269,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
   <div>
     <p class="surtitre" data-anime>En cuisine</p>
-    <h2 data-anime="lignes">Antoine Botter, un parcours de grandes maisons</h2>
+    <h2 data-anime="lignes">Antoine Botter, un parcours de <em>grandes maisons</em></h2>
     <p class="chapo doux" data-anime>Formé au CFPPA d&#39;Illkirch, il a cuisiné dans des maisons étoilées en Belgique, en Suisse et en France avant d&#39;ouvrir L&#39;Osmose.</p>
     <div class="frise">
       <svg class="frise-trait" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M2 0 V 100" fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>
@@ -260,15 +287,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur salle-grille">
     <div>
       <p class="surtitre" data-anime>La salle</p>
-      <h2 data-anime="lignes">Grès d&#39;Alsace, poutres et vitraux</h2>
+      <h2 data-anime="lignes">Grès d’Alsace, poutres et <em>vitraux</em></h2>
       <p class="chapo" data-anime>Une salle intime d&#39;une trentaine de couverts, où le grès, les poutres apparentes et les vitraux rencontrent un décor contemporain.</p>
       <ul class="puces" data-anime="cascade"><li>Parking privé, et trois parkings publics à deux pas.</li><li>Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</li></ul>
       <a href="/la-maison#salle" class="lien-fleche" data-libelle="La maison">Découvrir la maison</a>
     </div>
     <div class="salle-composition">
-      <figure class="media salle-mur" data-grok data-fx="zoom" style="--cadrage:48% 50%;--cadrage-mobile:50% 56%">
-  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/maison-ouverture-mobile-640.webp 640w, /assets/images/grok/maison-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 900px) 92vw, 50vw">
-    <img src="/assets/images/grok/maison-ouverture-1280.webp" srcset="/assets/images/grok/maison-ouverture-640.webp 640w, /assets/images/grok/maison-ouverture-1280.webp 1280w, /assets/images/grok/maison-ouverture-1920.webp 1920w" sizes="(max-width: 900px) 92vw, 50vw" alt="Mur de grès rose et poutres de chêne, taché de la lumière colorée d&#39;un vitrail" width="1280" height="720" loading="lazy" decoding="async">
+      <figure class="media salle-mur" data-grok data-fx="zoom" style="--cadrage:58% 59%">
+  <picture>
+    <img src="/assets/images/grok/recevoir-tablee-1280.webp" srcset="/assets/images/grok/recevoir-tablee-640.webp 640w, /assets/images/grok/recevoir-tablee-1280.webp 1280w, /assets/images/grok/recevoir-tablee-1920.webp 1920w" sizes="(max-width: 900px) 92vw, 50vw" alt="Longue table de fête dressée, nappe blanche, verres et bougies, entre murs de grès et poutres" width="1280" height="854" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
       <figure class="media salle-arche" data-superpose data-fx="vitesse" style="--cadrage:51% 57%">
@@ -281,7 +308,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 <section class="section conteneur" id="en-ce-moment">
-  <div class="tete-section"><div><p class="surtitre" data-anime>En ce moment</p><h2 data-anime="lignes">Les fêtes à L&#39;Osmose</h2></div></div>
+  <div class="tete-section"><div><p class="surtitre" data-anime>En ce moment</p><h2 data-anime="lignes">Les <em>fêtes</em> à L’Osmose</h2></div></div>
   <div class="moment-grille" data-anime="cascade">
     <article class="moment-carte moment-carte--nuit">
       <figure class="media " style="--cadrage:50% 48%">
@@ -294,7 +321,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <h3>La soirée du Nouvel An</h3>
         <p class="date">Le 31 décembre, dès 19 h 30</p>
         <p>Sept services, du Kiwuitre à la Surprise de minuit, accompagnés à la harpe par Claire Augier de Lajallet.</p>
-        <p class="tarifs" data-prix>Menu 200 € · All Inclusive 300 €</p>
+        <p class="tarifs" data-prix><span class="insecable">Menu 200 €</span> · <span class="insecable">All Inclusive 300 €</span></p>
         <p class="doux">Sur réservation, avec un acompte de 50 %.</p>
         <div class="actions"><a href="/reserver#nouvel-an" class="bouton bouton--clair" data-libelle="Réserver">Réserver la soirée</a></div>
       </div>
@@ -317,7 +344,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="cadran" data-visuel data-effet="aiguille" data-horaires-cadran><svg class="horaires__svg" viewBox="-36 -36 472 472" aria-hidden="true" focusable="false"><circle class="horaires__piste" cx="200" cy="200" r="158"/><line class="horaires__graduation est-forte" x1="200.0" y1="24.0" x2="200.0" y2="10.0"/><line class="horaires__graduation" x1="245.6" y1="30.0" x2="247.6" y2="22.3"/><line class="horaires__graduation" x1="288.0" y1="47.6" x2="292.0" y2="40.7"/><line class="horaires__graduation" x1="324.5" y1="75.5" x2="330.1" y2="69.9"/><line class="horaires__graduation" x1="352.4" y1="112.0" x2="359.3" y2="108.0"/><line class="horaires__graduation" x1="370.0" y1="154.4" x2="377.7" y2="152.4"/><line class="horaires__graduation est-forte" x1="376.0" y1="200.0" x2="390.0" y2="200.0"/><line class="horaires__graduation" x1="370.0" y1="245.6" x2="377.7" y2="247.6"/><line class="horaires__graduation" x1="352.4" y1="288.0" x2="359.3" y2="292.0"/><line class="horaires__graduation" x1="324.5" y1="324.5" x2="330.1" y2="330.1"/><line class="horaires__graduation" x1="288.0" y1="352.4" x2="292.0" y2="359.3"/><line class="horaires__graduation" x1="245.6" y1="370.0" x2="247.6" y2="377.7"/><line class="horaires__graduation est-forte" x1="200.0" y1="376.0" x2="200.0" y2="390.0"/><line class="horaires__graduation" x1="154.4" y1="370.0" x2="152.4" y2="377.7"/><line class="horaires__graduation" x1="112.0" y1="352.4" x2="108.0" y2="359.3"/><line class="horaires__graduation" x1="75.5" y1="324.5" x2="69.9" y2="330.1"/><line class="horaires__graduation" x1="47.6" y1="288.0" x2="40.7" y2="292.0"/><line class="horaires__graduation" x1="30.0" y1="245.6" x2="22.3" y2="247.6"/><line class="horaires__graduation est-forte" x1="24.0" y1="200.0" x2="10.0" y2="200.0"/><line class="horaires__graduation" x1="30.0" y1="154.4" x2="22.3" y2="152.4"/><line class="horaires__graduation" x1="47.6" y1="112.0" x2="40.7" y2="108.0"/><line class="horaires__graduation" x1="75.5" y1="75.5" x2="69.9" y2="69.9"/><line class="horaires__graduation" x1="112.0" y1="47.6" x2="108.0" y2="40.7"/><line class="horaires__graduation" x1="154.4" y1="30.0" x2="152.4" y2="22.3"/><text class="horaires__repere" x="200.0" y="-12.0">0 h</text><text class="horaires__repere" x="412.0" y="200.0">6 h</text><text class="horaires__repere" x="200.0" y="412.0">12 h</text><text class="horaires__repere" x="-12.0" y="200.0">18 h</text><path class="horaires__arc" d="M200.0 358.0A158 158 0 0 1 121.0 336.8"/><text class="horaires__plage" x="167.9" y="319.8">12 h – 14 h</text><path class="horaires__arc" d="M47.4 159.1A158 158 0 0 1 88.3 88.3"/><text class="horaires__plage" x="92.6" y="138.0">19 h – 21 h</text><g class="horaires__aiguille"><line x1="200" y1="112" x2="200" y2="52"/><circle class="horaires__pointe" cx="200" cy="42" r="9"/></g></svg><div class="cadran-centre"><strong data-statut-cadran>Du mardi au samedi</strong></div></div>
   <div>
     <p class="surtitre" data-anime>Infos pratiques</p>
-    <h2 data-anime="lignes">Venir à L&#39;Osmose</h2>
+    <h2 data-anime="lignes">Venir à <em>L’Osmose</em></h2>
     <div class="infos-liste" data-anime="cascade">
       <div><h3>Horaires</h3><p>Du mardi au samedi, de 12 h à 14 h et de 19 h à 21 h</p></div>
       <div><h3>Adresse</h3><p>18 rue du Général Gouraud, 67210 Obernai<br>Entrée par l&#39;avenue de Gail</p></div>
@@ -333,7 +360,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <defs><filter id="goo-fin" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11"/></filter></defs>
   <g filter="url(#goo-fin)"><circle class="fg-mets" cx="78" cy="80" r="36" fill="#F5EEE6"/><circle class="fg-vin" cx="162" cy="80" r="36" fill="#B23A48"/></g>
 </svg>
-    <h2 data-anime="lignes">Une table vous attend</h2>
+    <h2 data-anime="lignes">Une table <em>vous attend</em></h2>
     <p class="chapo" data-anime>Réservez en ligne ou par téléphone, du mardi au samedi.</p>
     <div class="actions" data-anime>
       <a href="/reserver" class="bouton bouton--clair" data-libelle="Réserver" data-survol="magnetique">Réserver une table</a>
@@ -363,7 +390,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="pied-titre" id="lettre-titre">Recevez chaque mois notre nouvelle carte</p>
       <div class="champ"><label for="lettre-email">Votre adresse e-mail</label>
       <div class="pied-lettre-ligne"><input id="lettre-email" name="email" type="email" required autocomplete="email"><button class="bouton" type="submit">S&#39;abonner</button></div></div>
-      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte. Politique de confidentialité : à compléter.</p>
+      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte, une fois par saison.</p>
       <p data-message-envoi hidden></p>
     </form>
   </div>
@@ -373,6 +400,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <a class="bouton bouton--contour" href="tel:+33388993889">Appeler</a>
   <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
 </div>
+<div class="fil" data-grille="fil" data-audit-ignorer aria-hidden="true"><span class="fil-trait"></span><span class="fil-vin"></span><span class="fil-points"></span><span class="fil-goutte"></span><span class="fil-nom"></span></div>
 <script type="application/json" id="horaires-donnees">{"fuseau":"Europe/Paris","seuil_ferme_bientot":30,"regle_feries":"ouvert","feries":[],"adresses":[{"id":"restaurant","nom":"L'Osmose","adresse":"18 rue du Général Gouraud, 67210 Obernai","telephone":"03 88 99 38 89","semaine":{"lundi":[],"mardi":["12:00-14:00","19:00-21:00"],"mercredi":["12:00-14:00","19:00-21:00"],"jeudi":["12:00-14:00","19:00-21:00"],"vendredi":["12:00-14:00","19:00-21:00"],"samedi":["12:00-14:00","19:00-21:00"],"dimanche":[]},"exceptions":[]}]}</script>
 </body>
 </html>

@@ -163,6 +163,7 @@ ${contenu}
 </main>
 ${pied(c)}
 ${barre(c)}
+<div class="fil" data-grille="fil" data-audit-ignorer aria-hidden="true"><span class="fil-trait"></span><span class="fil-vin"></span><span class="fil-points"></span><span class="fil-goutte"></span><span class="fil-nom"></span></div>
 <script type="application/json" id="horaires-donnees">${brut(JSON.stringify(c.donnees.horaires))}</script>
 </body>
 </html>`;

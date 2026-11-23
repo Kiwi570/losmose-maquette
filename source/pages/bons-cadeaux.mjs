@@ -12,9 +12,9 @@ export default (c) => html`
   <div class="cadeaux-tete-grille">
     <div class="cadeaux-texte">
       <p class="surtitre entree" data-anime="gsap">${c.t('cadeaux.surtitre')}</p>
-      <h1 class="page-titre entree" data-anime="gsap">${c.t('cadeaux.titre')}</h1>
+      <h1 class="page-titre entree" data-anime="gsap" data-grille="typo">${c.tb('cadeaux.titre')}</h1>
       <p class="chapo entree" data-anime="gsap" data-info-cle>${c.t('cadeaux.texte')}</p>
-      <form class="entree" data-anime="gsap" data-bon-form data-formulaire novalidate id="composer">
+      <form class="entree" data-anime="gsap" data-bon-form data-formulaire data-grille="retour" novalidate id="composer">
         <p class="etiquette" id="montant-titre">${c.t('cadeaux.montant')}</p>
         <div class="montants" role="group" aria-labelledby="montant-titre">${MONTANTS.map((v, i) => html`<button type="button" data-montant="${v}" aria-pressed="${i === 0 ? 'true' : 'false'}"${i === 0 ? html` data-action-principale` : ''}>${v} €</button>`)}</div>
         <input type="hidden" name="montant" value="100">
@@ -44,7 +44,7 @@ export default (c) => html`
 </section>
 
 <section class="section conteneur" id="comment">
-  <div class="tete-section"><div><p class="surtitre" data-anime>${c.t('cadeaux.etapesSurtitre')}</p><h2 data-anime="lignes">${c.t('cadeaux.etapesTitre')}</h2></div></div>
+  <div class="tete-section"><div><p class="surtitre" data-anime>${c.t('cadeaux.etapesSurtitre')}</p><h2 data-anime="lignes">${c.tb('cadeaux.etapesTitre')}</h2></div></div>
   <ol class="etapes" data-anime="cascade">
     <li><h3>${c.t('cadeaux.etape1Titre')}</h3><p>${c.t('cadeaux.etape1Texte')}</p></li>
     <li><h3>${c.t('cadeaux.etape2Titre')}</h3><p>${c.t('cadeaux.etape2Texte')}</p></li>
@@ -63,7 +63,7 @@ export default (c) => html`
 <section class="section sombre fin" id="fin">
   <div class="conteneur">
     ${gouttes('cadeaux')}
-    <h2 data-anime="lignes">${c.t('cadeaux.finTitre')}</h2>
+    <h2 data-anime="lignes">${c.tb('cadeaux.finTitre')}</h2>
     <p class="chapo" data-anime>${c.t('cadeaux.finTexte')}</p>
     <div class="actions" data-anime><a class="bouton bouton--clair" href="tel:${c.site.contact.telephoneLien}">${c.t('commun.appeler')} ${c.site.contact.telephone}</a>${c.lien('reserver', { classe: 'bouton bouton--contour', texte: c.t('accueil.finAction') })}</div>
   </div>

@@ -17,13 +17,13 @@ export default (c) => {
 <section class="page-haut conteneur resa-tete" id="debut">
   <div>
     <p class="surtitre entree masque-ecran-tres-bas" data-anime="gsap">${c.t('reserver.surtitre')}</p>
-    <h1 class="page-titre entree" data-anime="gsap">${c.t('reserver.titre')}</h1>
+    <h1 class="page-titre entree" data-anime="gsap" data-grille="typo">${c.tb('reserver.titre')}</h1>
     <p class="chapo entree masque-ecran-bas" data-anime="gsap">${c.t('reserver.texte')}</p>
     <p class="hero-info entree" data-anime="gsap" data-info-cle><span class="pastille" data-statut-lieu><span class="point"></span><span data-statut-texte>${c.t('commun.statutAttente')}</span></span><a href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a></p>
-    <form class="formulaire-resa entree" data-anime="gsap" data-resa data-formulaire novalidate id="reservation">
+    <form class="formulaire-resa entree" data-anime="gsap" data-resa data-formulaire data-grille="retour" novalidate id="reservation">
       <p class="etiquette" id="jour-titre">${c.t('reserver.jour')}</p>
       <noscript><div class="champ"><label for="jour-sansjs">${c.t('reserver.jour')}</label><input id="jour-sansjs" type="date" name="jour-sansjs" data-action-principale></div><div class="champ"><label for="heure-sansjs">${c.t('reserver.heure')}</label><input id="heure-sansjs" type="time" name="heure-sansjs" min="12:00" max="20:30"></div></noscript>
-      <div class="jours" data-jours role="group" aria-labelledby="jour-titre" data-action-principale><noscript><style>.jours{display:none}</style></noscript></div>
+      <div class="jours" data-jours role="group" aria-labelledby="jour-titre" data-action-principale data-iris-centre><noscript><style>.jours{display:none}</style></noscript></div>
       <p class="etiquette">${c.t('reserver.heure')}</p>
       <div class="creneaux" data-creneaux role="group" aria-label="${c.s('reserver.heure')}"></div>
       <input type="hidden" name="jour"><input type="hidden" name="heure">
@@ -43,14 +43,14 @@ export default (c) => {
       <p data-message-envoi hidden></p>
     </form>
   </div>
-  ${img(c, 'reserver-ouverture', { classe: 'resa-media', priorite: true, sizes: '(max-width: 900px) 92vw, 32vw', attrs: 'data-iris-centre data-fx="parallaxe"' })}
+  ${img(c, 'reserver-ouverture', { classe: 'resa-media', priorite: true, sizes: '(max-width: 900px) 92vw, 32vw', attrs: 'data-fx="parallaxe"' })}
 </section>
 
 <section class="section sombre" id="nouvel-an">
   <div class="conteneur nouvel-an">
     <div>
       <p class="surtitre" data-anime>${c.t('reserver.nouvelAnSurtitre')}</p>
-      <h2 data-anime="lignes">${c.t('reserver.nouvelAnTitre')}</h2>
+      <h2 data-anime="lignes">${c.tb('reserver.nouvelAnTitre')}</h2>
       ${img(c, 'nouvel-an', { sizes: '(max-width: 900px) 92vw, 46vw', attrs: 'data-anime="rideau"' })}
       <p class="chapo" data-anime style="margin-top:24px">${c.t('reserver.nouvelAnTexte')}</p>
       <p class="doux" data-anime>${c.t('reserver.nouvelAnMention')}</p>
@@ -59,13 +59,13 @@ export default (c) => {
     <div>
       <h3 data-anime>${c.t('reserver.nouvelAnMenu')}</h3>
       <ol class="plats-soiree" data-anime="cascade">${m.nouvelAn.plats.map((p) => html`<li><p style="margin:0"><strong>${p.titre}</strong><span>${p.texte}</span></p></li>`)}</ol>
-      <p class="tarifs" data-anime data-prix style="font-family:var(--police-titres);font-size:1.6rem;margin-top:20px">${c.t('accueil.nouvelAnPrix')}</p>
+      <p class="tarifs" data-anime data-prix style="font-family:var(--police-titres);font-size:1.6rem;margin-top:20px">${c.tb('accueil.nouvelAnPrix')}</p>
     </div>
   </div>
 </section>
 
 <section class="section conteneur" id="bon-a-savoir">
-  <div class="tete-section"><div><p class="surtitre" data-anime>${c.t('reserver.savoirSurtitre')}</p><h2 data-anime="lignes">${c.t('reserver.savoirTitre')}</h2></div></div>
+  <div class="tete-section"><div><p class="surtitre" data-anime>${c.t('reserver.savoirSurtitre')}</p><h2 data-anime="lignes">${c.tb('reserver.savoirTitre')}</h2></div></div>
   <div class="duo-image">
     <ul class="savoir" data-anime="cascade">
       <li>${c.t('reserver.savoir1')}</li><li>${c.t('reserver.savoir2')}</li><li>${c.t('reserver.savoir3')}</li><li>${c.t('reserver.savoir4')}</li>

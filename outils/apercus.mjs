@@ -3,7 +3,7 @@
 import { createRequire } from 'node:module';
 const sharp = createRequire(import.meta.url)('../_biblio/node_modules/sharp');
 import { writeFileSync, existsSync } from 'node:fs';
-const IMAGES = [['accueil-ouverture', 'accueil-ouverture-640'], ['menus-ouverture', 'menus-ouverture-640'], ['maison-ouverture', 'grok/maison-ouverture-640'],
+const IMAGES = [['accueil-ouverture', 'accueil-ouverture-640'], ['arche-gauche', 'arche-gauche-640'], ['arche-droite', 'arche-droite-640'], ['menus-ouverture', 'menus-ouverture-640'], ['maison-ouverture', 'grok/maison-ouverture-640'],
   ['reserver-ouverture', 'grok/reserver-ouverture-640'], ['cadeaux-fond', 'grok/cadeaux-fond-640'], ['page-404', 'grok/page-404-800']];
 const regles = [];
 for (const [nom, fichier] of IMAGES) {

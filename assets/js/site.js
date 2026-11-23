@@ -1,8 +1,8 @@
 /* Effets propres à L'Osmose. Le socle gère l'ouverture, le voile, l'en-tête, les apparitions et la bibliothèque d'effets.
    Effets du plan (data-effet) : gouttes (intro et appel final), osmose (deux disques qui se mêlent), verres (verres qui se
    remplissent), vitrail (taches de lumière colorée), aiguille (cadran des horaires), repere (goutte du plan), bon (carte cadeau). */
-import { demarrer, versObjet, quand, boucle } from './socle/index.js?v=1';
-import { preparer as preparerHoraires, statut, maintenant, rendreCadran, rendreTexte } from '../modules/horaires/horaires-calcul.js?v=1';
+import { demarrer, versObjet, quand, boucle } from './socle/index.js?v=2';
+import { preparer as preparerHoraires, statut, maintenant, rendreCadran, rendreTexte } from '../modules/horaires/horaires-calcul.js?v=2';
 
 const gsap = window.gsap;
 const ST = () => window.ScrollTrigger;
@@ -51,26 +51,74 @@ function osmose() {
   if (!bloc || !ST()) return;
   const [mets, vin] = $$('.disque', bloc);
   const tl = gsap.timeline({ scrollTrigger: { trigger: bloc, start: 'top 90%', end: 'center 45%', scrub: 0.6 } });
-  tl.fromTo(mets, { xPercent: 0, rotate: -10 }, { xPercent: 30, rotate: 0, ease: 'none' }, 0)
-    .fromTo(vin, { xPercent: 0, rotate: 10 }, { xPercent: -30, rotate: 0, ease: 'none' }, 0);
+  tl.fromTo(mets, { xPercent: 0, rotate: -10 }, { xPercent: 17, rotate: 0, ease: 'none' }, 0)
+    .fromTo(vin, { xPercent: 0, rotate: 10 }, { xPercent: -17, rotate: 0, ease: 'none' }, 0);
 }
 
-/* ---------- Verres : 3 ou 4 verres qui se remplissent par le fond, selon le menu. ---------- */
+/* ---------- Verres : 3 ou 4 verres qui se remplissent par le fond, surface du vin qui ondule, « tchin » au changement de menu. ---------- */
 function verres() {
   const bloc = $('[data-effet="verres"]');
   if (!bloc) return;
-  const tous = $$('.verre', bloc), vins = tous.map((v) => $('.vin', v));
+  const tous = $$('.verre', bloc);
+  const etats = tous.map((v, i) => ({ v, vin: $('.vin', v), corps: $('.verre-corps', v), niveau: 72, houle: 0, i }));
   const choix = $$('[data-choix-accord] button');
   const total = $('[data-accord-total]'), legende = $('[data-accord-verres]'), lien = $('[data-accord-lien]');
   let combien = 3;
-  const vide = { attr: { y: 72, height: 0 } }, plein = { attr: { y: 24, height: 48 } };
-  gsap.set(vins, vide);
+  etats.forEach((e) => { e.pente = 0; e.vp = 0; });
+  const dessiner = (e, t) => {
+    const a = 1.2 + e.houle * 4, pts = [];
+    for (let x = 0; x <= 60; x += 5) pts.push(`${x} ${(e.niveau + (x - 30) * e.pente + Math.sin(x / 60 * Math.PI * 2 + t * 2.2 + e.i) * a).toFixed(2)}`);
+    e.vin.setAttribute('d', `M${pts.join(' L')} V 80 H 0 Z`);
+  };
+  etats.forEach((e) => dessiner(e, 0));
+  boucle(bloc, (dt, t) => etats.forEach((e) => {
+    e.houle *= Math.exp(-dt * 1.6);
+    /* Le vin est un ressort amorti : il penche à contre-sens du geste, revient, déborde un peu, se pose. */
+    e.vp += (-70 * e.pente - 3.2 * e.vp) * dt;
+    e.pente = Math.max(-0.42, Math.min(0.42, e.pente + e.vp * dt));
+    e.v.style.rotate = Math.abs(e.pente) > 0.002 ? `${(e.pente * 9).toFixed(2)}deg` : '';
+    dessiner(e, t);
+  }));
+  /* Faire tourner le vin : la souris qui passe ou le doigt qui glisse sur les verres l'agite ; un appui fait trinquer. */
+  const astuce = $('.verres-astuce');
+  const curseur = () => $('.curseur');
+  let dernierX = null, dernierT = 0, appui = false, parcouru = 0;
+  const agiter = (dx, dt) => {
+    const v = Math.max(-2.5, Math.min(2.5, dx / Math.max(dt, 8)));
+    etats.forEach((e, i) => {
+      if (i >= combien) return;
+      e.vp = Math.max(-7, Math.min(7, e.vp - v * (0.55 + i * 0.06)));
+      e.houle = Math.min(1.6, e.houle + Math.abs(v) * 0.08);
+    });
+    if (astuce && Math.abs(v) > 0.3) astuce.classList.add('tourne');
+  };
+  bloc.addEventListener('pointerdown', (ev) => { appui = true; parcouru = 0; dernierX = ev.clientX; dernierT = ev.timeStamp; });
+  bloc.addEventListener('pointermove', (ev) => {
+    if (ev.pointerType !== 'mouse' && !appui) return;
+    if (dernierX === null) { dernierX = ev.clientX; dernierT = ev.timeStamp; return; }
+    const dx = ev.clientX - dernierX;
+    parcouru += Math.abs(dx);
+    agiter(dx, ev.timeStamp - dernierT);
+    dernierX = ev.clientX; dernierT = ev.timeStamp;
+  });
+  bloc.addEventListener('pointerup', () => { if (appui && parcouru < 6) { etats.forEach((e) => (e.houle = Math.max(e.houle, 0.8))); tchin(0); } appui = false; });
+  ['pointercancel', 'pointerleave'].forEach((t) => bloc.addEventListener(t, () => { appui = false; dernierX = null; }));
+  bloc.addEventListener('pointerenter', (ev) => { if (ev.pointerType === 'mouse') { const c = curseur(); if (c) c.classList.add('curseur-tourne'); } });
+  bloc.addEventListener('pointerleave', () => { const c = curseur(); if (c) c.classList.remove('curseur-tourne'); });
   const remplir = (delai = 0) => {
     tous.forEach((v, i) => v.classList.toggle('cache', i >= combien));
-    gsap.fromTo(vins.slice(0, combien), vide, { ...plein, duration: 1.1, ease: 'power2.out', stagger: 0.16, delay: delai, overwrite: true });
+    etats.forEach((e, i) => {
+      if (i >= combien) { gsap.to(e, { niveau: 72, duration: 0.3, overwrite: true }); return; }
+      e.houle = 1;
+      gsap.fromTo(e, { niveau: 72 }, { niveau: 26, duration: 1.3, ease: 'power2.out', delay: delai + i * 0.18, overwrite: true });
+    });
   };
+  const tchin = (attente = 0.9) => etats.slice(0, combien).forEach((e, i) => {
+    const sens = i < (combien - 1) / 2 ? 1 : i > (combien - 1) / 2 ? -1 : 0;
+    gsap.fromTo(e.corps, { rotate: 0 }, { rotate: sens * 7, svgOrigin: '30 142', duration: 0.16, yoyo: true, repeat: 1, ease: 'power2.out', delay: attente + i * 0.03 });
+  });
   tous.forEach((v, i) => v.classList.toggle('cache', i >= combien));
-  if (ST()) ST().create({ trigger: bloc, start: 'top 82%', once: true, onEnter: () => remplir() });
+  if (ST()) ST().create({ trigger: bloc, start: 'top 82%', once: true, onEnter: () => { remplir(); tchin(); } });
   else remplir();
   choix.forEach((b) => b.addEventListener('click', () => {
     choix.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
@@ -78,7 +126,8 @@ function verres() {
     if (total) total.textContent = b.dataset.total;
     if (legende) legende.textContent = `${combien} verres de 10 cl`;
     if (lien) { const u = new URL(lien.href, location.href); u.searchParams.set('formule', b.dataset.formule); lien.href = u.pathname + u.search; }
-    gsap.to(vins, { ...vide, duration: 0.25, overwrite: true, onComplete: () => remplir() });
+    etats.forEach((e) => (e.houle = 1));
+    remplir(0.1); tchin();
   }));
 }
 
@@ -263,6 +312,167 @@ function bandeau() {
   gsap.fromTo(f, { clipPath: 'inset(0% 7% 0% 7% round 18px)' }, { clipPath: 'inset(0% 0% 0% 0% round 18px)', ease: 'none', scrollTrigger: { trigger: f, start: 'top 85%', end: 'bottom 60%', scrub: 0.6 } });
 }
 
+/* ---------- Accueil : le triptyque d'arches suit la souris en profondeur, glisse au défilement, et les photos respirent. ---------- */
+function triptyque() {
+  const t = $('[data-effet="triptyque"]');
+  if (!t) return;
+  const cadres = $$('.arche-cadre', t), photos = $$('.arche img', t), profondeurs = [14, 24, 14];
+  const souris = { x: 0, y: 0 }, lisse = { x: 0, y: 0 };
+  if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    window.addEventListener('pointermove', (e) => { souris.x = e.clientX / innerWidth - 0.5; souris.y = e.clientY / innerHeight - 0.5; }, { passive: true });
+  }
+  boucle(t, (dt, temps) => {
+    const k = 1 - Math.exp(-dt * 5);
+    lisse.x += (souris.x - lisse.x) * k; lisse.y += (souris.y - lisse.y) * k;
+    /* Les arches flottent doucement, chacune à son rythme, et suivent la souris en profondeur. */
+    cadres.forEach((c, i) => { const f = Math.sin(temps * 0.7 + i * 2.1) * (i === 1 ? 4 : 7); c.style.translate = `${(lisse.x * profondeurs[i]).toFixed(2)}px ${(lisse.y * profondeurs[i] + f).toFixed(2)}px`; });
+    photos.forEach((p, i) => { p.style.scale = String(1.05 + 0.03 * Math.sin(temps * 0.45 + i * 1.7)); });
+  });
+  if (ST() && !tel()) {
+    gsap.to(cadres[0], { yPercent: -10, ease: 'none', scrollTrigger: { trigger: t, start: 'top top', end: 'bottom top', scrub: 0.5 } });
+    gsap.to(cadres[2], { yPercent: -16, ease: 'none', scrollTrigger: { trigger: t, start: 'top top', end: 'bottom top', scrub: 0.5 } });
+  }
+}
+
+/* ---------- Le O du titre se remplit de vin quand on quitte l'ouverture (un titre qui fait l'événement). ---------- */
+function oVin() {
+  const o = $('[data-effet="o-vin"]');
+  if (!o || !ST()) return;
+  gsap.fromTo(o, { '--niveau': '18%' }, { '--niveau': '100%', ease: 'none', scrollTrigger: { trigger: o.closest('section'), start: 'top top', end: 'bottom 35%', scrub: 0.4 } });
+}
+
+/* ---------- Manifeste : le nom apparaît là où le mets et le vin se mêlent. ---------- */
+function union() {
+  const u = $('.disque-union');
+  if (!u || !ST()) return;
+  gsap.fromTo(u, { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, ease: 'none', scrollTrigger: { trigger: u.parentElement, start: 'top 55%', end: 'center 45%', scrub: 0.6 } });
+}
+
+/* ---------- Menus : la rangée d'assiettes glisse au défilement sur grand écran (au doigt sur téléphone). ---------- */
+function rangee() {
+  const piste = $('.piste-assiettes');
+  if (!piste || !ST()) return;
+  gsap.matchMedia().add('(min-width: 761px)', () => {
+    piste.classList.add('piste--glisse');
+    const rail = $('.rail-assiettes', piste);
+    const tw = gsap.fromTo(rail, { x: 0 }, { x: () => -Math.max(0, rail.scrollWidth - piste.clientWidth), ease: 'none',
+      scrollTrigger: { trigger: piste, start: 'top 85%', end: 'bottom 15%', scrub: 0.6, invalidateOnRefresh: true } });
+    return () => { tw.scrollTrigger && tw.scrollTrigger.kill(); tw.kill(); gsap.set(rail, { clearProps: 'transform' }); piste.classList.remove('piste--glisse'); };
+  });
+}
+
+/* ---------- Retour physique de l'action : un cachet « O » tombe sur le billet de réservation ou sur le bon cadeau. ---------- */
+function cachet(cible, texte) {
+  const c = document.createElement('span');
+  c.className = 'cachet'; c.setAttribute('aria-hidden', 'true'); c.setAttribute('data-superpose', '');
+  c.innerHTML = `<b>O</b><small>${texte}</small>`;
+  cible.appendChild(c);
+  gsap.fromTo(c, { scale: 2.2, rotate: -28, opacity: 0, y: -40 }, { scale: 1, rotate: -12, opacity: 1, y: 0, duration: 0.55, ease: 'back.out(2.2)' });
+  gsap.fromTo(cible, { x: 0 }, { x: 3, duration: 0.05, repeat: 5, yoyo: true, delay: 0.42, clearProps: 'x' });
+}
+function retours() {
+  const resa = $('[data-resa]');
+  if (resa) resa.addEventListener('submit', () => setTimeout(() => {
+    const envoi = $('[type="submit"]', resa);
+    if (!envoi || !envoi.disabled) return;
+    const billet = document.createElement('div');
+    billet.className = 'billet'; billet.setAttribute('data-grille', 'retour');
+    billet.innerHTML = `<p class="billet-titre">Votre demande</p><p>${$('[data-resa-recap]', resa).textContent}</p><p class="billet-note">Demande simulée : la maison confirme par téléphone ou par e-mail.</p>`;
+    envoi.insertAdjacentElement('afterend', billet);
+    gsap.fromTo(billet, { y: 30, opacity: 0, rotate: -2 }, { y: 0, opacity: 1, rotate: 0, duration: 0.6, ease: 'power3.out', onComplete: () => cachet(billet, 'Reçue') });
+  }, 0));
+  const bonForm = $('[data-bon-form]');
+  if (bonForm) bonForm.addEventListener('submit', () => setTimeout(() => {
+    const envoi = $('[type="submit"]', bonForm), carte = $('[data-bon-cible]');
+    if (!envoi || !envoi.disabled || !carte) return;
+    carte.setAttribute('data-grille', 'retour');
+    const rc = carte.getBoundingClientRect(); if (rc.bottom < 80 || rc.top > innerHeight - 80) carte.scrollIntoView({ block: 'center' });
+    gsap.fromTo(carte, { rotateY: 0 }, { rotateY: 360, duration: 1, ease: 'power3.inOut', onComplete: () => cachet(carte, 'Envoyé') });
+  }, 0));
+  const message = $('[data-message-form]');
+  if (message) message.addEventListener('submit', () => setTimeout(() => {
+    const envoi = $('[type="submit"]', message);
+    if (!envoi || !envoi.disabled || $('.cachet', message)) return;
+    cachet(message, 'Envoyé');
+  }, 0));
+}
+
+/* ---------- Fil de vin : relie les sections ; la goutte descend avec la lecture, chaque section passée se remplit,
+   son nom passe à côté de la goutte. Sur tablette et téléphone, un trait de vin en haut de l'écran. ---------- */
+function fil() {
+  const f = $('.fil');
+  if (!f) return;
+  const points = $('.fil-points', f), nom = $('.fil-nom', f), pied = $('.pied');
+  const sections = $$('main > section').map((s) => ({ s, nom: ($('.surtitre', s) || {}).textContent || '', sombre: s.classList.contains('sombre') }));
+  /* Positions mesurées une fois (et au redimensionnement) : rien n'est relu pendant le défilement. */
+  let reperes = [], courant = -1, attente = 0, pret = false, max = 1, haut = 0, finDebut = 0, image = 0;
+  const mesurer = () => {
+    max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
+    points.innerHTML = '';
+    reperes = sections.map((x) => {
+      const b = x.s.getBoundingClientRect(), top = b.top + scrollY;
+      const p = Math.min(1, Math.max(0, (top - innerHeight * 0.5) / max));
+      const i = document.createElement('i'); i.style.top = `${(p * 100).toFixed(2)}%`; points.appendChild(i);
+      return { ...x, p, i, top, bas: top + b.height };
+    });
+    haut = pied ? pied.getBoundingClientRect().top + scrollY : Infinity;
+    finDebut = reperes[0] ? reperes[0].bas : 0;
+    poser();
+  };
+  const poser = () => {
+    image = 0;
+    const y = scrollY, milieu = y + innerHeight / 2, p = Math.min(1, Math.max(0, y / max));
+    f.style.setProperty('--p', p.toFixed(4));
+    let k = 0;
+    reperes.forEach((r, j) => { const passe = p >= r.p - 0.001; r.i.classList.toggle('passe', passe); if (passe) k = j; });
+    /* Couleur du fil selon le fond qui passe derrière lui (milieu de l'écran). */
+    const fond = reperes.find((r) => r.top <= milieu && r.bas > milieu);
+    f.classList.toggle('fil--clair', milieu >= haut || !!(fond && fond.sombre));
+    /* Le fil naît quand on quitte l'ouverture : il ne croise jamais le premier écran. */
+    f.classList.toggle('fil--pret', pret && finDebut - y < innerHeight * 0.72);
+    if (k !== courant && reperes[k]) {
+      courant = k;
+      nom.classList.add('change');
+      clearTimeout(attente);
+      attente = setTimeout(() => { nom.textContent = reperes[k].nom; nom.classList.remove('change'); }, 220);
+    }
+  };
+  addEventListener('scroll', () => { if (!image) image = requestAnimationFrame(poser); }, { passive: true });
+  addEventListener('resize', () => requestAnimationFrame(mesurer));
+  if (ST()) ST().addEventListener('refresh', mesurer);
+  mesurer();
+  setTimeout(() => { pret = true; mesurer(); }, 400);
+}
+
+/* ---------- Le vin monte dans le mot d'accent de chaque titre : au premier écran après l'ouverture,
+   plus bas quand le titre arrive. Un titre déjà à l'écran au chargement reste plein (rien ne change au rechargement). ---------- */
+const VIN_MOTS = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+function remplirMot(h, delai = 0) {
+  gsap.fromTo(h, { '--vin-mot': '0%' }, { '--vin-mot': '100%', duration: 1.35, delay: delai, ease: 'power2.inOut', overwrite: 'auto',
+    onComplete: () => { h.style.removeProperty('--vin-mot'); h.classList.add('vin-fini'); } });
+}
+function vinMots() {
+  if (!VIN_MOTS) return;
+  document.documentElement.classList.add('vin-mots');
+  $$('main h2').filter((h) => $('em', h)).forEach((h) => {
+    if (h.getBoundingClientRect().top < innerHeight * 0.85 || !ST()) { h.classList.add('vin-fini'); return; }
+    h.style.setProperty('--vin-mot', '0%');
+    ST().create({ trigger: h, start: 'top 80%', once: true, onEnter: () => remplirMot(h, 0.35) });
+  });
+}
+const titreVin = () => $('main h1[data-grille="typo"]');
+
+/* ---------- Images d'ouverture : si la photo arrive après l'aperçu flou, elle se fond au lieu d'apparaître d'un coup. ---------- */
+function fonduImages() {
+  $$('[class*="apercu--"] img').forEach((im) => {
+    if (im.complete && im.naturalWidth) return;
+    im.style.opacity = '0';
+    const montrer = () => { im.style.transition = 'opacity .7s ease'; im.style.opacity = ''; };
+    im.addEventListener('load', montrer, { once: true });
+    im.addEventListener('error', montrer, { once: true });
+  });
+}
+
 /* ---------- Accueil : deux petites gouttes tournent autour de l'arche, qui respire doucement (seulement à l'écran). ---------- */
 function orbite() {
   const o = $('[data-effet="orbite"]');
@@ -285,6 +495,8 @@ function entrerPage(tl, t0) {
   const autres = $$(ENTREES).filter((el) => !el.classList.contains('hero-titre'));
   if (autres.length) tl.fromTo(autres, { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, stagger: 0.08, ease: 'power3.out' }, t0 + 0.08);
   const h = $('.hero-titre'); if (h) tl.set(h, { opacity: 1 }, t0);
+  const t = titreVin();
+  if (t && VIN_MOTS && $('em', t)) tl.add(() => remplirMot(t), t0 + 0.4);
   return tl;
 }
 
@@ -293,7 +505,11 @@ demarrer({
     poserStatut();
     poserComptes();
     if (!gsap) return;
-    orbite(); bandeau(); osmose(); verres(); vitrail(); aiguille(); gouttesFin(); repere(); bon(); composeur(); reservation();
+    fonduImages();
+    const t = titreVin();
+    if (t && VIN_MOTS && $('em', t)) t.style.setProperty('--vin-mot', '0%');
+    triptyque(); oVin(); union(); rangee(); retours(); bandeau(); osmose(); verres(); vitrail(); aiguille(); gouttesFin(); repere(); bon(); composeur(); reservation();
+    vinMots(); fil();
   },
   jouer() {
     if (!gsap) return null;
@@ -317,6 +533,8 @@ demarrer({
     if (!gsap) return;
     gsap.set($$(`${ENTREES}, .hero-titre, .hero-titre .titre-ligne`), { clearProps: 'transform,opacity' });
     $$(`${ENTREES}, .hero-titre`).forEach((el) => el.classList.add('vu'));
+    const t = titreVin();
+    if (t) { gsap.killTweensOf(t, '--vin-mot'); t.style.removeProperty('--vin-mot'); t.classList.add('vin-fini'); }
   },
   arrivee() {
     if (!gsap) return;

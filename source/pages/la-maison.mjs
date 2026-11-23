@@ -11,7 +11,7 @@ export default (c) => {
 <section class="page-haut maison-tete section" id="debut">
   <div class="conteneur">
     <p class="surtitre entree" data-anime="gsap">${c.t('maison.surtitre')}</p>
-    <h1 class="page-titre entree" data-anime="gsap">${c.t('maison.titre')}</h1>
+    <h1 class="page-titre entree" data-anime="gsap" data-grille="typo">${c.tb('maison.titre')}</h1>
     <p class="chapo entree masque-ecran-tres-bas" data-anime="gsap">${c.t('maison.texte')}</p>
     <p class="actions entree" data-anime="gsap" style="justify-content:center">${c.lien('reserver', { classe: 'bouton', texte: c.t('accueil.action'), attrs: 'data-action-principale data-survol="magnetique"' })}<span class="doux" data-info-cle>${c.t('commun.joursHoraires')}</span></p>
   </div>
@@ -19,14 +19,14 @@ export default (c) => {
 </section>
 
 <section class="section conteneur" id="duo">
-  <div class="tete-section"><div><p class="surtitre" data-anime>${c.t('maison.duoSurtitre')}</p><h2 data-anime="lignes">${c.t('maison.duoTitre')}</h2></div></div>
+  <div class="tete-section"><div><p class="surtitre" data-anime>${c.t('maison.duoSurtitre')}</p><h2 data-anime="lignes">${c.tb('maison.duoTitre')}</h2></div></div>
   <ul class="duo" data-anime="cascade">
     <li class="duo-carte" data-survol="incline" data-survol-force="4">
       ${img(c, 'menus-spheres', { sizes: '(max-width: 760px) 92vw, 46vw' })}
       <div class="corps"><p class="role">${c.t('maison.chefRole')}</p><h3>${c.t('maison.chefNom')}</h3><p class="doux">${c.t('maison.chefTexte')}</p></div>
     </li>
     <li class="duo-carte" data-survol="incline" data-survol-force="4">
-      ${img(c, 'accord-verres', { cadrage: '50% 72%', sizes: '(max-width: 760px) 92vw, 46vw' })}
+      ${img(c, 'osmose-vin', { cadrage: '50% 50%', sizes: '(max-width: 760px) 92vw, 46vw' })}
       <div class="corps"><p class="role">${c.t('maison.sommelierRole')}</p><h3>${c.t('maison.sommelierNom')}</h3><p class="doux">${c.t('maison.sommelierTexte')}</p></div>
     </li>
   </ul>
@@ -36,8 +36,8 @@ export default (c) => {
   <div class="conteneur parcours">
     <div>
       <p class="surtitre" data-anime>${c.t('maison.parcoursSurtitre')}</p>
-      <h2 data-anime="lignes">${c.t('maison.parcoursTitre')}</h2>
-      ${img(c, 'chef-assiette', { classe: 'chef-media', sizes: '(max-width: 900px) 92vw, 36vw', attrs: 'data-fx="parallaxe"' })}
+      <h2 data-anime="lignes">${c.tb('maison.parcoursTitre')}</h2>
+      ${img(c, 'osmose-mets', { classe: 'chef-media', sizes: '(max-width: 900px) 92vw, 36vw', attrs: 'data-fx="parallaxe"' })}
     </div>
     <div class="frise">
       <svg class="frise-trait" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M2 0 V 100" fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>
@@ -67,7 +67,7 @@ export default (c) => {
     ${img(c, 'salle-arche', { sizes: '(max-width: 900px) 92vw, 38vw', attrs: 'data-anime="rideau"' })}
     <div>
       <p class="surtitre" data-anime>${c.t('maison.salleSurtitre')}</p>
-      <h2 data-anime="lignes">${c.t('maison.salleTitre')}</h2>
+      <h2 data-anime="lignes">${c.tb('maison.salleTitre')}</h2>
       <p class="chapo" data-anime>${c.t('maison.salleTexte')}</p>
       <p class="legende" data-anime>${c.t('maison.salleLegende')}</p>
     </div>
@@ -77,7 +77,7 @@ export default (c) => {
 <section class="section conteneur recevoir" id="privatiser">
   <div>
     <p class="surtitre" data-anime>${c.t('maison.privatiserSurtitre')}</p>
-    <h2 data-anime="lignes">${c.t('maison.privatiserTitre')}</h2>
+    <h2 data-anime="lignes">${c.tb('maison.privatiserTitre')}</h2>
     <p data-anime>${c.t('maison.privatiserTexte')}</p>
     <p class="doux" data-anime>${c.t('maison.privatiserMusique')} ${c.t('accueil.recevoirPetit')}</p>
     <p class="tel-fort" data-anime><a href="tel:${c.site.contact.telephone2Lien}">${c.t('accueil.recevoirTel')}</a></p>
@@ -89,7 +89,7 @@ export default (c) => {
 <section class="section sombre fin" id="fin">
   <div class="conteneur">
     ${gouttes('maison')}
-    <h2 data-anime="lignes">${c.t('maison.finTitre')}</h2>
+    <h2 data-anime="lignes">${c.tb('maison.finTitre')}</h2>
     <p class="chapo" data-anime>${c.t('maison.finTexte')}</p>
     <div class="actions" data-anime>${c.lien('reserver', { classe: 'bouton bouton--clair', texte: c.t('accueil.finAction'), attrs: 'data-survol="magnetique"' })}${c.lien('menus', { classe: 'bouton bouton--contour', texte: c.t('accueil.voirMenus') })}</div>
   </div>

@@ -1,13 +1,21 @@
 {
- "id": "20261120-164942-standard",
- "date": "2026-11-20T17:10:26.281Z",
- "niveau": "standard",
+ "id": "20261123-152425-complet-partiel",
+ "date": "2026-11-23T15:42:13.249Z",
+ "niveau": "complet",
  "pages": "toutes",
- "etapes": "toutes",
- "version": "1",
+ "etapes": [
+  "fichiers",
+  "grille",
+  "mesures",
+  "films",
+  "parcours",
+  "ecran",
+  "captures"
+ ],
+ "version": "2",
  "echecs": 0,
- "aRegarder": 12,
- "nonLances": 1,
+ "aRegarder": 3,
+ "nonLances": 0,
  "manquants": 0,
  "statut": "complet"
 }

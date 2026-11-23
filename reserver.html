@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-curseur>
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,15 +35,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/gloock-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="stylesheet" href="/assets/css/apercus.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="stylesheet" href="/assets/css/apercus.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F5EEE6">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -113,13 +113,13 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="page-haut conteneur resa-tete" id="debut">
   <div>
     <p class="surtitre entree masque-ecran-tres-bas" data-anime="gsap">Réserver</p>
-    <h1 class="page-titre entree" data-anime="gsap">Votre table à L&#39;Osmose</h1>
+    <h1 class="page-titre entree" data-anime="gsap" data-grille="typo">Votre table <em>à L’Osmose</em></h1>
     <p class="chapo entree masque-ecran-bas" data-anime="gsap">Choisissez le jour, le service et le nombre de couverts : nous confirmons votre demande par téléphone ou par e-mail.</p>
     <p class="hero-info entree" data-anime="gsap" data-info-cle><span class="pastille" data-statut-lieu><span class="point"></span><span data-statut-texte>Du mardi au samedi</span></span><a href="tel:+33388993889">03 88 99 38 89</a></p>
-    <form class="formulaire-resa entree" data-anime="gsap" data-resa data-formulaire novalidate id="reservation">
+    <form class="formulaire-resa entree" data-anime="gsap" data-resa data-formulaire data-grille="retour" novalidate id="reservation">
       <p class="etiquette" id="jour-titre">Le jour</p>
       <noscript><div class="champ"><label for="jour-sansjs">Le jour</label><input id="jour-sansjs" type="date" name="jour-sansjs" data-action-principale></div><div class="champ"><label for="heure-sansjs">L&#39;heure d&#39;arrivée</label><input id="heure-sansjs" type="time" name="heure-sansjs" min="12:00" max="20:30"></div></noscript>
-      <div class="jours" data-jours role="group" aria-labelledby="jour-titre" data-action-principale><noscript><style>.jours{display:none}</style></noscript></div>
+      <div class="jours" data-jours role="group" aria-labelledby="jour-titre" data-action-principale data-iris-centre><noscript><style>.jours{display:none}</style></noscript></div>
       <p class="etiquette">L&#39;heure d&#39;arrivée</p>
       <div class="creneaux" data-creneaux role="group" aria-label="L&#39;heure d&#39;arrivée"></div>
       <input type="hidden" name="jour"><input type="hidden" name="heure">
@@ -134,12 +134,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <div class="champ"><label for="resa-email">Votre e-mail</label><input id="resa-email" name="email" type="email" autocomplete="email" required></div>
       <div class="champ"><label for="resa-note">Une demande particulière ? (allergie, occasion, chaise haute…)</label><textarea id="resa-note" name="note" rows="3"></textarea></div>
       <p class="resa-recap" data-resa-recap aria-live="polite">Choisissez un jour et une heure.</p>
-      <p class="mention-donnees">Vos coordonnées servent seulement à vous répondre. Politique de confidentialité : à compléter. Créneaux d&#39;arrivée donnés à titre indicatif : à confirmer par la maison.</p>
+      <p class="mention-donnees">Vos coordonnées servent seulement à vous répondre. Créneaux d&#39;arrivée donnés à titre indicatif : à confirmer par la maison.</p>
       <button class="bouton" type="submit">Envoyer ma demande</button>
       <p data-message-envoi hidden></p>
     </form>
   </div>
-  <figure class="media resa-media apercu--reserver-ouverture" data-grok data-iris-centre data-fx="parallaxe" style="--cadrage:39% 52%;--cadrage-mobile:39% 52%">
+  <figure class="media resa-media apercu--reserver-ouverture" data-grok data-fx="parallaxe" style="--cadrage:39% 52%;--cadrage-mobile:39% 52%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/reserver-ouverture-mobile-640.webp 640w, /assets/images/grok/reserver-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 900px) 92vw, 32vw">
     <img src="/assets/images/grok/reserver-ouverture-1280.webp" srcset="/assets/images/grok/reserver-ouverture-640.webp 640w, /assets/images/grok/reserver-ouverture-1280.webp 1280w" sizes="(max-width: 900px) 92vw, 32vw" alt="Table dressée pour deux, nappe blanche, verres en cristal et bougie, devant un mur de grès rose" width="1280" height="1601" fetchpriority="high" loading="eager" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
@@ -149,7 +149,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur nouvel-an">
     <div>
       <p class="surtitre" data-anime>Le 31 décembre</p>
-      <h2 data-anime="lignes">La soirée du Nouvel An</h2>
+      <h2 data-anime="lignes">La soirée <em>du Nouvel An</em></h2>
       <figure class="media " data-anime="rideau" style="--cadrage:50% 48%">
   <picture>
     <img src="/assets/images/nouvel-an-784.webp" srcset="/assets/images/nouvel-an-480.webp 480w, /assets/images/nouvel-an-640.webp 640w, /assets/images/nouvel-an-784.webp 784w" sizes="(max-width: 900px) 92vw, 46vw" alt="Poisson doré, cheveux d&#39;ange croustillants et baies rouges sur une assiette blanche, bougies et décor de fêtes derrière" width="784" height="522" loading="lazy" decoding="async">
@@ -162,12 +162,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div>
       <h3 data-anime>Le menu de la soirée</h3>
       <ol class="plats-soiree" data-anime="cascade"><li><p style="margin:0"><strong>L&#39;Amuse-bouche</strong><span>et sa coupe de Champagne</span></p></li><li><p style="margin:0"><strong>Le Kiwuitre</strong><span>Huître et kiwi</span></p></li><li><p style="margin:0"><strong>L&#39;Œuf parfait et le Maïs</strong><span>Œuf parfait et espuma de maïs</span></p></li><li><p style="margin:0"><strong>La Saint-Jacques et le Chocolat blanc</strong><span>Noix de Saint-Jacques, panais au chocolat blanc</span></p></li><li><p style="margin:0"><strong>Le Turbot à la manière du duc de Wellington</strong><span>Turbot Wellington, espuma de volaille au safran</span></p></li><li><p style="margin:0"><strong>Le Pigeon façon Rossini</strong><span>Pigeon, foie gras et pomme de terre Anna</span></p></li><li><p style="margin:0"><strong>La Surprise de minuit</strong><span>Gardée secrète jusqu&#39;au dernier moment</span></p></li></ol>
-      <p class="tarifs" data-anime data-prix style="font-family:var(--police-titres);font-size:1.6rem;margin-top:20px">Menu 200 € · All Inclusive 300 €</p>
+      <p class="tarifs" data-anime data-prix style="font-family:var(--police-titres);font-size:1.6rem;margin-top:20px"><span class="insecable">Menu 200 €</span> · <span class="insecable">All Inclusive 300 €</span></p>
     </div>
   </div>
 </section>
 <section class="section conteneur" id="bon-a-savoir">
-  <div class="tete-section"><div><p class="surtitre" data-anime>Bon à savoir</p><h2 data-anime="lignes">Avant de venir</h2></div></div>
+  <div class="tete-section"><div><p class="surtitre" data-anime>Bon à savoir</p><h2 data-anime="lignes">Avant <em>de venir</em></h2></div></div>
   <div class="duo-image">
     <ul class="savoir" data-anime="cascade">
       <li>Le menu du jour est servi le midi, du mardi au vendredi.</li><li>Un All Inclusive acheté à l&#39;avance se réserve dans le mois qui suit l&#39;achat.</li><li>Groupes de 25 à 30 personnes : la salle se privatise, appelez le 07 55 61 02 61.</li><li>Parking privé au restaurant, entrée par l&#39;avenue de Gail.</li>
@@ -212,7 +212,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="pied-titre" id="lettre-titre">Recevez chaque mois notre nouvelle carte</p>
       <div class="champ"><label for="lettre-email">Votre adresse e-mail</label>
       <div class="pied-lettre-ligne"><input id="lettre-email" name="email" type="email" required autocomplete="email"><button class="bouton" type="submit">S&#39;abonner</button></div></div>
-      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte. Politique de confidentialité : à compléter.</p>
+      <p class="mention-donnees">Votre adresse ne sert qu&#39;à l&#39;envoi de la carte, une fois par saison.</p>
       <p data-message-envoi hidden></p>
     </form>
   </div>
@@ -222,6 +222,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <a class="bouton bouton--contour" href="tel:+33388993889">Appeler</a>
   <a class="bouton" href="/reserver" data-libelle="Réserver">Réserver</a>
 </div>
+<div class="fil" data-grille="fil" data-audit-ignorer aria-hidden="true"><span class="fil-trait"></span><span class="fil-vin"></span><span class="fil-points"></span><span class="fil-goutte"></span><span class="fil-nom"></span></div>
 <script type="application/json" id="horaires-donnees">{"fuseau":"Europe/Paris","seuil_ferme_bientot":30,"regle_feries":"ouvert","feries":[],"adresses":[{"id":"restaurant","nom":"L'Osmose","adresse":"18 rue du Général Gouraud, 67210 Obernai","telephone":"03 88 99 38 89","semaine":{"lundi":[],"mardi":["12:00-14:00","19:00-21:00"],"mercredi":["12:00-14:00","19:00-21:00"],"jeudi":["12:00-14:00","19:00-21:00"],"vendredi":["12:00-14:00","19:00-21:00"],"samedi":["12:00-14:00","19:00-21:00"],"dimanche":[]},"exceptions":[]}]}</script>
 </body>
 </html>

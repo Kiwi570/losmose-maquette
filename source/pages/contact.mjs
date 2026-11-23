@@ -32,9 +32,9 @@ export default (c) => {
   </div>
   <div class="coord">
     <p class="surtitre entree" data-anime="gsap">${c.t('contact.surtitre')}</p>
-    <h1 class="entree" data-anime="gsap">${c.t('contact.titre')}</h1>
+    <h1 class="entree" data-anime="gsap" data-grille="typo">${c.tb('contact.titre')}</h1>
     <p class="entree masque-ecran-bas" data-anime="gsap">${c.t('contact.texte')}</p>
-    <p class="actions entree" data-anime="gsap"><a class="bouton" href="tel:${k.telephoneLien}" data-action-principale>${c.t('commun.appeler')}</a><a class="lien-fleche" href="#message" data-sans-transition>${c.t('contact.messageTitre')}</a></p>
+    <p class="actions entree" data-anime="gsap"><a class="bouton" href="tel:${k.telephoneLien}" data-action-principale>${c.t('commun.appeler')}</a><a class="lien-fleche" href="#message" data-sans-transition>${c.t('contact.ecrire')}</a></p>
     <p class="hero-info entree" data-anime="gsap" data-info-cle><span class="pastille" data-statut-lieu><span class="point"></span><span data-statut-texte>${c.t('commun.statutAttente')}</span></span></p>
     <dl class="entree" data-anime="gsap">
       <div><dt>${c.t('accueil.infosAdresse')}</dt><dd>${k.adresse}<br>${k.entree}</dd></div>
@@ -49,7 +49,7 @@ export default (c) => {
     <div class="cadran" data-visuel data-effet="aiguille" data-horaires-cadran>${cadran(c)}<div class="cadran-centre"><strong data-statut-cadran>${c.t('commun.statutAttente')}</strong></div></div>
     <div>
       <p class="surtitre" data-anime>${c.t('contact.horairesSurtitre')}</p>
-      <h2 data-anime="lignes">${c.t('contact.horairesTitre')}</h2>
+      <h2 data-anime="lignes">${c.tb('contact.horairesTitre')}</h2>
       <div data-horaires-semaine data-anime>${semaine(c)}</div>
       <p class="doux" data-anime style="margin-top:18px">${c.t('accueil.infosParkingTexte')}</p>
     </div>
@@ -59,12 +59,12 @@ export default (c) => {
 <section class="section conteneur message" id="message">
   <div>
     <p class="surtitre" data-anime>${c.t('contact.messageSurtitre')}</p>
-    <h2 data-anime="lignes">${c.t('contact.messageTitre')}</h2>
+    <h2 data-anime="lignes">${c.tb('contact.messageTitre')}</h2>
     ${img(c, 'salle-arche', { sizes: '(max-width: 900px) 92vw, 36vw', attrs: 'data-anime="rideau"' })}
     <h3 style="margin-top:28px;font-size:1.2rem" data-anime>${c.t('contact.paiementTitre')}</h3>
     <ul class="paiements" data-anime="cascade">${c.s('commun.paiements').split(', ').map((p) => html`<li>${p}</li>`)}</ul>
   </div>
-  <form data-formulaire novalidate>
+  <form data-formulaire data-message-form novalidate>
     <div class="champ"><label for="sujet">${c.t('contact.sujet')}</label><select id="sujet" name="sujet">${SUJETS.map(([v, t]) => html`<option value="${v}">${c.t(t)}</option>`)}</select></div>
     <div class="champ"><label for="msg-nom">${c.t('contact.nom')}</label><input id="msg-nom" name="nom" autocomplete="name" required></div>
     <div class="champ"><label for="msg-email">${c.t('contact.courriel')}</label><input id="msg-email" name="email" type="email" autocomplete="email" required></div>

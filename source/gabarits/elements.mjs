@@ -11,12 +11,18 @@ export function img(c, nom, o = {}) {
   return c.media({ nom: chemin, alt: o.alt ?? fiche.alt ?? '', cadrage: o.cadrage || fiche.cadrage || '50% 50%', cadrageMobile: fiche.mobile?.cadrage, sizes: o.sizes || '100vw', priorite: !!o.priorite, classe: (o.classe || '') + (o.priorite ? ` apercu--${nom}` : ''), attrs: o.attrs || '', legende: o.legende });
 }
 
-/** Un verre à pied dessiné en SVG ; le vin monte par le fond (rect découpé par la forme du verre). */
+/** Un verre à pied dessiné en SVG. Le vin (chemin à surface ondulée, redessiné par site.js) remplit la coupe par le fond ;
+    sans JavaScript, les verres sont servis à moitié. */
 export function verre(i, couleur) {
+  const pts = Array.from({ length: 13 }, (_, k) => `${k * 5} 40`).join(' L');
   return html`<svg class="verre" viewBox="0 0 60 150" aria-hidden="true" data-verre="${i}">
   <defs><clipPath id="coupe-${i}"><path d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/></clipPath></defs>
-  <g clip-path="url(#coupe-${i})"><rect class="vin" x="0" y="6" width="60" height="66" fill="${couleur}"/></g>
-  <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+  <g class="verre-corps">
+    <path class="coupe-fond" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 Z"/>
+    <g clip-path="url(#coupe-${i})"><path class="vin" d="M${pts} V 80 H 0 Z" fill="${couleur}"/></g>
+    <path class="bord" d="M8 6 C 6 38, 12 62, 30 70 C 48 62, 54 38, 52 6 M30 70 V 138 M14 142 H 46"/>
+    <path class="eclat" d="M14 14 C 13 30, 16 46, 23 57"/>
+  </g>
 </svg>`;
 }
 

@@ -1,0 +1,17 @@
+{
+ "id": "20261123-142615-standard-cible-partiel",
+ "date": "2026-11-23T14:27:16.252Z",
+ "niveau": "standard",
+ "pages": "/reserver,/la-maison",
+ "etapes": [
+  "fichiers",
+  "films",
+  "parcours:hauteur"
+ ],
+ "version": "2",
+ "echecs": 0,
+ "aRegarder": 3,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "complet"
+}

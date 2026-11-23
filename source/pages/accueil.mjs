@@ -10,7 +10,7 @@ const COULEURS_VINS = ['#E9C46A', '#F2A27E', '#B23A48', '#7A1F2B'];
 export default (c) => {
   const m = c.donnees.menus;
   const nom = c.s('accueil.titre').replace(/'/g, '’');
-  const titre = brut(nom.replace('O', '<span class="o">O</span>'));
+  const titre = brut(nom.replace('O', '<span class="o" data-effet="o-vin" data-grille="typo">O</span>'));
   const reperes = [0, 1, 5, 6].map((i) => m.parcours[i]);
   return html`
 <section class="hero" id="debut">
@@ -24,9 +24,10 @@ export default (c) => {
     </div>
     <p class="hero-info" data-info-cle data-anime="gsap"><span class="pastille" data-statut-lieu><span class="point"></span><span data-statut-texte>${c.t('commun.statutAttente')}</span></span><span>${c.t('commun.menusDes')}</span></p>
   </div>
-  <div class="hero-arche-cadre">
-    <span class="orbite" aria-hidden="true" data-effet="orbite" data-audit-ignorer><i class="orbite-mets"></i><i class="orbite-vin"></i></span>
-    ${img(c, 'accueil-ouverture', { classe: 'arche', priorite: true, sizes: '(max-width: 760px) 64vw, 30vw', attrs: 'data-iris-centre data-fx="parallaxe" data-fx-force="8"' })}
+  <div class="triptyque" data-effet="triptyque" data-souris>
+    <div class="arche-cadre arche-cadre--g"><div class="arche-clip">${img(c, 'arche-gauche', { classe: 'arche', priorite: true, sizes: '(max-width: 760px) 30vw, 18vw', attrs: '' })}<span class="reflet" aria-hidden="true" data-audit-ignorer></span></div></div>
+    <div class="arche-cadre arche-cadre--c"><div class="arche-clip">${img(c, 'accueil-ouverture', { classe: 'arche', priorite: true, sizes: '(max-width: 760px) 38vw, 22vw', attrs: 'data-iris-centre' })}<span class="reflet" aria-hidden="true" data-audit-ignorer></span></div></div>
+    <div class="arche-cadre arche-cadre--d"><div class="arche-clip">${img(c, 'arche-droite', { classe: 'arche', priorite: true, sizes: '(max-width: 760px) 30vw, 18vw', attrs: '' })}<span class="reflet" aria-hidden="true" data-audit-ignorer></span></div></div>
   </div>
 </section>
 
@@ -39,13 +40,14 @@ export default (c) => {
   <div class="disques" data-effet="osmose">
     <div class="disque disque--mets">${img(c, 'osmose-mets', { sizes: '(max-width: 900px) 56vw, 24vw' })}<span class="disque-legende">${c.t('accueil.mets')}</span></div>
     <div class="disque disque--vin">${img(c, 'osmose-vin', { sizes: '(max-width: 900px) 56vw, 24vw' })}<span class="disque-legende">${c.t('accueil.vin')}</span></div>
+    <span class="disque-union" aria-hidden="true" data-audit-ignorer>${nom}</span>
   </div>
 </section>
 
 <section class="section gres" id="menus">
   <div class="conteneur">
     <div class="tete-section">
-      <div><p class="surtitre" data-anime>${c.t('accueil.menusSurtitre')}</p><h2 data-anime="lignes">${c.t('accueil.menusTitre')}</h2></div>
+      <div><p class="surtitre" data-anime>${c.t('accueil.menusSurtitre')}</p><h2 data-anime="lignes">${c.tb('accueil.menusTitre')}</h2></div>
       ${c.lien('menus', { classe: 'lien-fleche', texte: c.t('accueil.menusLien') })}
     </div>
     <ul class="cartes-menus" data-anime="cascade">${m.cartes.map((x) => html`<li class="carte-menu">
@@ -66,13 +68,14 @@ export default (c) => {
   <div class="conteneur accord">
     <div>
       <p class="surtitre" data-anime>${c.t('accueil.accordSurtitre')}</p>
-      <h2 data-anime="lignes">${c.t('accueil.accordTitre')}</h2>
+      <h2 data-anime="lignes">${c.tb('accueil.accordTitre')}</h2>
       <p class="chapo" data-anime>${c.t('accueil.accordTexte')}</p>
       <div class="choix" role="group" aria-label="${c.s('accueil.accordChoix')}" data-choix-accord>
         <button type="button" aria-pressed="true" data-verres="3" data-total="${m.cartes[1].accord}" data-formule="quatre-accord">${c.t('accueil.accordQuatre')}</button>
         <button type="button" aria-pressed="false" data-verres="4" data-total="${m.cartes[2].accord}" data-formule="cinq-accord">${c.t('accueil.accordCinq')}</button>
       </div>
-      <div class="verres" data-effet="verres">${COULEURS_VINS.map((col, i) => verre(i, col))}</div>
+      <div class="verres" data-effet="verres" data-grille="manipuler">${COULEURS_VINS.map((col, i) => verre(i, col))}</div>
+      <p class="verres-astuce" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v4h-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>${c.t('accueil.accordAstuce')}</p>
       <p class="accord-total" aria-live="polite"><strong class="prix" data-prix><span data-accord-total>${m.cartes[1].accord}</span> €</strong><span data-accord-verres>${c.t('accueil.accordVerres', { n: 3 })}</span></p>
       ${c.lien('reserver', { classe: 'bouton bouton--clair', params: 'formule=quatre-accord', texte: c.t('accueil.accordLien'), attrs: 'data-accord-lien data-survol="magnetique"' })}
     </div>
@@ -84,7 +87,7 @@ export default (c) => {
   ${img(c, 'chef-assiette', { classe: 'chef-media', sizes: '(max-width: 900px) 92vw, 40vw', attrs: 'data-anime="rideau"' })}
   <div>
     <p class="surtitre" data-anime>${c.t('accueil.chefSurtitre')}</p>
-    <h2 data-anime="lignes">${c.t('accueil.chefTitre')}</h2>
+    <h2 data-anime="lignes">${c.tb('accueil.chefTitre')}</h2>
     <p class="chapo doux" data-anime>${c.t('accueil.chefTexte')}</p>
     <div class="frise">
       <svg class="frise-trait" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M2 0 V 100" fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>
@@ -103,13 +106,13 @@ export default (c) => {
   <div class="conteneur salle-grille">
     <div>
       <p class="surtitre" data-anime>${c.t('accueil.salleSurtitre')}</p>
-      <h2 data-anime="lignes">${c.t('accueil.salleTitre')}</h2>
+      <h2 data-anime="lignes">${c.tb('accueil.salleTitre')}</h2>
       <p class="chapo" data-anime>${c.t('accueil.salleTexte')}</p>
       <ul class="puces" data-anime="cascade"><li>${c.t('accueil.salleParking')}</li><li>${c.t('commun.horaires')}</li></ul>
       ${c.lien('la-maison', { ancre: 'salle', classe: 'lien-fleche', texte: c.t('accueil.chefLien') })}
     </div>
     <div class="salle-composition">
-      ${img(c, 'maison-ouverture', { classe: 'salle-mur', sizes: '(max-width: 900px) 92vw, 50vw', attrs: 'data-fx="zoom"' })}
+      ${img(c, 'recevoir-tablee', { classe: 'salle-mur', sizes: '(max-width: 900px) 92vw, 50vw', attrs: 'data-fx="zoom"' })}
       ${img(c, 'salle-arche', { classe: 'salle-arche', sizes: '(max-width: 900px) 48vw, 22vw', attrs: 'data-superpose data-fx="vitesse"' })}
       <p class="legende">${c.t('accueil.salleLegende')}</p>
     </div>
@@ -117,7 +120,7 @@ export default (c) => {
 </section>
 
 <section class="section conteneur" id="en-ce-moment">
-  <div class="tete-section"><div><p class="surtitre" data-anime>${c.t('accueil.momentSurtitre')}</p><h2 data-anime="lignes">${c.t('accueil.momentTitre')}</h2></div></div>
+  <div class="tete-section"><div><p class="surtitre" data-anime>${c.t('accueil.momentSurtitre')}</p><h2 data-anime="lignes">${c.tb('accueil.momentTitre')}</h2></div></div>
   <div class="moment-grille" data-anime="cascade">
     <article class="moment-carte moment-carte--nuit">
       ${img(c, 'nouvel-an', { sizes: '(max-width: 900px) 92vw, 58vw' })}
@@ -126,7 +129,7 @@ export default (c) => {
         <h3>${c.t('accueil.nouvelAnTitre')}</h3>
         <p class="date">${c.t('accueil.nouvelAnDate')}</p>
         <p>${c.t('accueil.nouvelAnTexte')}</p>
-        <p class="tarifs" data-prix>${c.t('accueil.nouvelAnPrix')}</p>
+        <p class="tarifs" data-prix>${c.tb('accueil.nouvelAnPrix')}</p>
         <p class="doux">${c.t('accueil.nouvelAnMention')}</p>
         <div class="actions">${c.lien('reserver', { ancre: 'nouvel-an', classe: 'bouton bouton--clair', texte: c.t('accueil.nouvelAnLien') })}</div>
       </div>
@@ -146,7 +149,7 @@ export default (c) => {
   <div class="cadran" data-visuel data-effet="aiguille" data-horaires-cadran>${cadran(c)}<div class="cadran-centre"><strong data-statut-cadran>${c.t('commun.statutAttente')}</strong></div></div>
   <div>
     <p class="surtitre" data-anime>${c.t('accueil.infosSurtitre')}</p>
-    <h2 data-anime="lignes">${c.t('accueil.infosTitre')}</h2>
+    <h2 data-anime="lignes">${c.tb('accueil.infosTitre')}</h2>
     <div class="infos-liste" data-anime="cascade">
       <div><h3>${c.t('accueil.infosHoraires')}</h3><p>${c.t('commun.horaires')}</p></div>
       <div><h3>${c.t('accueil.infosAdresse')}</h3><p>${c.site.contact.adresse}<br>${c.site.contact.entree}</p></div>
@@ -160,7 +163,7 @@ export default (c) => {
 <section class="section sombre fin" id="reserver-fin">
   <div class="conteneur">
     ${gouttes('fin')}
-    <h2 data-anime="lignes">${c.t('accueil.finTitre')}</h2>
+    <h2 data-anime="lignes">${c.tb('accueil.finTitre')}</h2>
     <p class="chapo" data-anime>${c.t('accueil.finTexte')}</p>
     <div class="actions" data-anime>
       ${c.lien('reserver', { classe: 'bouton bouton--clair', texte: c.t('accueil.finAction'), attrs: 'data-survol="magnetique"' })}

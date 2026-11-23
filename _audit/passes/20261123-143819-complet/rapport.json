@@ -1,0 +1,204 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "premier écran : bouton principal hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/bons-cadeaux",
+      "taille": "375×667",
+      "mode": "sansJs",
+      "selecteur": "form#composer > div.montants:nth-of-type(1) > button:nth-of-type(1) « 100 € »",
+      "lieux": [
+        "375×667 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "positions non recalculées après un changement de hauteur",
+      "detail": "décalage de 35 px",
+      "etape": "parcours",
+      "page": "/",
+      "taille": "1366×768",
+      "selecteur": "4 services",
+      "lieux": [
+        "1366×768"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "photo moyenne affichée en très grand",
+      "detail": "assiette-cuilleres (3/5, 52 % de l'écran) : une image notée 4 ou 5 à cette taille",
+      "etape": "mesures",
+      "page": "/la-maison",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div:nth-of-type(1) > figure.media.chef-media > picture > img « Tasses noires et cuillères de bouchées roses sur u »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 50 ms (différence 25 %) (films/retour-avant-1366.png)",
+      "etape": "films",
+      "page": "/la-maison",
+      "taille": "1366×768",
+      "mode": "retour avant",
+      "lieux": [
+        "1366×768 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 74 ms (différence 20 %) (films/retour-avant-390.png)",
+      "etape": "films",
+      "page": "/la-maison",
+      "taille": "390×844",
+      "mode": "retour avant",
+      "lieux": [
+        "390×844 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "fluidité",
+      "detail": "4 % d'images de plus de 50 ms",
+      "etape": "fluidite",
+      "page": "/menus",
+      "taille": "1366×768",
+      "mode": "défilement à la molette, processeur ralenti 4 fois",
+      "lieux": [
+        "1366×768 défilement à la molette, processeur ralenti 4 fois"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 7,
+    "mesures": 273,
+    "balayage": 6,
+    "films d’ouverture": 12,
+    "films de transition": 12,
+    "bords de l’écran": 7,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 7,
+    "liens et boutons": 7,
+    "liens profonds": 6,
+    "liens vers la page en cours": 6,
+    "changements de hauteur": 6,
+    "parcours du projet": 1,
+    "fluidité": 12,
+    "défilement selon l’appareil": 5,
+    "mouvement": 12,
+    "effets du plan": 8,
+    "souris immobile": 6,
+    "vitesse": 6,
+    "captures": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=2",
+    "Journal v2 : 2 étape(s) notée(s), 32 min de travail pour 60 min de budget, 0 min d’attente de l’utilisateur.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Ouverture / (1366×768) : 2899 ms depuis le premier octet",
+    "Ouverture /bons-cadeaux (1366×768) : 2899 ms depuis le premier octet",
+    "Ouverture /contact (1366×768) : 2904 ms depuis le premier octet",
+    "Ouverture /la-maison (1366×768) : 2889 ms depuis le premier octet",
+    "Ouverture /menus (1366×768) : 2901 ms depuis le premier octet",
+    "Ouverture /reserver (1366×768) : 2903 ms depuis le premier octet",
+    "film de l'ouverture /reserver 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture / (390×844) : 2913 ms depuis le premier octet",
+    "Ouverture /bons-cadeaux (390×844) : 2902 ms depuis le premier octet",
+    "film de l'ouverture /bons-cadeaux 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /contact (390×844) : 2895 ms depuis le premier octet",
+    "Ouverture /la-maison (390×844) : 2889 ms depuis le premier octet",
+    "film de l'ouverture /la-maison 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /menus (390×844) : 2902 ms depuis le premier octet",
+    "film de l'ouverture /menus 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /reserver (390×844) : 2906 ms depuis le premier octet",
+    "Bords de l’écran : 546 images d’intro, 40 de voile et 173 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Tient dans l'écran / : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /bons-cadeaux : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /contact : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /la-maison : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /menus : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /reserver : aucune section épinglée ou plein écran.",
+    "Fluidité / 1366×768 (molette) : 0 % d'images lentes sur 374, tâche la plus longue 0 ms",
+    "Fluidité /bons-cadeaux 1366×768 (molette) : 0 % d'images lentes sur 177, tâche la plus longue 0 ms",
+    "Fluidité /contact 1366×768 (molette) : 0 % d'images lentes sur 189, tâche la plus longue 0 ms",
+    "Fluidité /la-maison 1366×768 (molette) : 0 % d'images lentes sur 289, tâche la plus longue 0 ms",
+    "Fluidité /reserver 1366×768 (molette) : 0 % d'images lentes sur 238, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1432, tâche la plus longue 0 ms",
+    "Fluidité /bons-cadeaux 390×844 (doigt) : 0 % d'images lentes sur 1352, tâche la plus longue 0 ms",
+    "Fluidité /contact 390×844 (doigt) : 0 % d'images lentes sur 1349, tâche la plus longue 0 ms",
+    "Fluidité /la-maison 390×844 (doigt) : 0 % d'images lentes sur 1353, tâche la plus longue 0 ms",
+    "Fluidité /menus 390×844 (doigt) : 0 % d'images lentes sur 1354, tâche la plus longue 0 ms",
+    "Fluidité /reserver 390×844 (doigt) : 0 % d'images lentes sur 1349, tâche la plus longue 0 ms",
+    "Vitesse / : 0.77 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /bons-cadeaux : 0.57 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /contact : 0.43 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /la-maison : 0.47 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /menus : 0.65 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /reserver : 0.49 s de calcul au chargement (téléphone ralenti)."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "présent",
+      "detail": "accueil"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 6 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en iris"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "présent",
+      "detail": "sur les 6 page(s)"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "présent",
+      "detail": "sur les 6 page(s)"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "sans objet",
+      "detail": "aucune scène épinglée marquée ni galerie générique"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "présent",
+      "detail": "sur /bons-cadeaux, /reserver"
+    }
+  ]
+}

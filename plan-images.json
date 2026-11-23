@@ -16,6 +16,28 @@
   "page": "accueil"
  },
  {
+  "source": "recu/site/losmose-recu/menus-partir-29-11.jpg",
+  "nom": "arche-droite",
+  "role": "ouverture",
+  "ratio": "4:5",
+  "mobile": false,
+  "beaute": 4,
+  "cadrage": [
+   40,
+   52
+  ],
+  "alt": "Disque de biscuit doré entrouvert sur un cœur jaune, éclats de sauce jaune sur assiette blanche"
+ },
+ {
+  "source": "recu/site/losmose-recu/menus-partir-29-4.jpg",
+  "nom": "arche-gauche",
+  "role": "ouverture",
+  "ratio": "4:5",
+  "mobile": false,
+  "beaute": 4,
+  "alt": "Sphères vertes et bâtonnets de pomme dans des bols sombres alignés"
+ },
+ {
   "source": "recu/site/losmose-recu/menus-partir-29-3.jpg",
   "nom": "osmose-mets",
   "role": "vignette",

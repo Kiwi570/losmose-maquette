@@ -1,0 +1,15 @@
+{
+ "id": "20261123-142743-standard-cible-partiel",
+ "date": "2026-11-23T14:28:48.636Z",
+ "niveau": "standard",
+ "pages": "/reserver",
+ "etapes": [
+  "parcours"
+ ],
+ "version": "2",
+ "echecs": 0,
+ "aRegarder": 0,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "complet"
+}

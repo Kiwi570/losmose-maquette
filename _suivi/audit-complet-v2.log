@@ -1,0 +1,49 @@
+… fichiers
+  fait en 0 s
+… grille
+  fait en 43 s
+… mesures
+  16/273
+  41/273
+  68/273
+  91/273
+  121/273
+  146/273
+  168/273
+  195/273
+  212/273
+  239/273
+  260/273
+  fait en 346 s
+… mesures:balayage
+  fait en 58 s
+… films
+  fait en 172 s
+… bords
+  fait en 77 s
+… parcours:intro
+  fait en 78 s
+… parcours:menu
+  fait en 5 s
+… parcours:liens
+  fait en 89 s
+… parcours:hauteur
+  fait en 63 s
+… parcours:projet
+  fait en 17 s
+… ecran
+  fait en 18 s
+… fluidite
+  fait en 216 s
+… mouvement
+  fait en 161 s
+… vitesse
+  fait en 24 s
+… captures
+  fait en 171 s
+… safari
+  fait en 0 s
+
+Échecs : 2 · À regarder : 4 · Non lancé : 1
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/bons-cadeaux --seulement=fichiers,mesures,parcours
+Rapport : /home/claude/losmose-maquette/_audit/rapport/rapport.md (passe 20261123-143819-complet)
